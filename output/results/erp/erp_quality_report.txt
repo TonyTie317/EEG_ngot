@@ -1,0 +1,327 @@
+========================================================================
+  BÁO CÁO CHẤT LƯỢNG ERP — THEO TỪNG SUBJECT × CONDITION
+========================================================================
+  Tổng số: 168 subject×condition
+  • GOOD (pattern rõ, giữ lại):   90 (54%)
+  • WEAK (pattern yếu, thận trọng):  29 (17%)
+  • BAD (nhiễu, nên loại):        49 (29%)
+  • has_real_pattern=True:         119 (71%)
+
+────────────────────────────────────────────────────────────────────────
+  SUBJECT × CONDITION — BAD (nên loại khỏi phân tích nhóm)
+────────────────────────────────────────────────────────────────────────
+  Subject Condition        AvgSNR  Comp  Morph  Score  SNFratio 
+  P001   Low/258              0.5  2/4    0.50  0.377       0.5
+  P001   MedLow/453           0.9  3/4    0.33  0.461       0.6
+  P001   Medium/189           1.0  2/4    0.17  0.338       0.5
+  P001   MedHigh/762          0.5  2/4    0.50  0.372       0.4
+  P002   Medium/189           0.5  2/4    0.50  0.376       0.4
+  P003   Low/258              0.6  2/4    0.33  0.336       0.4
+  P004   Water/605            0.6  3/4    0.33  0.437       0.6
+  P005   Water/605            0.4  3/4    0.17  0.380       0.6
+  P006   Medium/189           0.7  2/4    0.17  0.305       0.4
+  P007   High/893             0.4  3/4    0.33  0.412       0.4
+  P008   Water/605            0.3  2/4    0.67  0.394       0.4
+  P008   MedLow/453           0.4  3/4    0.33  0.409       0.4
+  P008   Medium/189           0.4  2/4    0.67  0.399       0.4
+  P008   High/893             0.4  2/4    0.17  0.278       0.4
+  P009   Water/605            0.5  2/4    0.33  0.329       0.4
+  P010   MedLow/453           0.6  3/4    0.33  0.427       0.4
+  P011   MedLow/453           0.7  2/4    0.33  0.350       0.4
+  P011   MedHigh/762          0.6  2/4    0.50  0.389       0.5
+  P014   Low/258              0.5  3/4    0.33  0.420       0.4
+  P015   Water/605            0.3  2/4    0.33  0.328       0.6
+  P015   Medium/189           0.8  3/4    0.17  0.402       0.5
+  P015   MedHigh/762          0.4  2/4    0.67  0.402       0.4
+  P016   Water/605            0.5  1/4    0.50  0.301       0.6
+  P016   Low/258              0.9  3/4    0.17  0.413       0.5
+  P016   MedLow/453           0.5  3/4    0.17  0.374       0.4
+  P016   High/893             0.5  2/4    0.50  0.368       0.4
+  P017   Low/258              0.5  2/4    0.50  0.370       0.3
+  P017   MedLow/453           1.1  3/4    0.33  0.507       0.9
+  P018   Medium/189           0.4  3/4    0.17  0.378       0.5
+  P020   Low/258              0.3  3/4    0.33  0.405       0.5
+  P020   Medium/189           0.6  3/4    0.17  0.390       0.4
+  P021   Low/258              0.9  1/4    0.33  0.278       0.5
+  P024   Low/258              0.8  3/4    0.33  0.471       0.8
+  P024   MedLow/453           0.5  2/4    0.17  0.292       0.5
+  P024   Medium/189           0.7  3/4    0.33  0.441       0.5
+  P025   Medium/189           0.4  2/4    0.50  0.373       0.6
+  P025   MedHigh/762          0.5  2/4    0.17  0.290       0.4
+  P026   MedHigh/762          0.6  3/4    0.33  0.434       0.5
+  P027   Low/258              0.5  3/4    0.17  0.379       0.4
+  P027   MedLow/453           0.5  2/4    0.33  0.347       0.6
+  P027   Medium/189           0.5  2/4    0.67  0.413       0.4
+  P028   Water/605            0.6  3/4    0.17  0.393       0.5
+  P028   Medium/189           0.3  1/4    0.17  0.179       0.3
+  P028   MedHigh/762          0.6  3/4    0.33  0.430       0.4
+  P028   High/893             0.8  2/4    0.33  0.370       0.6
+  P029   Low/258              0.6  2/4    0.50  0.387       0.5
+  P029   MedLow/453           0.4  2/4    0.50  0.368       0.5
+  P029   MedHigh/762          0.4  2/4    0.50  0.359       0.4
+  P030   High/893             0.4  3/4    0.00  0.328       0.4
+
+────────────────────────────────────────────────────────────────────────
+  SUBJECT × CONDITION — WEAK (cần xem xét trước khi loại)
+────────────────────────────────────────────────────────────────────────
+  Subject Condition        AvgSNR  Comp  Morph  Score  SNFratio 
+  P002   High/893             0.4  3/4    0.50  0.444       0.4
+  P003   Water/605            0.7  3/4    0.50  0.490       0.6
+  P003   MedHigh/762          0.4  3/4    0.50  0.446       0.3
+  P004   MedHigh/762          0.4  3/4    0.50  0.459       0.5
+  P004   High/893             0.5  3/4    0.50  0.473       0.6
+  P005   MedLow/453           0.3  3/4    0.50  0.447       0.4
+  P005   MedHigh/762          0.3  3/4    0.67  0.479       0.3
+  P008   Low/258              0.4  3/4    0.50  0.442       0.3
+  P008   MedHigh/762          0.3  3/4    0.50  0.447       0.4
+  P010   Water/605            0.4  4/4    0.33  0.499       0.5
+  P011   Water/605            0.6  4/4    0.00  0.431       0.4
+  P013   Water/605            0.7  3/4    0.50  0.489       0.6
+  P013   MedLow/453           0.7  4/4    0.17  0.484       0.5
+  P013   MedHigh/762          0.7  3/4    0.50  0.479       0.4
+  P014   Water/605            0.4  4/4    0.33  0.499       0.4
+  P014   Medium/189           0.4  3/4    0.50  0.458       0.5
+  P014   MedHigh/762          0.4  3/4    0.67  0.490       0.4
+  P017   High/893             0.3  3/4    0.50  0.437       0.3
+  P019   Water/605            0.6  4/4    0.17  0.474       0.5
+  P023   MedHigh/762          0.5  3/4    0.50  0.458       0.4
+  P024   Water/605            0.5  4/4    0.17  0.460       0.4
+  P025   Water/605            0.3  3/4    0.50  0.442       0.4
+  P025   High/893             0.4  3/4    0.50  0.451       0.4
+  P026   Water/605            0.5  3/4    0.50  0.459       0.4
+  P026   Medium/189           0.4  3/4    0.67  0.490       0.4
+  P026   High/893             0.4  4/4    0.00  0.408       0.3
+  P029   Water/605            0.4  4/4    0.33  0.489       0.4
+  P029   Medium/189           0.5  3/4    0.50  0.460       0.4
+  P030   MedHigh/762          0.6  3/4    0.50  0.470       0.4
+
+────────────────────────────────────────────────────────────────────────
+  THỐNG KÊ THEO SUBJECT
+────────────────────────────────────────────────────────────────────────
+  Subj  N   GOOD  WEAK  BAD  Quality AvgSNR  CóPatt
+────────────────────────────────────────────────────────────────────────
+  P001    6     2     0    4   0.454     0.7  2/ 6
+  P002    6     4     1    1   0.558     0.6  5/ 6
+  P003    6     3     2    1   0.514     0.6  5/ 6
+  P004    6     3     2    1   0.552     0.5  5/ 6
+  P005    6     3     2    1   0.497     0.4  5/ 6
+  P006    6     5     0    1   0.521     0.6  5/ 6
+  P007    6     5     0    1   0.545     0.7  5/ 6
+  P008    6     0     2    4   0.395     0.4  2/ 6
+  P009    6     5     0    1   0.604     0.6  5/ 6
+  P010    6     4     1    1   0.525     0.5  5/ 6
+  P011    6     3     1    2   0.510     0.6  4/ 6
+  P013    6     3     3    0   0.550     0.8  6/ 6
+  P014    6     2     3    1   0.504     0.5  5/ 6
+  P015    6     3     0    3   0.469     0.5  3/ 6
+  P016    6     2     0    4   0.422     0.6  2/ 6
+  P017    6     3     1    2   0.489     0.5  4/ 6
+  P018    6     5     0    1   0.568     0.5  5/ 6
+  P019    6     5     1    0   0.559     0.6  6/ 6
+  P020    6     4     0    2   0.525     0.5  4/ 6
+  P021    6     5     0    1   0.536     0.8  5/ 6
+  P023    6     5     1    0   0.549     0.5  6/ 6
+  P024    6     2     1    3   0.469     0.6  3/ 6
+  P025    6     2     2    2   0.463     0.4  4/ 6
+  P026    6     2     3    1   0.490     0.5  5/ 6
+  P027    6     3     0    3   0.473     0.6  3/ 6
+  P028    6     2     0    4   0.428     0.6  2/ 6
+  P029    6     1     2    3   0.429     0.5  3/ 6
+  P030    6     4     1    1   0.501     0.6  5/ 6
+────────────────────────────────────────────────────────────────────────
+
+========================================================================
+  CHI TIẾT TỪNG SUBJECT × CONDITION
+========================================================================
+  Subj  Condition  Label    AvgSNR Comps Morph Score  P1  N1  P2  N400
+────────────────────────────────────────────────────────────────────────
+  P001  Water/605  GOOD        0.7  4/4   0.83  0.645  Y   Y   Y   Y   
+  P001  Low/258    BAD         0.5  2/4   0.50  0.377  .   .   Y   Y   
+  P001  MedLow/453 BAD         0.9  3/4   0.33  0.461  Y   Y   Y   .   
+  P001  Medium/189 BAD         1.0  2/4   0.17  0.338  .   .   Y   Y   
+  P001  MedHigh/762 BAD         0.5  2/4   0.50  0.372  .   .   Y   Y   
+  P001  High/893   GOOD        0.8  3/4   0.67  0.532  Y   Y   Y   .   
+  P002  Water/605  GOOD        0.4  4/4   0.67  0.583  Y   Y   Y   Y   
+  P002  Low/258    GOOD        1.5  4/4   0.83  0.731  Y   Y   Y   Y   
+  P002  MedLow/453 GOOD        0.5  4/4   0.50  0.550  Y   Y   Y   Y   
+  P002  Medium/189 BAD         0.5  2/4   0.50  0.376  Y   .   Y   .   
+  P002  MedHigh/762 GOOD        0.4  4/4   1.00  0.666  Y   Y   Y   Y   
+  P002  High/893   WEAK        0.4  3/4   0.50  0.444  .   Y   Y   Y   
+  P003  Water/605  WEAK        0.7  3/4   0.50  0.490  Y   Y   .   Y   
+  P003  Low/258    BAD         0.6  2/4   0.33  0.336  .   Y   Y   .   
+  P003  MedLow/453 GOOD        0.6  4/4   1.00  0.687  Y   Y   Y   Y   
+  P003  Medium/189 GOOD        0.8  4/4   0.67  0.620  Y   Y   Y   Y   
+  P003  MedHigh/762 WEAK        0.4  3/4   0.50  0.446  Y   Y   Y   .   
+  P003  High/893   GOOD        0.5  4/4   0.33  0.507  Y   Y   Y   Y   
+  P004  Water/605  BAD         0.6  3/4   0.33  0.437  Y   Y   .   Y   
+  P004  Low/258    GOOD        0.6  4/4   1.00  0.678  Y   Y   Y   Y   
+  P004  MedLow/453 GOOD        0.6  4/4   0.83  0.642  Y   Y   Y   Y   
+  P004  Medium/189 GOOD        0.4  4/4   0.83  0.625  Y   Y   Y   Y   
+  P004  MedHigh/762 WEAK        0.4  3/4   0.50  0.459  Y   Y   .   Y   
+  P004  High/893   WEAK        0.5  3/4   0.50  0.473  Y   Y   .   Y   
+  P005  Water/605  BAD         0.4  3/4   0.17  0.380  Y   Y   .   Y   
+  P005  Low/258    GOOD        0.4  3/4   0.83  0.542  Y   Y   Y   .   
+  P005  MedLow/453 WEAK        0.3  3/4   0.50  0.447  Y   Y   .   Y   
+  P005  Medium/189 GOOD        0.4  4/4   0.67  0.598  Y   Y   Y   Y   
+  P005  MedHigh/762 WEAK        0.3  3/4   0.67  0.479  .   Y   Y   Y   
+  P005  High/893   GOOD        0.3  4/4   0.50  0.534  Y   Y   Y   Y   
+  P006  Water/605  GOOD        0.9  4/4   0.67  0.633  Y   Y   Y   Y   
+  P006  Low/258    GOOD        0.5  3/4   0.67  0.502  .   Y   Y   Y   
+  P006  MedLow/453 GOOD        0.6  4/4   0.67  0.599  Y   Y   Y   Y   
+  P006  Medium/189 BAD         0.7  2/4   0.17  0.305  Y   .   Y   .   
+  P006  MedHigh/762 GOOD        0.5  4/4   0.67  0.584  Y   Y   Y   Y   
+  P006  High/893   GOOD        0.5  3/4   0.67  0.504  .   Y   Y   Y   
+  P007  Water/605  GOOD        0.5  4/4   0.67  0.584  Y   Y   Y   Y   
+  P007  Low/258    GOOD        0.7  4/4   0.83  0.653  Y   Y   Y   Y   
+  P007  MedLow/453 GOOD        0.6  4/4   0.33  0.516  Y   Y   Y   Y   
+  P007  Medium/189 GOOD        1.3  3/4   0.50  0.557  Y   .   Y   Y   
+  P007  MedHigh/762 GOOD        0.4  4/4   0.50  0.544  Y   Y   Y   Y   
+  P007  High/893   BAD         0.4  3/4   0.33  0.412  Y   .   Y   Y   
+  P008  Water/605  BAD         0.3  2/4   0.67  0.394  .   .   Y   Y   
+  P008  Low/258    WEAK        0.4  3/4   0.50  0.442  Y   Y   Y   .   
+  P008  MedLow/453 BAD         0.4  3/4   0.33  0.409  Y   Y   .   Y   
+  P008  Medium/189 BAD         0.4  2/4   0.67  0.399  .   .   Y   Y   
+  P008  MedHigh/762 WEAK        0.3  3/4   0.50  0.447  Y   Y   .   Y   
+  P008  High/893   BAD         0.4  2/4   0.17  0.278  .   Y   .   Y   
+  P009  Water/605  BAD         0.5  2/4   0.33  0.329  Y   .   .   Y   
+  P009  Low/258    GOOD        0.6  4/4   0.67  0.592  Y   Y   Y   Y   
+  P009  MedLow/453 GOOD        0.8  4/4   1.00  0.708  Y   Y   Y   Y   
+  P009  Medium/189 GOOD        0.6  4/4   0.83  0.636  Y   Y   Y   Y   
+  P009  MedHigh/762 GOOD        0.6  4/4   1.00  0.681  Y   Y   Y   Y   
+  P009  High/893   GOOD        0.5  4/4   1.00  0.676  Y   Y   Y   Y   
+  P010  Water/605  WEAK        0.4  4/4   0.33  0.499  Y   Y   Y   Y   
+  P010  Low/258    GOOD        0.5  4/4   0.33  0.510  Y   Y   Y   Y   
+  P010  MedLow/453 BAD         0.6  3/4   0.33  0.427  Y   Y   .   Y   
+  P010  Medium/189 GOOD        0.5  4/4   0.33  0.502  Y   Y   Y   Y   
+  P010  MedHigh/762 GOOD        0.8  4/4   0.50  0.580  Y   Y   Y   Y   
+  P010  High/893   GOOD        0.4  4/4   0.83  0.631  Y   Y   Y   Y   
+  P011  Water/605  WEAK        0.6  4/4   0.00  0.431  Y   Y   Y   Y   
+  P011  Low/258    GOOD        0.6  4/4   1.00  0.683  Y   Y   Y   Y   
+  P011  MedLow/453 BAD         0.7  2/4   0.33  0.350  .   .   Y   Y   
+  P011  Medium/189 GOOD        0.7  4/4   0.83  0.651  Y   Y   Y   Y   
+  P011  MedHigh/762 BAD         0.6  2/4   0.50  0.389  .   Y   .   Y   
+  P011  High/893   GOOD        0.6  3/4   0.83  0.554  Y   .   Y   Y   
+  P013  Water/605  WEAK        0.7  3/4   0.50  0.489  Y   Y   Y   .   
+  P013  Low/258    GOOD        0.7  4/4   0.50  0.566  Y   Y   Y   Y   
+  P013  MedLow/453 WEAK        0.7  4/4   0.17  0.484  Y   Y   Y   Y   
+  P013  Medium/189 GOOD        0.9  4/4   0.83  0.665  Y   Y   Y   Y   
+  P013  MedHigh/762 WEAK        0.7  3/4   0.50  0.479  Y   Y   .   Y   
+  P013  High/893   GOOD        0.8  4/4   0.67  0.616  Y   Y   Y   Y   
+  P014  Water/605  WEAK        0.4  4/4   0.33  0.499  Y   Y   Y   Y   
+  P014  Low/258    BAD         0.5  3/4   0.33  0.420  Y   .   Y   Y   
+  P014  MedLow/453 GOOD        0.5  4/4   0.67  0.600  Y   Y   Y   Y   
+  P014  Medium/189 WEAK        0.4  3/4   0.50  0.458  Y   .   Y   Y   
+  P014  MedHigh/762 WEAK        0.4  3/4   0.67  0.490  .   Y   Y   Y   
+  P014  High/893   GOOD        0.6  4/4   0.50  0.557  Y   Y   Y   Y   
+  P015  Water/605  BAD         0.3  2/4   0.33  0.328  .   Y   .   Y   
+  P015  Low/258    GOOD        0.8  4/4   0.83  0.652  Y   Y   Y   Y   
+  P015  MedLow/453 GOOD        0.5  4/4   0.33  0.509  Y   Y   Y   Y   
+  P015  Medium/189 BAD         0.8  3/4   0.17  0.402  Y   Y   .   Y   
+  P015  MedHigh/762 BAD         0.4  2/4   0.67  0.402  Y   .   Y   .   
+  P015  High/893   GOOD        0.3  3/4   0.83  0.522  Y   Y   Y   .   
+  P016  Water/605  BAD         0.5  1/4   0.50  0.301  .   .   Y   .   
+  P016  Low/258    BAD         0.9  3/4   0.17  0.413  Y   Y   .   Y   
+  P016  MedLow/453 BAD         0.5  3/4   0.17  0.374  Y   Y   .   Y   
+  P016  Medium/189 GOOD        0.6  4/4   0.50  0.555  Y   Y   Y   Y   
+  P016  MedHigh/762 GOOD        0.7  3/4   0.67  0.521  Y   Y   Y   .   
+  P016  High/893   BAD         0.5  2/4   0.50  0.368  .   Y   Y   .   
+  P017  Water/605  GOOD        0.3  4/4   0.50  0.526  Y   Y   Y   Y   
+  P017  Low/258    BAD         0.5  2/4   0.50  0.370  .   .   Y   Y   
+  P017  MedLow/453 BAD         1.1  3/4   0.33  0.507  Y   Y   .   Y   
+  P017  Medium/189 GOOD        0.6  4/4   0.33  0.518  Y   Y   Y   Y   
+  P017  MedHigh/762 GOOD        0.4  4/4   0.67  0.577  Y   Y   Y   Y   
+  P017  High/893   WEAK        0.3  3/4   0.50  0.437  Y   Y   .   Y   
+  P018  Water/605  GOOD        0.6  4/4   0.67  0.605  Y   Y   Y   Y   
+  P018  Low/258    GOOD        0.5  4/4   0.83  0.638  Y   Y   Y   Y   
+  P018  MedLow/453 GOOD        0.4  4/4   0.83  0.635  Y   Y   Y   Y   
+  P018  Medium/189 BAD         0.4  3/4   0.17  0.378  Y   Y   .   Y   
+  P018  MedHigh/762 GOOD        0.5  4/4   0.67  0.594  Y   Y   Y   Y   
+  P018  High/893   GOOD        0.6  4/4   0.50  0.559  Y   Y   Y   Y   
+  P019  Water/605  WEAK        0.6  4/4   0.17  0.474  Y   Y   Y   Y   
+  P019  Low/258    GOOD        0.6  4/4   0.33  0.509  Y   Y   Y   Y   
+  P019  MedLow/453 GOOD        0.5  4/4   0.83  0.639  Y   Y   Y   Y   
+  P019  Medium/189 GOOD        0.6  3/4   0.67  0.521  .   Y   Y   Y   
+  P019  MedHigh/762 GOOD        0.7  3/4   0.67  0.517  Y   Y   Y   .   
+  P019  High/893   GOOD        0.7  4/4   1.00  0.693  Y   Y   Y   Y   
+  P020  Water/605  GOOD        0.5  3/4   1.00  0.589  Y   Y   Y   .   
+  P020  Low/258    BAD         0.3  3/4   0.33  0.405  Y   Y   .   Y   
+  P020  MedLow/453 GOOD        0.7  4/4   0.83  0.656  Y   Y   Y   Y   
+  P020  Medium/189 BAD         0.6  3/4   0.17  0.390  Y   .   Y   Y   
+  P020  MedHigh/762 GOOD        0.6  3/4   0.67  0.530  .   Y   Y   Y   
+  P020  High/893   GOOD        0.5  4/4   0.67  0.577  Y   Y   Y   Y   
+  P021  Water/605  GOOD        0.8  4/4   0.50  0.577  Y   Y   Y   Y   
+  P021  Low/258    BAD         0.9  1/4   0.33  0.278  .   .   .   Y   
+  P021  MedLow/453 GOOD        0.9  4/4   0.67  0.629  Y   Y   Y   Y   
+  P021  Medium/189 GOOD        0.8  4/4   0.33  0.541  Y   Y   Y   Y   
+  P021  MedHigh/762 GOOD        0.7  3/4   0.67  0.514  Y   .   Y   Y   
+  P021  High/893   GOOD        0.6  4/4   1.00  0.676  Y   Y   Y   Y   
+  P023  Water/605  GOOD        0.7  4/4   0.67  0.614  Y   Y   Y   Y   
+  P023  Low/258    GOOD        0.3  3/4   0.83  0.523  Y   .   Y   Y   
+  P023  MedLow/453 GOOD        0.9  3/4   0.50  0.516  Y   .   Y   Y   
+  P023  Medium/189 GOOD        0.3  4/4   1.00  0.647  Y   Y   Y   Y   
+  P023  MedHigh/762 WEAK        0.5  3/4   0.50  0.458  .   Y   Y   Y   
+  P023  High/893   GOOD        0.4  4/4   0.50  0.536  Y   Y   Y   Y   
+  P024  Water/605  WEAK        0.5  4/4   0.17  0.460  Y   Y   Y   Y   
+  P024  Low/258    BAD         0.8  3/4   0.33  0.471  Y   Y   .   Y   
+  P024  MedLow/453 BAD         0.5  2/4   0.17  0.292  .   Y   .   Y   
+  P024  Medium/189 BAD         0.7  3/4   0.33  0.441  .   Y   Y   Y   
+  P024  MedHigh/762 GOOD        0.5  4/4   0.83  0.637  Y   Y   Y   Y   
+  P024  High/893   GOOD        0.6  3/4   0.67  0.511  .   Y   Y   Y   
+  P025  Water/605  WEAK        0.3  3/4   0.50  0.442  .   Y   Y   Y   
+  P025  Low/258    GOOD        0.5  4/4   0.83  0.631  Y   Y   Y   Y   
+  P025  MedLow/453 GOOD        0.5  4/4   0.67  0.590  Y   Y   Y   Y   
+  P025  Medium/189 BAD         0.4  2/4   0.50  0.373  .   .   Y   Y   
+  P025  MedHigh/762 BAD         0.5  2/4   0.17  0.290  .   Y   .   Y   
+  P025  High/893   WEAK        0.4  3/4   0.50  0.451  Y   Y   Y   .   
+  P026  Water/605  WEAK        0.5  3/4   0.50  0.459  Y   Y   Y   .   
+  P026  Low/258    GOOD        0.5  4/4   0.33  0.508  Y   Y   Y   Y   
+  P026  MedLow/453 GOOD        0.6  4/4   0.83  0.640  Y   Y   Y   Y   
+  P026  Medium/189 WEAK        0.4  3/4   0.67  0.490  .   Y   Y   Y   
+  P026  MedHigh/762 BAD         0.6  3/4   0.33  0.434  Y   Y   .   Y   
+  P026  High/893   WEAK        0.4  4/4   0.00  0.408  Y   Y   Y   Y   
+  P027  Water/605  GOOD        0.8  4/4   0.33  0.526  Y   Y   Y   Y   
+  P027  Low/258    BAD         0.5  3/4   0.17  0.379  Y   Y   Y   .   
+  P027  MedLow/453 BAD         0.5  2/4   0.33  0.347  Y   .   .   Y   
+  P027  Medium/189 BAD         0.5  2/4   0.67  0.413  .   .   Y   Y   
+  P027  MedHigh/762 GOOD        1.0  3/4   0.67  0.545  Y   .   Y   Y   
+  P027  High/893   GOOD        0.5  4/4   0.83  0.629  Y   Y   Y   Y   
+  P028  Water/605  BAD         0.6  3/4   0.17  0.393  .   Y   Y   Y   
+  P028  Low/258    GOOD        0.5  4/4   0.83  0.625  Y   Y   Y   Y   
+  P028  MedLow/453 GOOD        0.8  4/4   0.50  0.572  Y   Y   Y   Y   
+  P028  Medium/189 BAD         0.3  1/4   0.17  0.179  .   .   .   Y   
+  P028  MedHigh/762 BAD         0.6  3/4   0.33  0.430  Y   .   Y   Y   
+  P028  High/893   BAD         0.8  2/4   0.33  0.370  .   Y   .   Y   
+  P029  Water/605  WEAK        0.4  4/4   0.33  0.489  Y   Y   Y   Y   
+  P029  Low/258    BAD         0.6  2/4   0.50  0.387  .   .   Y   Y   
+  P029  MedLow/453 BAD         0.4  2/4   0.50  0.368  .   Y   .   Y   
+  P029  Medium/189 WEAK        0.5  3/4   0.50  0.460  Y   .   Y   Y   
+  P029  MedHigh/762 BAD         0.4  2/4   0.50  0.359  .   .   Y   Y   
+  P029  High/893   GOOD        0.5  3/4   0.67  0.512  Y   Y   Y   .   
+  P030  Water/605  GOOD        0.5  3/4   0.67  0.503  .   Y   Y   Y   
+  P030  Low/258    GOOD        0.7  3/4   0.67  0.516  Y   Y   Y   .   
+  P030  MedLow/453 GOOD        0.5  3/4   0.83  0.543  Y   Y   Y   .   
+  P030  Medium/189 GOOD        0.6  4/4   0.83  0.646  Y   Y   Y   Y   
+  P030  MedHigh/762 WEAK        0.6  3/4   0.50  0.470  Y   Y   Y   .   
+  P030  High/893   BAD         0.4  3/4   0.00  0.328  .   Y   Y   Y   
+
+========================================================================
+  GHI CHÚ:
+  • File flag:        output/results/erp/erp_quality_flags.csv
+  • File per-trial:   output/results/erp/erp_quality_per_trial.csv
+  • File subj summary: output/results/erp/erp_quality_subject_summary.csv
+
+  Tiêu chí "has_real_pattern" = True:
+    1) avg_SNR ≥ 2.0 + ≥ 2/4 components detected
+    2) Hoặc ≥ 3/4 components + morphology ≥ 0.5
+    3) Hoặc ≥ 2/4 components + avg_SNR ≥ 3.0
+    4) Hoặc 4/4 components
+
+  avg_SNR = variance(signal_avg) / [mean(variance(residuals)) / n_trials]
+  Đây là SNR thực của condition-averaged ERP (không phải single-trial).
+
+  Sử dụng filter cho group analysis:
+    flags = pd.read_csv("output/results/erp/erp_quality_flags.csv")
+    ok = flags[flags['quality_label'].isin(['GOOD', 'WEAK'])]
+  Hoặc strict:
+    ok = flags[flags['has_real_pattern'] == True]
+========================================================================

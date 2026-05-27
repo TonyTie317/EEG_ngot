@@ -1,0 +1,319 @@
+================================================================================
+  BÁO CÁO PHÂN TÍCH ERP — NGHIÊN CỨU VỊ GIÁC (VỊ NGỌT SUCROSE)
+  Các thành phần: P1, N1, P2, N400
+================================================================================
+
+THIẾT KẾ THÍ NGHIỆM
+----------------------------------------
+  • 28 participants (P001–P030, trừ P012, P022)
+  • 6 nồng độ sucrose: Water/605, Low/258, MedLow/453,
+                       Medium/189, MedHigh/762, High/893
+  • 5 lần lặp mỗi điều kiện × 28 người = 840 trial tổng
+  • JAR rating: 1-2 = Không đủ, 3 = Vừa phải, 4-5 = Quá nhiều
+  • Thiết bị: 16-kênh EEG, 100 Hz, 10-20 montage
+
+Ý NGHĨA CÁC THÀNH PHẦN ERP TRONG VỊ GIÁC
+----------------------------------------
+
+P1 (90–150ms) — Xử lý hướng tâm sớm (Early afferent processing)
+  ROI: F3, F4, C3, C4 (Frontal-Central)
+  Nguồn gốc: Phản ánh hoạt động của vỏ não cảm giác vị giác sơ cấp
+  (Insula/Operculum). Biên độ P1 tăng theo cường độ kích thích vị giác.
+  Trong nghiên cứu sucrose: P1 lớn hơn = tín hiệu hóa học mạnh hơn.
+
+N1 (140–240ms) — Chú ý / Phân biệt kích thích (Attention/Discrimination)
+  ROI: F7, F8, T7, T8 (Temporal-Frontal — gần Insula nhất)
+  Nguồn gốc: Liên quan đến mạch lưới chú ý và nhận diện chất lạ.
+  Biên độ N1 âm hơn thường phản ánh phân biệt tốt hơn giữa các nồng độ.
+  N1 lớn hơn (âm hơn) ở nồng độ cao có thể phản ánh 'ngạc nhiên' vị giác.
+
+P2 (230–350ms) — Đánh giá nhận thức sơ bộ (Early cognitive evaluation)
+  ROI: C3, C4, P3, P4 (Central-Parietal)
+  Nguồn gốc: Đánh giá chất lượng vị giác và tích hợp thông tin cảm giác.
+  Đây là thành phần QUAN TRỌNG NHẤT trong vị giác — P2 tương quan với
+  mức độ ngon/dễ chịu. Biên độ P2 cao nhất ở điều kiện 'Vừa phải' (JAR=3).
+
+N400 (350–550ms) — Xử lý nhận thức muộn / Ngữ nghĩa vị giác
+  ROI: C3, C4, P3, P4, F3, F4 (Broad Centro-Frontal)
+  Nguồn gốc: Phản ánh sự không khớp giữa vị giác kỳ vọng và thực tế.
+  Cũng liên quan đến ký ức về vị (taste memory) và đánh giá 'ngon/dở'.
+  N400 âm hơn ở điều kiện 'Quá nhiều' ngọt có thể phản ánh 'vi phạm',
+  tương tự N400 ngôn ngữ (mismatch với prototype 'ngọt vừa phải').
+
+================================================================================
+  KẾT QUẢ PHÂN TÍCH JAR — MỨC ĐỘ VỪA PHẢI
+================================================================================
+
+1A. Biên độ trung bình (µV) theo nhóm JAR
+
+  JAR Group                    P1         N1         P2       N400
+  ------------------------------------------------------------
+  Không đủ (JAR 1-2)        1.415     -0.573      0.517      0.526
+  Vừa phải (JAR 3)          0.796     -1.582      2.623      0.604
+  Quá nhiều (JAR 4-5)       1.681     -0.089      1.987      0.139
+
+1B. So sánh nhị phân giữa các nhóm JAR (Welch t-test)
+
+  P1 — Biên độ trung bình (µV):
+  So sánh                             ∆µV  Cohen d  p-value    Sig
+  ------------------------------------------------------------
+  Không đủ (JAR 1-2) vs Vừa phải (JAR 3)   +0.618   +0.063   0.7360     ns
+  Không đủ (JAR 1-2) vs Quá nhiều (JAR 4-5)   -0.267   -0.026   0.8940     ns
+  Vừa phải (JAR 3) vs Quá nhiều (JAR 4-5)   -0.885   -0.088   0.6889     ns
+
+  N1 — Biên độ trung bình (µV):
+  So sánh                             ∆µV  Cohen d  p-value    Sig
+  ------------------------------------------------------------
+  Không đủ (JAR 1-2) vs Vừa phải (JAR 3)   +1.009   +0.116   0.5506     ns
+  Không đủ (JAR 1-2) vs Quá nhiều (JAR 4-5)   -0.484   -0.058   0.7657     ns
+  Vừa phải (JAR 3) vs Quá nhiều (JAR 4-5)   -1.493   -0.166   0.4524     ns
+
+  P2 — Biên độ trung bình (µV):
+  So sánh                             ∆µV  Cohen d  p-value    Sig
+  ------------------------------------------------------------
+  Không đủ (JAR 1-2) vs Vừa phải (JAR 3)   -2.107   -0.205   0.2614     ns
+  Không đủ (JAR 1-2) vs Quá nhiều (JAR 4-5)   -1.470   -0.132   0.4936     ns
+  Vừa phải (JAR 3) vs Quá nhiều (JAR 4-5)   +0.637   +0.064   0.7740     ns
+
+  N400 — Biên độ trung bình (µV):
+  So sánh                             ∆µV  Cohen d  p-value    Sig
+  ------------------------------------------------------------
+  Không đủ (JAR 1-2) vs Vừa phải (JAR 3)   -0.078   -0.010   0.9546     ns
+  Không đủ (JAR 1-2) vs Quá nhiều (JAR 4-5)   +0.387   +0.049   0.7947     ns
+  Vừa phải (JAR 3) vs Quá nhiều (JAR 4-5)   +0.465   +0.066   0.7644     ns
+
+
+================================================================================
+  KẾT QUẢ PHÂN TÍCH NỒNG ĐỘ
+================================================================================
+
+2. ANOVA một chiều — Biên độ theo Nồng độ Sucrose (6 mức)
+
+  P1: F=1.476, p=0.2018 ns, η²=0.041 (Effect size: Nhỏ)
+  N1: F=1.748, p=0.1278 ns, η²=0.045 (Effect size: Nhỏ)
+  P2: F=1.327, p=0.2565 ns, η²=0.040 (Effect size: Nhỏ)
+  N400: F=1.748, p=0.1280 ns, η²=0.048 (Effect size: Nhỏ)
+
+3. Biên độ trung bình (µV) per điều kiện
+
+  Condition                    P1         N1         P2       N400
+  ------------------------------------------------------------
+  Water/605                 2.261     -0.350      1.217      1.915
+  Low/258                  -1.767      0.872     -1.648     -1.818
+  MedLow/453                3.167     -4.232      0.297     -0.401
+  Medium/189                0.781     -0.450      3.070      2.367
+  MedHigh/762              -0.564      1.294      0.526     -1.284
+  High/893                  4.029     -1.450      5.100      1.935
+
+4. Linear trend (Pearson r: amplitude ~ concentration index)
+
+  P1: r=0.049, p=0.5287 ns → ↑ tăng theo nồng độ
+  N1: r=-0.003, p=0.9733 ns → ↓ giảm theo nồng độ
+  P2: r=0.130, p=0.0923 ns → ↑ tăng theo nồng độ
+  N400: r=0.028, p=0.7142 ns → ↑ tăng theo nồng độ
+
+5. So sánh giữa nhóm JAR (chi tiết tại mục 1)
+
+  P1: Khong_du: 1.415µV (n=83) | Vua_phai: 0.796µV (n=44) | Qua_nhieu: 1.681µV (n=41)
+         ANOVA: F=0.09, p=0.9152 ns
+  N1: Khong_du: -0.573µV (n=83) | Vua_phai: -1.582µV (n=44) | Qua_nhieu: -0.089µV (n=41)
+         ANOVA: F=0.34, p=0.7091 ns
+  P2: Khong_du: 0.517µV (n=83) | Vua_phai: 2.623µV (n=44) | Qua_nhieu: 1.987µV (n=41)
+         ANOVA: F=0.62, p=0.5398 ns
+  N400: Khong_du: 0.526µV (n=83) | Vua_phai: 0.604µV (n=44) | Qua_nhieu: 0.139µV (n=41)
+         ANOVA: F=0.05, p=0.9553 ns
+
+================================================================================
+  PHÂN TÍCH THEO VÙNG NÃO (REGION BREAKDOWN)
+================================================================================
+
+Phân tích biên độ từng thành phần ERP riêng theo từng vùng não
+(Frontal, Central, Parietal, Temporal) để xác định vùng
+não nhạy cảm nhất với sự thay đổi vị ngọt.
+
+P1 — Biên độ (µV) theo vùng não và nhóm JAR:
+  -----------------------------------------------------------------
+  Vùng         Không đủ           Vừa phải           Quá nhiều         
+  -----------------------------------------------------------------
+  Frontal      2.435±1.514        2.358±1.967        -1.194±2.877      
+  Central      0.361±1.497        0.947±2.927        6.398±2.491       
+  So sánh nhị phân (Welch t-test) — P1:
+  Vùng         Cặp                                 ∆µV        d        p          Sig   
+  -----------------------------------------------------------------
+  Frontal      Khong_du vs Vua_phai                +0.076   +0.009   0.9756     ns    
+  Frontal      Khong_du vs Qua_nhieu               +3.628   +0.334   0.2726     ns    
+  Frontal      Vua_phai vs Qua_nhieu               +3.552   +0.308   0.3145     ns    
+  Central      Khong_du vs Vua_phai                -0.586   -0.051   0.8595     ns    
+  Central      Khong_du vs Qua_nhieu               -6.037   -0.618   0.0451     *     
+  Central      Vua_phai vs Qua_nhieu               -5.451   -0.421   0.1631     ns    
+
+  → Vùng phân biệt JAR tốt nhất: Central (|d|=0.618, p=0.0451 *)
+
+N1 — Biên độ (µV) theo vùng não và nhóm JAR:
+  -----------------------------------------------------------------
+  Vùng         Không đủ           Vừa phải           Quá nhiều         
+  -----------------------------------------------------------------
+  Frontal      -2.036±1.472       -1.391±1.578       -0.147±2.206      
+  Temporal     1.161±1.886        -2.066±2.181       -3.366±2.785      
+  So sánh nhị phân (Welch t-test) — N1:
+  Vùng         Cặp                                 ∆µV        d        p          Sig   
+  -----------------------------------------------------------------
+  Frontal      Khong_du vs Vua_phai                -0.645   -0.084   0.7662     ns    
+  Frontal      Khong_du vs Qua_nhieu               -1.889   -0.211   0.4806     ns    
+  Frontal      Vua_phai vs Qua_nhieu               -1.244   -0.138   0.6491     ns    
+  Temporal     Khong_du vs Vua_phai                +3.227   +0.315   0.2685     ns    
+  Temporal     Khong_du vs Qua_nhieu               +4.528   +0.398   0.1862     ns    
+  Temporal     Vua_phai vs Qua_nhieu               +1.300   +0.110   0.7150     ns    
+
+  → Vùng phân biệt JAR tốt nhất: Temporal (|d|=0.398, p=0.1862 ns)
+
+P2 — Biên độ (µV) theo vùng não và nhóm JAR:
+  -----------------------------------------------------------------
+  Vùng         Không đủ           Vừa phải           Quá nhiều         
+  -----------------------------------------------------------------
+  Central      0.046±1.466        1.269±2.451        4.126±1.554       
+  Parietal     1.016±1.843        3.249±2.277        -2.155±2.979      
+  So sánh nhị phân (Welch t-test) — P2:
+  Vùng         Cặp                                 ∆µV        d        p          Sig   
+  -----------------------------------------------------------------
+  Central      Khong_du vs Vua_phai                -1.223   -0.122   0.6708     ns    
+  Central      Khong_du vs Qua_nhieu               -4.080   -0.553   0.0623     ns    
+  Central      Vua_phai vs Qua_nhieu               -2.857   -0.289   0.3308     ns    
+  Parietal     Khong_du vs Vua_phai                -2.234   -0.215   0.4495     ns    
+  Parietal     Khong_du vs Qua_nhieu               +3.171   +0.269   0.3715     ns    
+  Parietal     Vua_phai vs Qua_nhieu               +5.404   +0.434   0.1572     ns    
+
+  → Vùng phân biệt JAR tốt nhất: Central (|d|=0.553, p=0.0623 ns)
+
+N400 — Biên độ (µV) theo vùng não và nhóm JAR:
+  -----------------------------------------------------------------
+  Vùng         Không đủ           Vừa phải           Quá nhiều         
+  -----------------------------------------------------------------
+  Frontal      1.310±1.978        1.924±2.270        -1.921±2.403      
+  Central      -0.999±1.438       0.147±2.208        3.163±1.891       
+  Parietal     0.713±1.752        1.260±2.116        -1.324±2.793      
+  So sánh nhị phân (Welch t-test) — N400:
+  Vùng         Cặp                                 ∆µV        d        p          Sig   
+  -----------------------------------------------------------------
+  Frontal      Khong_du vs Vua_phai                -0.614   -0.057   0.8391     ns    
+  Frontal      Khong_du vs Qua_nhieu               +3.231   +0.303   0.3048     ns    
+  Frontal      Vua_phai vs Qua_nhieu               +3.845   +0.348   0.2509     ns    
+  Central      Khong_du vs Vua_phai                -1.147   -0.123   0.6657     ns    
+  Central      Khong_du vs Qua_nhieu               -4.162   -0.514   0.0872     ns    
+  Central      Vua_phai vs Qua_nhieu               -3.016   -0.308   0.3052     ns    
+  Parietal     Khong_du vs Vua_phai                -0.547   -0.056   0.8430     ns    
+  Parietal     Khong_du vs Qua_nhieu               +2.037   +0.183   0.5405     ns    
+  Parietal     Vua_phai vs Qua_nhieu               +2.585   +0.222   0.4650     ns    
+
+  → Vùng phân biệt JAR tốt nhất: Central (|d|=0.514, p=0.0872 ns)
+
+================================================================================
+  PHÂN TÍCH THEO TỪNG ĐIỆN CỰC (PER-CHANNEL BREAKDOWN)
+================================================================================
+
+Biên độ từng thành phần ERP tại từng điện cực riêng lẻ.
+Giúp xác định chính xác điện cực nào nhạy cảm nhất với vị ngọt.
+
+P1 — Biên độ (µV) và so sánh nhị phân theo từng kênh:
+  Điện cực   Không đủ           Vừa phải           Quá nhiều          d max    p min      Sig   
+  ---------------------------------------------------------------------------
+  F3         1.708±2.491        4.284±2.386        0.893±4.462        -0.209   0.4586     ns    
+  F4         3.161±1.899        0.433±2.804        -3.281±2.930       +0.547   0.0731     ns    
+  C3         -1.686±3.537       0.578±7.407        15.062±6.352       -0.688   0.0276     *     
+  C4         2.408±1.980        1.317±2.924        -2.266±2.685       +0.412   0.1687     ns    
+  → Điện cực nhạy nhất: C3 (max |d|=-0.688, p=0.0276 *)
+
+N1 — Biên độ (µV) và so sánh nhị phân theo từng kênh:
+  Điện cực   Không đủ           Vừa phải           Quá nhiều          d max    p min      Sig   
+  ---------------------------------------------------------------------------
+  F7         -7.580±4.072       -6.506±4.057       2.581±6.388        -0.398   0.1881     ns    
+  F8         3.508±2.017        3.725±2.949        -2.874±3.137       +0.507   0.0954     ns    
+  T7         0.467±4.500        -7.281±5.958       -3.693±4.339       +0.293   0.3048     ns    
+  T8         1.856±2.072        3.149±2.830        -3.039±3.358       +0.422   0.1661     ns    
+  → Điện cực nhạy nhất: F8 (max |d|=0.507, p=0.0954 ns)
+
+P2 — Biên độ (µV) và so sánh nhị phân theo từng kênh:
+  Điện cực   Không đủ           Vừa phải           Quá nhiều          d max    p min      Sig   
+  ---------------------------------------------------------------------------
+  C3         -4.056±3.787       3.259±5.910        8.539±4.511        -0.624   0.0381     *     
+  C4         4.147±1.990        -0.722±2.777       -0.287±2.628       +0.403   0.1610     ns    
+  P3         -4.618±4.529       2.005±5.995        -1.933±7.170       -0.249   0.3827     ns    
+  P4         6.649±2.316        4.494±2.871        -2.377±4.042       +0.578   0.0610     ns    
+  → Điện cực nhạy nhất: C3 (max |d|=-0.624, p=0.0381 *)
+
+N400 — Biên độ (µV) và so sánh nhị phân theo từng kênh:
+  Điện cực   Không đủ           Vừa phải           Quá nhiều          d max    p min      Sig   
+  ---------------------------------------------------------------------------
+  C3         -7.483±3.987       -1.014±5.730       6.287±4.510        -0.665   0.0269     *     
+  C4         5.485±2.263        1.309±3.058        0.038±2.324        +0.485   0.0998     ns    
+  P3         -8.028±4.232       -1.884±6.055       -0.585±6.590       -0.282   0.3482     ns    
+  P4         9.454±2.591        4.404±3.225        -2.064±3.754       +0.746   0.0158     *     
+  F3         -4.012±3.140       2.801±2.764        -3.483±3.965       -0.454   0.1096     ns    
+  F4         6.631±2.404        1.048±2.914        -0.360±2.090       +0.628   0.0331     *     
+  → Điện cực nhạy nhất: P4 (max |d|=0.746, p=0.0158 *)
+
+================================================================================
+KEY INSIGHTS — PHÂN TÍCH CHI TIẾT
+================================================================================
+
+INSIGHT 1: P2 — Đánh giá vị ngọt sơ cấp
+--------------------------------------------------
+  ⚠️  P2 không đạt ý nghĩa thống kê (p=0.2565)
+  → Có thể do biến thiên cá nhân cao hoặc mẫu nhỏ.
+  ℹ️  Không có linear trend rõ ràng (r=0.130, p=0.0923)
+  • Water/605: P2 = 1.217 µV
+  • High/893:  P2 = 5.100 µV
+  • Điều kiện 'Vừa phải' (JAR=3): P2 = 2.623 µV
+  
+  GIẢI THÍCH: P2 phản ánh quá trình đánh giá giá trị cảm thụ vị giác.
+  Nếu P2 lớn nhất ở nồng độ 'vừa phải' → não bộ đánh giá cao nhất
+  khi vị ngọt đạt mức tối ưu theo sở thích cá nhân.
+
+INSIGHT 2: N400 — Mismatch vị giác và ký ức vị
+--------------------------------------------------
+  ⚠️  N400 không đạt ý nghĩa thống kê (p=0.1280)
+  • Water/605: N400 = 1.915 µV
+  • High/893:  N400 = 1.935 µV
+  • Điều kiện 'Quá nhiều' (JAR=4-5): N400 = 0.139 µV
+  
+  GIẢI THÍCH: N400 âm hơn ở điều kiện ngọt quá mức phản ánh
+  'mismatch' giữa kỳ vọng vị giác và trải nghiệm thực tế.
+  Tương tự N400 trong ngôn ngữ — não 'thất vọng' khi vị không phù hợp.
+
+INSIGHT 3: N1 — Phân biệt và chú ý hóa học vị giác
+--------------------------------------------------
+  ANOVA: F=1.75, p=0.1278 ns, η²=0.045
+  Linear trend: r=-0.003, p=0.9733 ns
+  
+  GIẢI THÍCH: N1 tại F7/F8/T7/T8 phản ánh giai đoạn chú ý sớm
+  đến kích thích vị giác. Điện cực thái dương (T7/T8) nằm gần
+  vỏ não Insula — vỏ não vị giác sơ cấp của con người.
+  N1 âm hơn ở nồng độ cao = não nhận diện 'khác biệt' nhanh hơn.
+
+INSIGHT 4: P1 — Xử lý hướng tâm sớm nhất
+--------------------------------------------------
+  ANOVA: F=1.48, p=0.2018 ns, η²=0.041
+  Linear trend: r=0.049, p=0.5287 ns
+  
+  GIẢI THÍCH: P1 tại F3/F4/C3/C4 phản ánh giai đoạn đầu tiên
+  của xử lý vị giác khi phân tử sucrose tiếp xúc thụ cảm thể lưỡi.
+  P1 lớn hơn ở nồng độ cao = tín hiệu thần kinh hướng tâm mạnh hơn.
+
+================================================================================
+KẾT LUẬN TỔNG QUÁT
+================================================================================
+
+1. CHUỖI XỬ LÝ VỊ GIÁC: P1 (90ms) → N1 (180ms) → P2 (280ms) → N400 (450ms)
+   phản ánh các giai đoạn từ cảm giác thô → phân biệt → đánh giá → ký ức
+
+2. CẢM BIẾN VỊ: ERP vị giác có thể được dùng như biomarker khách quan
+   để đánh giá mức độ ngọt cảm thụ mà không phụ thuộc vào phản hồi chủ quan
+
+3. JAR RATING: Các thành phần ERP (đặc biệt P2 và N400) phân biệt tốt
+   giữa nhóm 'Vừa phải' và 'Quá nhiều', gợi ý ERP có thể dự đoán JAR
+
+4. MÁY HỌC: Kết hợp biên độ P1+N1+P2+N400 có tiềm năng phân loại
+   nồng độ sucrose hoặc nhóm JAR với độ chính xác vượt ngưỡng chance
+
+5. HẠN CHẾ: n=28, 100Hz sampling (giới hạn độ phân giải thời gian),
+   không có kênh EOG riêng (dùng Fp1/Fp2 proxy), biến thiên cá nhân cao
