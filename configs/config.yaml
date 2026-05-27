@@ -1,0 +1,123 @@
+# gERP Analysis Pipeline Configuration
+# ======================================
+
+paths:
+  raw_data: "datadone"
+  output_base: "output"
+  results_base: "output/results"
+  figures_base: "output/figures"
+  csv_pattern: "sub-{subject}_ses-S001_task-Default_run-001_eeg.csv"
+
+preprocessing:
+  sfreq: 100                    # Hz — fixed, not inferred
+  reference: "average"          # average reference for 16-ch 10-20 montage
+  montage: "standard_1020"      # MNE standard montage name
+  notch_freq: 49                # Hz — Vietnam power line
+  l_freq: 0.1                   # Hz — high-pass
+  h_freq: 45                    # Hz — low-pass
+  non_signal_cols:              # columns to exclude from EEG signal
+    - "time"
+    - "times"
+    - "timestamp"
+    - "frame_idx"
+    - "ma_mau"
+    - "NT"
+    - "repeat"
+    - "JAR"
+    - "ECG1"
+    - "ECG2"
+  rename_channels:              # rename old 10-10 names → standard 10-20
+    T3: T7
+    T4: T8
+    T5: P7
+    T6: P8
+  ica:
+    enabled: true
+    n_components: 15
+    method: "picard"
+    max_iter: 512
+    random_state: 42
+    auto_exclude_eog: true      # uses Fp1/Fp2 as EOG proxy (no dedicated EOG channel)
+    auto_exclude_ecg: false     # disabled — no ECG sensor in this dataset
+    eog_threshold: 2.0          # z-score threshold for EOG detection via Fp1/Fp2 proxy
+
+
+# epoching:
+#   tmin: -0.5                    # ĐÃ TĂNG: Mở rộng ra 500ms trước trigger để bù offset
+#   tmax: 2.0                     # ĐÃ TĂNG: Tăng lên 2000ms để bắt trọn các sóng bị dịch chuyển về sau
+#   baseline: [-0.5, -0.2]
+
+
+epoching:
+  tmin: -0.5                    # seconds before stimulus onset (0.5s trước trigger làm baseline)
+  tmax: 3.0                     # seconds after stimulus onset (giữ rộng: max offset ~2.8s + 1s ERP)
+  baseline: [-0.5, -0.3]       # baseline correction: 200ms sạch trước khi đưa cốc
+  reject:
+    eeg: 800e-6                 # V — nới lỏng: artifact đưa cốc nằm trước true onset
+  reject_by_annotation: true
+
+erp_analysis:
+  p1_window: [0.090, 0.150]     #gERP: P1 thường trễ hơn một chút (90-150ms)
+  n1_window: [0.140, 0.240]     #gERP: N1 thường rơi vào tầm 140-240ms
+  p2_window: [0.230, 0.350]     #gERP: P2 vị giác xuất hiện quanh mức 250-300ms
+  n400_window: [0.350, 0.550]
+# --- Vùng quan tâm (ROI) tối ưu cho Vị giác (16 kênh) ---
+  p1_roi: ["F3", "F4", "C3", "C4"]
+  # LOẠI BỎ hoàn toàn O1, O2 vì không có kích thích thị giác. 
+  # P1 của vị giác thường ghi nhận tốt nhất ở vùng trán-trung tâm.
+
+  n1_roi: ["F7", "F8", "T7", "T8"]
+  # ĐẶC BIỆT CHO VỊ GIÁC: Các điện cực F7, F8 (trán dưới) và T7, T8 (thái dương) 
+  # nằm gần nhất với Vỏ não vị giác sơ cấp (Insular cortex). Đây là nơi N1 vị giác hoạt động mạnh.
+
+  p2_roi: ["C3", "C4", "P3", "P4"]
+  # Sóng P2 vị giác hướng tâm thường đạt biên độ lớn ở vùng trung tâm và vùng đỉnh.
+
+  n400_roi: ["C3", "C4", "P3", "P4", "F3", "F4"]
+  # Phản hồi nhận thức muộn về vị giác (độ ngon, độ ngọt, sự quen thuộc) 
+  # sẽ phân bố rộng từ vùng trán kéo dài xuống thùy đỉnh.
+
+stats:
+  alpha: 0.05
+  fdr_method: "fdr_bh"
+  cluster_n_permutations: 1024
+  cluster_threshold: 0.05
+
+ml:
+  random_state: 42
+  n_top_features: 50
+  models:
+    - "logistic_regression"
+    - "svm"
+    - "random_forest"
+    - "xgboost"
+  cv_method: "loso"
+  classification_tasks:
+    - "jar_group"               # 3-class
+
+dl:
+  random_state: 42
+  models:
+    - "eegnet"
+    - "shallowconvnet"
+    - "deepconvnet"
+  batch_size: 16
+  epochs: 100
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  early_stopping_patience: 15
+  cv_method: "loso"
+  classification_tasks:
+    - "jar_group"
+
+visualization:
+  dpi: 300
+  save_plots: true
+  format: "png"
+  style: "seaborn-v0_8-whitegrid"
+  colormap: "RdBu_r"
+
+logging:
+  level: "INFO"
+  log_to_file: true
+  log_file: "output/pipeline.log"
