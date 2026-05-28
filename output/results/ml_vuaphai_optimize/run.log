@@ -1,0 +1,102 @@
+[2026-05-28T10:14:56] logging to output/results/ml_vuaphai_optimize/logs/run_20260528_101456.log
+==============================================================================
+  VUA_PHAI vs OTHERS — outlier-aware optimization
+==============================================================================
+Loaded (168, 1368), quality: {'GOOD': 90, 'BAD': 49, 'WEAK': 29}
+
+── Filter [weak]  n=119  subj=28  pos=29  neg=90  majority_baseline=0.756 ──
+  [1/12] precomputing folds for strategy=standard ...
+    → 28 folds prepared
+      K=20  GradBoost      acc=0.756 bacc=0.558 f1=0.555
+      K=20  RForest        acc=0.756 bacc=0.523 f1=0.490
+      K=30  RForest        acc=0.748 bacc=0.506 f1=0.458
+  [2/12] precomputing folds for strategy=std+wins ...
+    → 28 folds prepared
+      K=20  RForest        acc=0.765 bacc=0.541 f1=0.520
+      K=30  RForest        acc=0.748 bacc=0.494 f1=0.428
+      K=15  RForest        acc=0.739 bacc=0.489 f1=0.425
+  [3/12] precomputing folds for strategy=std+iforest ...
+    → 28 folds prepared
+      K=15  RForest        acc=0.773 bacc=0.558 f1=0.548
+      K=8   RForest        acc=0.765 bacc=0.552 f1=0.542
+      K=30  RForest        acc=0.765 bacc=0.529 f1=0.495
+  [4/12] precomputing folds for strategy=robust ...
+    → 28 folds prepared
+      K=20  RForest        acc=0.765 bacc=0.541 f1=0.520
+      K=20  GradBoost      acc=0.756 bacc=0.558 f1=0.555
+      K=30  RForest        acc=0.748 bacc=0.506 f1=0.458
+
+── Filter [strict]  n=90  subj=27  pos=19  neg=71  majority_baseline=0.789 ──
+  [5/12] precomputing folds for strategy=standard ...
+    → 27 folds prepared
+      K=30  RForest        acc=0.789 bacc=0.500 f1=0.441
+      K=20  RForest        acc=0.789 bacc=0.500 f1=0.441
+      K=15  RForest        acc=0.789 bacc=0.500 f1=0.441
+  [6/12] precomputing folds for strategy=std+wins ...
+    → 27 folds prepared
+      K=30  RForest        acc=0.789 bacc=0.500 f1=0.441
+      K=20  RForest        acc=0.789 bacc=0.500 f1=0.441
+      K=15  RForest        acc=0.778 bacc=0.493 f1=0.438
+  [7/12] precomputing folds for strategy=std+iforest ...
+    → 27 folds prepared
+      K=30  RForest        acc=0.778 bacc=0.493 f1=0.438
+      K=8   RForest        acc=0.778 bacc=0.512 f1=0.482
+      K=20  RForest        acc=0.778 bacc=0.493 f1=0.438
+  [8/12] precomputing folds for strategy=robust ...
+    → 27 folds prepared
+      K=30  RForest        acc=0.789 bacc=0.500 f1=0.441
+      K=20  RForest        acc=0.789 bacc=0.500 f1=0.441
+      K=15  RForest        acc=0.789 bacc=0.500 f1=0.441
+
+── Filter [snr_q1]  n=126  subj=27  pos=31  neg=95  majority_baseline=0.754 ──
+  [9/12] precomputing folds for strategy=standard ...
+    → 27 folds prepared
+      K=15  RForest        acc=0.754 bacc=0.500 f1=0.430
+      K=30  RForest        acc=0.746 bacc=0.495 f1=0.427
+      K=10  RForest        acc=0.738 bacc=0.511 f1=0.477
+  [10/12] precomputing folds for strategy=std+wins ...
+    → 27 folds prepared
+      K=15  RForest        acc=0.754 bacc=0.500 f1=0.430
+      K=20  RForest        acc=0.746 bacc=0.495 f1=0.427
+      K=30  RForest        acc=0.746 bacc=0.495 f1=0.427
+  [11/12] precomputing folds for strategy=std+iforest ...
+    → 27 folds prepared
+      K=30  GradBoost      acc=0.754 bacc=0.576 f1=0.581
+      K=10  RForest        acc=0.754 bacc=0.522 f1=0.486
+      K=15  RForest        acc=0.754 bacc=0.500 f1=0.430
+  [12/12] precomputing folds for strategy=robust ...
+    → 27 folds prepared
+      K=15  RForest        acc=0.754 bacc=0.500 f1=0.430
+      K=30  RForest        acc=0.746 bacc=0.495 f1=0.427
+      K=20  RForest        acc=0.738 bacc=0.489 f1=0.425
+
+✓ Saved: output/results/ml_vuaphai_optimize/all_results.csv  (504 rows)
+✓ Saved: output/results/ml_vuaphai_optimize/best_per_filter.csv
+✓ Saved: output/figures/ml_vuaphai_optimize/accuracy_sweep.png
+✓ Saved: output/figures/ml_vuaphai_optimize/best_confusion_matrix.png
+
+==============================================================================
+  BEST PER FILTER (by accuracy)
+==============================================================================
+filter    n     strategy      K    model         acc     bacc    f1      
+strict    90    robust        15   RForest       0.789   0.500   0.441
+weak      119   std+iforest   15   RForest       0.773   0.558   0.548
+snr_q1    126   robust        15   RForest       0.754   0.500   0.430
+
+  🏆 OVERALL BEST:
+    filter       = strict
+    strategy     = standard
+    K            = 15
+    model        = RForest
+    accuracy     = 0.7889
+    balanced_acc = 0.5000
+    f1_macro     = 0.4410
+    n_samples    = 90
+
+  📊 Class balance per filter:
+    weak      : pos=29  neg=90  majority_baseline=0.756
+    strict    : pos=19  neg=71  majority_baseline=0.789
+    snr_q1    : pos=31  neg=95  majority_baseline=0.754
+==============================================================================
+
+[2026-05-28T10:56:59] done.

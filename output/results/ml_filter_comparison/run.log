@@ -1,0 +1,53 @@
+[2026-05-28T09:53:45] logging to output/results/ml_filter_comparison/logs/run_20260528_095345.log
+
+========================================================================
+  ML FILTER COMPARISON — none / weak / strict / snr_q1
+========================================================================
+Loaded features: (168, 1367), quality labels merged ({'GOOD': 90, 'BAD': 49, 'WEAK': 29})
+  [   none] JAR3               LogReg   n=168 subj=28 acc=0.292 bacc=0.265 chance=0.33
+  [   none] JAR3               RForest  n=168 subj=28 acc=0.375 bacc=0.286 chance=0.33
+  [   none] VuaphaiVsOthers    LogReg   n=168 subj=28 acc=0.405 bacc=0.384 chance=0.50
+  [   none] VuaphaiVsOthers    RForest  n=168 subj=28 acc=0.708 bacc=0.524 chance=0.50
+  [   none] HighVsWater        LogReg   n= 56 subj=28 acc=0.482 bacc=0.482 chance=0.50
+  [   none] HighVsWater        RForest  n= 56 subj=28 acc=0.554 bacc=0.554 chance=0.50
+  [   weak] JAR3               LogReg   n=119 subj=28 acc=0.294 bacc=0.291 chance=0.33
+  [   weak] JAR3               RForest  n=119 subj=28 acc=0.353 bacc=0.291 chance=0.33
+  [   weak] VuaphaiVsOthers    LogReg   n=119 subj=28 acc=0.471 bacc=0.486 chance=0.50
+  [   weak] VuaphaiVsOthers    RForest  n=119 subj=28 acc=0.689 bacc=0.491 chance=0.50
+  [   weak] HighVsWater        LogReg   n= 44 subj=25 acc=0.477 bacc=0.473 chance=0.50
+  [   weak] HighVsWater        RForest  n= 44 subj=25 acc=0.614 bacc=0.610 chance=0.50
+  [ strict] JAR3               LogReg   n= 90 subj=27 acc=0.344 bacc=0.344 chance=0.33
+  [ strict] JAR3               RForest  n= 90 subj=27 acc=0.333 bacc=0.264 chance=0.33
+  [ strict] VuaphaiVsOthers    LogReg   n= 90 subj=27 acc=0.567 bacc=0.552 chance=0.50
+  [ strict] VuaphaiVsOthers    RForest  n= 90 subj=27 acc=0.778 bacc=0.512 chance=0.50
+  [ strict] HighVsWater        LogReg   n= 29 subj=22 acc=0.655 bacc=0.634 chance=0.50
+  [ strict] HighVsWater        RForest  n= 29 subj=22 acc=0.759 bacc=0.717 chance=0.50
+  [ snr_q1] JAR3               LogReg   n=126 subj=27 acc=0.357 bacc=0.331 chance=0.33
+  [ snr_q1] JAR3               RForest  n=126 subj=27 acc=0.484 bacc=0.367 chance=0.33
+  [ snr_q1] VuaphaiVsOthers    LogReg   n=126 subj=27 acc=0.508 bacc=0.456 chance=0.50
+  [ snr_q1] VuaphaiVsOthers    RForest  n=126 subj=27 acc=0.690 bacc=0.480 chance=0.50
+  [ snr_q1] HighVsWater        LogReg   n= 38 subj=23 acc=0.737 bacc=0.742 chance=0.50
+  [ snr_q1] HighVsWater        RForest  n= 38 subj=23 acc=0.737 bacc=0.742 chance=0.50
+
+✓ Saved: output/results/ml_filter_comparison/all_results.csv
+✓ Saved: output/figures/ml_filter_comparison/accuracy_by_filter.png
+
+========================================================================
+  SUMMARY (best model per filter × task)
+========================================================================
+task                filter    n     subj  model     acc     bal_acc   f1      
+JAR3                none      168   28    RForest   0.375   0.286     0.266
+JAR3                weak      119   28    LogReg    0.294   0.291     0.284
+JAR3                strict    90    27    LogReg    0.344   0.344     0.333
+JAR3                snr_q1    126   27    RForest   0.484   0.367     0.351
+VuaphaiVsOthers     none      168   28    RForest   0.708   0.524     0.509
+VuaphaiVsOthers     weak      119   28    RForest   0.689   0.491     0.475
+VuaphaiVsOthers     strict    90    27    LogReg    0.567   0.552     0.508
+VuaphaiVsOthers     snr_q1    126   27    RForest   0.690   0.480     0.453
+HighVsWater         none      56    28    RForest   0.554   0.554     0.553
+HighVsWater         weak      44    25    RForest   0.614   0.610     0.609
+HighVsWater         strict    29    22    RForest   0.759   0.717     0.726
+HighVsWater         snr_q1    38    23    LogReg    0.737   0.742     0.736
+========================================================================
+
+[2026-05-28T10:07:33] done.
