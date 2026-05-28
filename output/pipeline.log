@@ -1,0 +1,1087 @@
+12:26:32 [INFO]   ICA fitted: 15 components (picard)
+12:26:32 [INFO]   ICA excluded EOG components: [np.int64(7), np.int64(4), np.int64(0)]
+12:26:32 [INFO]   ICA removed 3 artifact components
+12:26:32 [INFO] [P002] Preprocessing...
+12:26:32 [INFO]   Selected 16 EEG channels
+12:26:32 [INFO]   Set reference: average
+12:26:32 [INFO]   Notch filter: 49 Hz
+12:26:33 [INFO]   Bandpass filter: 0.1-45 Hz
+12:26:57 [INFO]   ICA fitted: 15 components (picard)
+12:26:57 [INFO]   ICA excluded EOG components: [np.int64(7), np.int64(4), np.int64(5)]
+12:26:57 [INFO]   ICA removed 3 artifact components
+12:26:57 [INFO] [P003] Preprocessing...
+12:26:57 [INFO]   Selected 16 EEG channels
+12:26:57 [INFO]   Set reference: average
+12:26:57 [INFO]   Notch filter: 49 Hz
+12:26:57 [INFO]   Bandpass filter: 0.1-45 Hz
+12:27:09 [INFO]   ICA fitted: 15 components (picard)
+12:27:09 [INFO]   ICA excluded EOG components: [np.int64(6), np.int64(4)]
+12:27:09 [INFO]   ICA removed 2 artifact components
+12:27:09 [INFO] [P004] Preprocessing...
+12:27:09 [INFO]   Selected 16 EEG channels
+12:27:09 [INFO]   Set reference: average
+12:27:09 [INFO]   Notch filter: 49 Hz
+12:27:09 [INFO]   Bandpass filter: 0.1-45 Hz
+12:27:27 [INFO]   ICA fitted: 15 components (picard)
+12:27:27 [INFO]   ICA excluded EOG components: [np.int64(6), np.int64(5), np.int64(8)]
+12:27:27 [INFO]   ICA removed 3 artifact components
+12:27:27 [INFO] [P005] Preprocessing...
+12:27:27 [INFO]   Selected 16 EEG channels
+12:27:27 [INFO]   Set reference: average
+12:27:27 [INFO]   Notch filter: 49 Hz
+12:27:27 [INFO]   Bandpass filter: 0.1-45 Hz
+12:27:42 [INFO]   ICA fitted: 15 components (picard)
+12:27:43 [INFO]   ICA excluded EOG components: [np.int64(6)]
+12:27:43 [INFO]   ICA removed 1 artifact components
+12:27:43 [INFO] [P006] Preprocessing...
+12:27:43 [INFO]   Selected 16 EEG channels
+12:27:43 [INFO]   Set reference: average
+12:27:43 [INFO]   Notch filter: 49 Hz
+12:27:43 [INFO]   Bandpass filter: 0.1-45 Hz
+12:28:05 [INFO]   ICA fitted: 15 components (picard)
+12:28:05 [INFO]   ICA excluded EOG components: [np.int64(7), np.int64(5), np.int64(3)]
+12:28:05 [INFO]   ICA removed 3 artifact components
+12:28:05 [INFO] [P007] Preprocessing...
+12:28:05 [INFO]   Selected 16 EEG channels
+12:28:05 [INFO]   Set reference: average
+12:28:05 [INFO]   Notch filter: 49 Hz
+12:28:05 [INFO]   Bandpass filter: 0.1-45 Hz
+12:28:16 [INFO]   ICA fitted: 15 components (picard)
+12:28:17 [INFO]   ICA excluded EOG components: [np.int64(6), np.int64(9)]
+12:28:17 [INFO]   ICA removed 2 artifact components
+12:28:17 [INFO] [P008] Preprocessing...
+12:28:17 [INFO]   Selected 16 EEG channels
+12:28:17 [INFO]   Set reference: average
+12:28:17 [INFO]   Notch filter: 49 Hz
+12:28:17 [INFO]   Bandpass filter: 0.1-45 Hz
+12:28:32 [INFO]   ICA fitted: 15 components (picard)
+12:28:32 [INFO]   ICA excluded EOG components: [np.int64(10), np.int64(8)]
+12:28:32 [INFO]   ICA removed 2 artifact components
+12:28:32 [INFO] [P009] Preprocessing...
+12:28:33 [INFO]   Selected 16 EEG channels
+12:28:33 [INFO]   Set reference: average
+12:28:33 [INFO]   Notch filter: 49 Hz
+12:28:33 [INFO]   Bandpass filter: 0.1-45 Hz
+12:28:46 [INFO]   ICA fitted: 15 components (picard)
+12:28:47 [INFO]   ICA excluded EOG components: [np.int64(4), np.int64(7), np.int64(1)]
+12:28:47 [INFO]   ICA removed 3 artifact components
+12:28:47 [INFO] [P010] Preprocessing...
+12:28:47 [INFO]   Selected 16 EEG channels
+12:28:47 [INFO]   Set reference: average
+12:28:47 [INFO]   Notch filter: 49 Hz
+12:28:47 [INFO]   Bandpass filter: 0.1-45 Hz
+12:29:10 [INFO]   ICA fitted: 15 components (picard)
+12:29:10 [INFO]   ICA excluded EOG components: [np.int64(10), np.int64(7)]
+12:29:10 [INFO]   ICA removed 2 artifact components
+12:29:10 [INFO] [P011] Preprocessing...
+12:29:10 [INFO]   Selected 16 EEG channels
+12:29:10 [INFO]   Set reference: average
+12:29:10 [INFO]   Notch filter: 49 Hz
+12:29:10 [INFO]   Bandpass filter: 0.1-45 Hz
+12:29:22 [INFO]   ICA fitted: 15 components (picard)
+12:29:23 [INFO]   ICA excluded EOG components: [np.int64(9), np.int64(7)]
+12:29:23 [INFO]   ICA removed 2 artifact components
+12:29:23 [INFO] [P013] Preprocessing...
+12:29:23 [INFO]   Selected 16 EEG channels
+12:29:23 [INFO]   Set reference: average
+12:29:23 [INFO]   Notch filter: 49 Hz
+12:29:23 [INFO]   Bandpass filter: 0.1-45 Hz
+12:29:43 [INFO]   ICA fitted: 15 components (picard)
+12:29:43 [INFO]   ICA excluded EOG components: [np.int64(7), np.int64(5)]
+12:29:43 [INFO]   ICA removed 2 artifact components
+12:29:43 [INFO] [P014] Preprocessing...
+12:29:43 [INFO]   Selected 16 EEG channels
+12:29:43 [INFO]   Set reference: average
+12:29:43 [INFO]   Notch filter: 49 Hz
+12:29:43 [INFO]   Bandpass filter: 0.1-45 Hz
+12:29:54 [INFO]   ICA fitted: 15 components (picard)
+12:29:54 [INFO]   ICA excluded EOG components: [np.int64(6), np.int64(0)]
+12:29:54 [INFO]   ICA removed 2 artifact components
+12:29:54 [INFO] [P015] Preprocessing...
+12:29:54 [INFO]   Selected 16 EEG channels
+12:29:54 [INFO]   Set reference: average
+12:29:54 [INFO]   Notch filter: 49 Hz
+12:29:54 [INFO]   Bandpass filter: 0.1-45 Hz
+12:30:23 [INFO]   ICA fitted: 15 components (picard)
+12:30:23 [INFO]   ICA excluded EOG components: [np.int64(7), np.int64(10)]
+12:30:23 [INFO]   ICA removed 2 artifact components
+12:30:23 [INFO] [P016] Preprocessing...
+12:30:23 [INFO]   Selected 16 EEG channels
+12:30:23 [INFO]   Set reference: average
+12:30:24 [INFO]   Notch filter: 49 Hz
+12:30:24 [INFO]   Bandpass filter: 0.1-45 Hz
+12:30:41 [INFO]   ICA fitted: 15 components (picard)
+12:30:41 [INFO]   ICA excluded EOG components: [np.int64(7), np.int64(8)]
+12:30:41 [INFO]   ICA removed 2 artifact components
+12:30:41 [INFO] [P017] Preprocessing...
+12:30:41 [INFO]   Selected 16 EEG channels
+12:30:41 [INFO]   Set reference: average
+12:30:41 [INFO]   Notch filter: 49 Hz
+12:30:42 [INFO]   Bandpass filter: 0.1-45 Hz
+12:30:58 [INFO]   ICA fitted: 15 components (picard)
+12:30:58 [INFO]   ICA excluded EOG components: [np.int64(5), np.int64(14)]
+12:30:58 [INFO]   ICA removed 2 artifact components
+12:30:58 [INFO] [P018] Preprocessing...
+12:30:58 [INFO]   Selected 16 EEG channels
+12:30:58 [INFO]   Set reference: average
+12:30:58 [INFO]   Notch filter: 49 Hz
+12:30:58 [INFO]   Bandpass filter: 0.1-45 Hz
+12:31:13 [INFO]   ICA fitted: 15 components (picard)
+12:31:13 [INFO]   ICA excluded EOG components: [np.int64(7)]
+12:31:13 [INFO]   ICA removed 1 artifact components
+12:31:13 [INFO] [P019] Preprocessing...
+12:31:13 [INFO]   Selected 16 EEG channels
+12:31:13 [INFO]   Set reference: average
+12:31:13 [INFO]   Notch filter: 49 Hz
+12:31:14 [INFO]   Bandpass filter: 0.1-45 Hz
+12:31:23 [INFO]   ICA fitted: 15 components (picard)
+12:31:23 [INFO]   ICA excluded EOG components: [np.int64(6), np.int64(2), np.int64(1)]
+12:31:23 [INFO]   ICA removed 3 artifact components
+12:31:23 [INFO] [P020] Preprocessing...
+12:31:23 [INFO]   Selected 16 EEG channels
+12:31:23 [INFO]   Set reference: average
+12:31:23 [INFO]   Notch filter: 49 Hz
+12:31:23 [INFO]   Bandpass filter: 0.1-45 Hz
+12:31:35 [INFO]   ICA fitted: 15 components (picard)
+12:31:35 [INFO]   ICA excluded EOG components: [np.int64(8)]
+12:31:35 [INFO]   ICA removed 1 artifact components
+12:31:35 [INFO] [P021] Preprocessing...
+12:31:35 [INFO]   Selected 16 EEG channels
+12:31:36 [INFO]   Set reference: average
+12:31:36 [INFO]   Notch filter: 49 Hz
+12:31:36 [INFO]   Bandpass filter: 0.1-45 Hz
+12:31:50 [INFO]   ICA fitted: 15 components (picard)
+12:31:50 [INFO]   ICA excluded EOG components: [np.int64(8), np.int64(7)]
+12:31:50 [INFO]   ICA removed 2 artifact components
+12:31:50 [INFO] [P023] Preprocessing...
+12:31:50 [INFO]   Selected 16 EEG channels
+12:31:50 [INFO]   Set reference: average
+12:31:50 [INFO]   Notch filter: 49 Hz
+12:31:50 [INFO]   Bandpass filter: 0.1-45 Hz
+12:32:06 [INFO]   ICA fitted: 15 components (picard)
+12:32:06 [INFO]   ICA excluded EOG components: [np.int64(8), np.int64(6), np.int64(9)]
+12:32:06 [INFO]   ICA removed 3 artifact components
+12:32:06 [INFO] [P024] Preprocessing...
+12:32:06 [INFO]   Selected 16 EEG channels
+12:32:06 [INFO]   Set reference: average
+12:32:06 [INFO]   Notch filter: 49 Hz
+12:32:06 [INFO]   Bandpass filter: 0.1-45 Hz
+12:32:16 [INFO]   ICA fitted: 15 components (picard)
+12:32:17 [INFO]   ICA excluded EOG components: [np.int64(4), np.int64(6), np.int64(9)]
+12:32:17 [INFO]   ICA removed 3 artifact components
+12:32:17 [INFO] [P025] Preprocessing...
+12:32:17 [INFO]   Selected 16 EEG channels
+12:32:17 [INFO]   Set reference: average
+12:32:17 [INFO]   Notch filter: 49 Hz
+12:32:17 [INFO]   Bandpass filter: 0.1-45 Hz
+12:32:26 [INFO]   ICA fitted: 15 components (picard)
+12:32:26 [INFO]   ICA excluded EOG components: [np.int64(9), np.int64(4)]
+12:32:26 [INFO]   ICA removed 2 artifact components
+12:32:26 [INFO] [P026] Preprocessing...
+12:32:26 [INFO]   Selected 16 EEG channels
+12:32:26 [INFO]   Set reference: average
+12:32:27 [INFO]   Notch filter: 49 Hz
+12:32:27 [INFO]   Bandpass filter: 0.1-45 Hz
+12:32:37 [INFO]   ICA fitted: 15 components (picard)
+12:32:37 [INFO]   ICA excluded EOG components: [np.int64(6)]
+12:32:37 [INFO]   ICA removed 1 artifact components
+12:32:37 [INFO] [P027] Preprocessing...
+12:32:37 [INFO]   Selected 16 EEG channels
+12:32:37 [INFO]   Set reference: average
+12:32:37 [INFO]   Notch filter: 49 Hz
+12:32:37 [INFO]   Bandpass filter: 0.1-45 Hz
+12:32:52 [INFO]   ICA fitted: 15 components (picard)
+12:32:53 [INFO]   ICA excluded EOG components: [np.int64(8), np.int64(5), np.int64(3)]
+12:32:53 [INFO]   ICA removed 3 artifact components
+12:32:53 [INFO] [P028] Preprocessing...
+12:32:53 [INFO]   Selected 16 EEG channels
+12:32:53 [INFO]   Set reference: average
+12:32:53 [INFO]   Notch filter: 49 Hz
+12:32:53 [INFO]   Bandpass filter: 0.1-45 Hz
+12:33:03 [INFO]   ICA fitted: 15 components (picard)
+12:33:04 [INFO]   ICA excluded EOG components: [np.int64(1)]
+12:33:04 [INFO]   ICA removed 1 artifact components
+12:33:04 [INFO] [P029] Preprocessing...
+12:33:04 [INFO]   Selected 16 EEG channels
+12:33:04 [INFO]   Set reference: average
+12:33:04 [INFO]   Notch filter: 49 Hz
+12:33:04 [INFO]   Bandpass filter: 0.1-45 Hz
+12:33:14 [INFO]   ICA fitted: 15 components (picard)
+12:33:14 [INFO]   ICA: no artifact components found, data unchanged
+12:33:14 [INFO] [P030] Preprocessing...
+12:33:14 [INFO]   Selected 16 EEG channels
+12:33:14 [INFO]   Set reference: average
+12:33:14 [INFO]   Notch filter: 49 Hz
+12:33:14 [INFO]   Bandpass filter: 0.1-45 Hz
+12:33:35 [INFO]   ICA fitted: 15 components (picard)
+12:33:35 [INFO]   ICA excluded EOG components: [np.int64(8), np.int64(0)]
+12:33:35 [INFO]   ICA removed 2 artifact components
+12:33:35 [INFO]   Preprocessing xong.
+12:33:35 [INFO] 
+[Stage 3] Epoching...
+12:33:35 [INFO] [P001] Creating epochs...
+12:33:35 [INFO]   [P001] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P002] Creating epochs...
+12:33:35 [INFO]   [P002] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P003] Creating epochs...
+12:33:35 [INFO]   [P003] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P004] Creating epochs...
+12:33:35 [INFO]   [P004] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P005] Creating epochs...
+12:33:35 [INFO]   [P005] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P006] Creating epochs...
+12:33:35 [INFO]   [P006] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P007] Creating epochs...
+12:33:35 [INFO]   [P007] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P008] Creating epochs...
+12:33:35 [INFO]   [P008] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P009] Creating epochs...
+12:33:35 [INFO]   [P009] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P010] Creating epochs...
+12:33:35 [INFO]   [P010] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P011] Creating epochs...
+12:33:35 [INFO]   [P011] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P013] Creating epochs...
+12:33:35 [INFO]   [P013] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P014] Creating epochs...
+12:33:35 [INFO]   [P014] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P015] Creating epochs...
+12:33:35 [INFO]   [P015] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P016] Creating epochs...
+12:33:35 [INFO]   [P016] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P017] Creating epochs...
+12:33:35 [INFO]   [P017] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P018] Creating epochs...
+12:33:35 [INFO]   [P018] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P019] Creating epochs...
+12:33:35 [INFO]   [P019] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P020] Creating epochs...
+12:33:35 [INFO]   [P020] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P021] Creating epochs...
+12:33:35 [INFO]   [P021] Created 30 epochs: (30, 16, 351)
+12:33:35 [INFO] [P023] Creating epochs...
+12:33:36 [INFO]   [P023] Created 30 epochs: (30, 16, 351)
+12:33:36 [INFO] [P024] Creating epochs...
+12:33:36 [INFO]   [P024] Created 30 epochs: (30, 16, 351)
+12:33:36 [INFO] [P025] Creating epochs...
+12:33:36 [INFO]   [P025] Created 30 epochs: (30, 16, 351)
+12:33:36 [INFO] [P026] Creating epochs...
+12:33:36 [INFO]   [P026] Created 30 epochs: (30, 16, 351)
+12:33:36 [INFO] [P027] Creating epochs...
+12:33:36 [INFO]   [P027] Created 30 epochs: (30, 16, 351)
+12:33:36 [INFO] [P028] Creating epochs...
+12:33:36 [INFO]   [P028] Created 30 epochs: (30, 16, 351)
+12:33:36 [INFO] [P029] Creating epochs...
+12:33:36 [INFO]   [P029] Created 30 epochs: (30, 16, 351)
+12:33:36 [INFO] [P030] Creating epochs...
+12:33:36 [INFO]   [P030] Created 30 epochs: (30, 16, 351)
+12:33:36 [INFO] Total: 28 subjects, 840 epochs
+12:33:36 [INFO]   [P001] Saved epochs to output/epochs/P001
+12:33:36 [INFO]   [P002] Saved epochs to output/epochs/P002
+12:33:36 [INFO]   [P003] Saved epochs to output/epochs/P003
+12:33:36 [INFO]   [P004] Saved epochs to output/epochs/P004
+12:33:36 [INFO]   [P005] Saved epochs to output/epochs/P005
+12:33:36 [INFO]   [P006] Saved epochs to output/epochs/P006
+12:33:36 [INFO]   [P007] Saved epochs to output/epochs/P007
+12:33:36 [INFO]   [P008] Saved epochs to output/epochs/P008
+12:33:36 [INFO]   [P009] Saved epochs to output/epochs/P009
+12:33:36 [INFO]   [P010] Saved epochs to output/epochs/P010
+12:33:36 [INFO]   [P011] Saved epochs to output/epochs/P011
+12:33:36 [INFO]   [P013] Saved epochs to output/epochs/P013
+12:33:36 [INFO]   [P014] Saved epochs to output/epochs/P014
+12:33:36 [INFO]   [P015] Saved epochs to output/epochs/P015
+12:33:36 [INFO]   [P016] Saved epochs to output/epochs/P016
+12:33:36 [INFO]   [P017] Saved epochs to output/epochs/P017
+12:33:36 [INFO]   [P018] Saved epochs to output/epochs/P018
+12:33:36 [INFO]   [P019] Saved epochs to output/epochs/P019
+12:33:36 [INFO]   [P020] Saved epochs to output/epochs/P020
+12:33:36 [INFO]   [P021] Saved epochs to output/epochs/P021
+12:33:36 [INFO]   [P023] Saved epochs to output/epochs/P023
+12:33:36 [INFO]   [P024] Saved epochs to output/epochs/P024
+12:33:36 [INFO]   [P025] Saved epochs to output/epochs/P025
+12:33:36 [INFO]   [P026] Saved epochs to output/epochs/P026
+12:33:36 [INFO]   [P027] Saved epochs to output/epochs/P027
+12:33:36 [INFO]   [P028] Saved epochs to output/epochs/P028
+12:33:36 [INFO]   [P029] Saved epochs to output/epochs/P029
+12:33:36 [INFO]   [P030] Saved epochs to output/epochs/P030
+12:33:36 [INFO] Saved combined trial_info (840 epochs)
+12:33:36 [INFO] 
+============================================================
+12:33:36 [INFO] TỔNG KẾT EPOCH SAU RE-RUN:
+12:33:36 [INFO]   Số subjects: 28
+12:33:36 [INFO]   Tổng epochs: 840
+12:33:36 [INFO]   Shape mỗi epoch: 16 kênh × 351 mẫu (3.51s)
+12:33:36 [INFO]   P001: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P002: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P003: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P004: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P005: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P006: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P007: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P008: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P009: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P010: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P011: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P013: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P014: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P015: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P016: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P017: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P018: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P019: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P020: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P021: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P023: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P024: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P025: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P026: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P027: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P028: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P029: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO]   P030: 30/30 kept (0 rejected, 0%)
+12:33:36 [INFO] ============================================================
+09:44:20 [INFO] ============================================================
+09:44:20 [INFO] STAGE: ERP Analysis
+09:44:20 [INFO] ============================================================
+09:44:20 [INFO]   [P001] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P002] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P003] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P004] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P005] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P006] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P007] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P008] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P009] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P010] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P011] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P013] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P014] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P015] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P016] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P017] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P018] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P019] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P020] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P021] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P023] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P024] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P025] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P026] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P027] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P028] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P029] Loaded 30 epochs from disk
+09:44:20 [INFO]   [P030] Loaded 30 epochs from disk
+09:44:20 [INFO] Loaded trial_info: 840 rows from output/epochs/all_trial_info.csv
+09:44:20 [INFO] Loaded 28 subjects from disk
+09:44:20 [INFO] Applying Woody realignment to epochs...
+09:44:20 [INFO] [ERP] Realign áp dụng: 807/840 epochs giữ lại, window [-200ms, 1000ms]
+09:44:20 [INFO] Computing grand averages...
+09:44:20 [INFO] [ERP] Realign áp dụng: 152/807 epochs giữ lại, window [-200ms, 1000ms]
+09:44:20 [INFO] Grand average: 152 total epochs, 16 channels
+09:44:21 [INFO] Extracted component measures: (110, 15)
+09:44:21 [INFO] Grand average computed: 6 conditions, 3 JAR groups
+09:44:21 [INFO] Comparing by concentration...
+09:44:21 [INFO] Concentration comparison: 72 rows
+09:44:21 [INFO] Comparing by JAR group...
+09:44:21 [INFO] Computing difference waves...
+09:44:21 [INFO]   Difference wave 'High_vs_Water': 137 vs 133 trials
+09:44:21 [INFO]   Difference wave 'MedHigh_vs_Water': 135 vs 133 trials
+09:44:21 [INFO]   Difference wave 'High_vs_Medium': 137 vs 136 trials
+09:44:21 [INFO] Extracting bandpower features...
+09:44:21 [INFO] Bandpower features: (807, 84)
+09:44:21 [INFO] Extracting extended ML features...
+09:44:23 [INFO] Extended ML features: 168 rows × 326 columns
+09:44:23 [INFO] ML features merged with ERP measures: (168, 338)
+09:44:24 [INFO] ERP results saved to output/results/erp
+09:44:48 [INFO] ============================================================
+09:44:48 [INFO] STAGE: ERP Analysis
+09:44:48 [INFO] ============================================================
+09:44:48 [INFO]   [P001] Loaded 30 epochs from disk
+09:44:48 [INFO]   [P002] Loaded 30 epochs from disk
+09:44:48 [INFO]   [P003] Loaded 30 epochs from disk
+09:44:48 [INFO]   [P004] Loaded 30 epochs from disk
+09:44:48 [INFO]   [P005] Loaded 30 epochs from disk
+09:44:48 [INFO]   [P006] Loaded 30 epochs from disk
+09:44:48 [INFO]   [P007] Loaded 30 epochs from disk
+09:44:48 [INFO]   [P008] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P009] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P010] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P011] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P013] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P014] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P015] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P016] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P017] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P018] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P019] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P020] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P021] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P023] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P024] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P025] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P026] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P027] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P028] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P029] Loaded 30 epochs from disk
+09:44:49 [INFO]   [P030] Loaded 30 epochs from disk
+09:44:49 [INFO] Loaded trial_info: 840 rows from output/epochs/all_trial_info.csv
+09:44:49 [INFO] Loaded 28 subjects from disk
+09:44:49 [INFO] Applying Woody realignment to epochs...
+09:44:49 [INFO] [ERP] Realign áp dụng: 807/840 epochs giữ lại, window [-200ms, 1000ms]
+09:44:49 [INFO] Computing grand averages...
+09:44:49 [INFO] Grand average: 807 total epochs, 16 channels
+09:44:50 [INFO] Extracted component measures: (168, 15)
+09:44:50 [INFO] Grand average computed: 6 conditions, 3 JAR groups
+09:44:50 [INFO] Comparing by concentration...
+09:44:50 [INFO] Concentration comparison: 72 rows
+09:44:50 [INFO] Comparing by JAR group...
+09:44:50 [INFO] Computing difference waves...
+09:44:50 [INFO]   Difference wave 'High_vs_Water': 137 vs 133 trials
+09:44:50 [INFO]   Difference wave 'MedHigh_vs_Water': 135 vs 133 trials
+09:44:50 [INFO]   Difference wave 'High_vs_Medium': 137 vs 136 trials
+09:44:50 [INFO] Extracting bandpower features...
+09:44:50 [INFO] Bandpower features: (807, 84)
+09:44:50 [INFO] Extracting extended ML features...
+09:44:52 [INFO] Extended ML features: 168 rows × 326 columns
+09:44:52 [INFO] ML features merged with ERP measures: (168, 338)
+09:44:52 [INFO] ERP results saved to output/results/erp
+09:47:30 [INFO] ============================================================
+09:47:30 [INFO] STAGE: ERP Analysis
+09:47:30 [INFO] ============================================================
+09:47:30 [INFO]   [P001] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P002] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P003] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P004] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P005] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P006] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P007] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P008] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P009] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P010] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P011] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P013] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P014] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P015] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P016] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P017] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P018] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P019] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P020] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P021] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P023] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P024] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P025] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P026] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P027] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P028] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P029] Loaded 30 epochs from disk
+09:47:30 [INFO]   [P030] Loaded 30 epochs from disk
+09:47:30 [INFO] Loaded trial_info: 840 rows from output/epochs/all_trial_info.csv
+09:47:30 [INFO] Loaded 28 subjects from disk
+09:47:30 [INFO] Applying Woody realignment to epochs...
+09:47:30 [INFO] [ERP] Realign áp dụng: 807/840 epochs giữ lại, window [-200ms, 1000ms]
+09:47:30 [INFO] Computing grand averages...
+09:47:30 [INFO] Grand average: 807 total epochs, 16 channels
+09:47:31 [INFO] Extracted component measures: (168, 15)
+09:47:31 [INFO] Grand average computed: 6 conditions, 3 JAR groups
+09:47:31 [INFO] Comparing by concentration...
+09:47:31 [INFO] Concentration comparison: 72 rows
+09:47:31 [INFO] Comparing by JAR group...
+09:47:31 [INFO] Computing difference waves...
+09:47:31 [INFO]   Difference wave 'High_vs_Water': 137 vs 133 trials
+09:47:31 [INFO]   Difference wave 'MedHigh_vs_Water': 135 vs 133 trials
+09:47:31 [INFO]   Difference wave 'High_vs_Medium': 137 vs 136 trials
+09:47:31 [INFO] Extracting bandpower features...
+09:47:31 [INFO] Bandpower features: (807, 84)
+09:47:31 [INFO] Extracting extended ML features...
+09:47:34 [INFO] Extended ML features: 168 rows × 326 columns
+09:47:34 [INFO] ML features merged with ERP measures: (168, 338)
+09:47:34 [INFO] ERP results saved to output/results/erp
+09:47:34 [INFO] ============================================================
+09:47:34 [INFO] STAGE: ML Classification
+09:47:34 [INFO] ============================================================
+09:47:34 [INFO] Using extended ML features: 334 feature columns
+09:47:34 [INFO] 
+Task: jar_group
+09:47:34 [INFO]   168 samples, 334 features, 3 classes (chance=0.333)
+09:47:34 [INFO]   Model: logistic_regression
+09:47:47 [INFO]   logistic_regression: acc=0.280, f1=0.265 (mean fold: 0.280 ± 0.189)
+09:47:47 [INFO]   ⚠ balanced_acc=0.271 < 0.55 → chạy feature sweep...
+09:50:13 [INFO] ============================================================
+09:50:13 [INFO] STAGE: ERP Analysis
+09:50:13 [INFO] ============================================================
+09:50:13 [INFO]   [P001] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P002] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P003] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P004] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P005] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P006] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P007] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P008] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P009] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P010] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P011] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P013] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P014] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P015] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P016] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P017] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P018] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P019] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P020] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P021] Loaded 30 epochs from disk
+09:50:13 [INFO]   [P023] Loaded 30 epochs from disk
+09:50:14 [INFO]   [P024] Loaded 30 epochs from disk
+09:50:14 [INFO]   [P025] Loaded 30 epochs from disk
+09:50:14 [INFO]   [P026] Loaded 30 epochs from disk
+09:50:14 [INFO]   [P027] Loaded 30 epochs from disk
+09:50:14 [INFO]   [P028] Loaded 30 epochs from disk
+09:50:14 [INFO]   [P029] Loaded 30 epochs from disk
+09:50:14 [INFO]   [P030] Loaded 30 epochs from disk
+09:50:14 [INFO] Loaded trial_info: 840 rows from output/epochs/all_trial_info.csv
+09:50:14 [INFO] Loaded 28 subjects from disk
+09:50:14 [INFO] Applying Woody realignment to epochs...
+09:50:14 [INFO] [ERP] Realign áp dụng: 807/840 epochs giữ lại, window [-200ms, 1000ms]
+09:50:14 [INFO] Computing grand averages...
+09:50:14 [INFO] Grand average: 807 total epochs, 16 channels
+09:50:14 [INFO] Extracted component measures: (168, 15)
+09:50:14 [INFO] Grand average computed: 6 conditions, 3 JAR groups
+09:50:14 [INFO] Comparing by concentration...
+09:50:14 [INFO] Concentration comparison: 72 rows
+09:50:14 [INFO] Comparing by JAR group...
+09:50:14 [INFO] Computing difference waves...
+09:50:14 [INFO]   Difference wave 'High_vs_Water': 137 vs 133 trials
+09:50:14 [INFO]   Difference wave 'MedHigh_vs_Water': 135 vs 133 trials
+09:50:14 [INFO]   Difference wave 'High_vs_Medium': 137 vs 136 trials
+09:50:14 [INFO] Extracting bandpower features...
+09:50:15 [INFO] Bandpower features: (807, 84)
+09:50:15 [INFO] Extracting extended ML features...
+09:50:17 [INFO] Extended ML features: 168 rows × 326 columns
+09:50:17 [INFO] ML features merged with ERP measures: (168, 338)
+09:50:17 [INFO] ERP results saved to output/results/erp
+09:50:17 [INFO] ============================================================
+09:50:17 [INFO] STAGE: ML Classification
+09:50:17 [INFO] ============================================================
+09:50:17 [INFO] Using extended ML features: 334 feature columns
+09:50:17 [INFO] 
+Task: jar_group
+09:50:17 [INFO]   168 samples, 334 features, 3 classes (chance=0.333)
+09:50:17 [INFO]   Model: logistic_regression
+09:50:30 [INFO]   logistic_regression: acc=0.280, f1=0.265 (mean fold: 0.280 ± 0.189)
+09:50:30 [INFO]   ⚠ balanced_acc=0.271 < 0.55 → chạy feature sweep...
+09:52:49 [INFO]   Best n_features=5 (balanced_acc=0.389)
+09:52:50 [INFO] Saved: output/figures/feat_sweep_jar_group_logistic_regression.png
+09:53:02 [INFO]   logistic_regression: acc=0.393, f1=0.357 (mean fold: 0.393 ± 0.200)
+09:53:02 [INFO]   ✓ Improved: 0.271 → 0.389 with n=5
+09:53:02 [INFO] Saved: output/figures/cm_jar_group_logistic_regression.png
+09:53:02 [INFO] Saved: output/figures/fold_acc_jar_group_logistic_regression.png
+09:53:03 [INFO] Saved: output/figures/feat_importance_jar_group_logistic_regression.png
+09:53:03 [INFO]   Model: svm
+09:53:15 [INFO]   svm: acc=0.339, f1=0.289 (mean fold: 0.339 ± 0.211)
+09:53:15 [INFO]   ⚠ balanced_acc=0.297 < 0.55 → chạy feature sweep...
+09:55:29 [INFO]   Best n_features=15 (balanced_acc=0.361)
+09:55:29 [INFO] Saved: output/figures/feat_sweep_jar_group_svm.png
+09:55:41 [INFO]   svm: acc=0.375, f1=0.341 (mean fold: 0.375 ± 0.197)
+09:55:41 [INFO]   ✓ Improved: 0.297 → 0.361 with n=15
+09:55:41 [INFO] Saved: output/figures/cm_jar_group_svm.png
+09:55:42 [INFO] Saved: output/figures/fold_acc_jar_group_svm.png
+09:55:42 [INFO] Saved: output/figures/feat_importance_jar_group_svm.png
+09:55:42 [INFO]   Model: random_forest
+09:56:00 [INFO]   random_forest: acc=0.446, f1=0.261 (mean fold: 0.446 ± 0.209)
+09:56:00 [INFO]   ⚠ balanced_acc=0.318 < 0.55 → chạy feature sweep...
+09:59:13 [INFO]   Best n_features=5 (balanced_acc=0.400)
+09:59:14 [INFO] Saved: output/figures/feat_sweep_jar_group_random_forest.png
+09:59:31 [INFO]   random_forest: acc=0.464, f1=0.392 (mean fold: 0.464 ± 0.180)
+09:59:31 [INFO]   ✓ Improved: 0.318 → 0.400 with n=5
+09:59:32 [INFO] Saved: output/figures/cm_jar_group_random_forest.png
+09:59:32 [INFO] Saved: output/figures/fold_acc_jar_group_random_forest.png
+09:59:32 [INFO] Saved: output/figures/feat_importance_jar_group_random_forest.png
+09:59:32 [INFO]   Model: xgboost
+09:59:32 [WARNING] Model 'xgboost' not available (missing dependency).
+09:59:32 [INFO] 
+Task: concentration_binary
+09:59:32 [INFO]   56 samples, 334 features, 2 classes (chance=0.500)
+09:59:32 [INFO]   Model: logistic_regression
+09:59:40 [INFO]   logistic_regression: acc=0.500, f1=0.497 (mean fold: 0.500 ± 0.299)
+09:59:40 [INFO]   ⚠ balanced_acc=0.500 < 0.55 → chạy feature sweep...
+10:01:09 [INFO]   Best n_features=5 (balanced_acc=0.571)
+10:01:10 [INFO] Saved: output/figures/feat_sweep_concentration_binary_logistic_regression.png
+10:01:18 [INFO]   logistic_regression: acc=0.571, f1=0.571 (mean fold: 0.571 ± 0.319)
+10:01:18 [INFO]   ✓ Improved: 0.500 → 0.571 with n=5
+10:01:18 [INFO] Saved: output/figures/cm_concentration_binary_logistic_regression.png
+10:01:18 [INFO] Saved: output/figures/fold_acc_concentration_binary_logistic_regression.png
+10:01:18 [INFO] Saved: output/figures/feat_importance_concentration_binary_logistic_regression.png
+10:01:18 [INFO]   Model: svm
+10:01:26 [INFO]   svm: acc=0.482, f1=0.474 (mean fold: 0.482 ± 0.283)
+10:01:26 [INFO]   ⚠ balanced_acc=0.482 < 0.55 → chạy feature sweep...
+10:02:50 [INFO]   Best n_features=200 (balanced_acc=0.625)
+10:02:50 [INFO] Saved: output/figures/feat_sweep_concentration_binary_svm.png
+10:02:57 [INFO]   svm: acc=0.625, f1=0.624 (mean fold: 0.625 ± 0.254)
+10:02:57 [INFO]   ✓ Improved: 0.482 → 0.625 with n=200
+10:02:58 [INFO] Saved: output/figures/cm_concentration_binary_svm.png
+10:02:58 [INFO] Saved: output/figures/fold_acc_concentration_binary_svm.png
+10:02:58 [INFO] Saved: output/figures/feat_importance_concentration_binary_svm.png
+10:02:58 [INFO]   Model: random_forest
+10:03:11 [INFO]   random_forest: acc=0.464, f1=0.462 (mean fold: 0.464 ± 0.352)
+10:03:11 [INFO]   ⚠ balanced_acc=0.464 < 0.55 → chạy feature sweep...
+10:05:31 [INFO]   Best n_features=10 (balanced_acc=0.643)
+10:05:31 [INFO] Saved: output/figures/feat_sweep_concentration_binary_random_forest.png
+10:05:44 [INFO]   random_forest: acc=0.643, f1=0.642 (mean fold: 0.643 ± 0.323)
+10:05:44 [INFO]   ✓ Improved: 0.464 → 0.643 with n=10
+10:05:44 [INFO] Saved: output/figures/cm_concentration_binary_random_forest.png
+10:05:44 [INFO] Saved: output/figures/fold_acc_concentration_binary_random_forest.png
+10:05:44 [INFO] Saved: output/figures/feat_importance_concentration_binary_random_forest.png
+10:05:44 [INFO]   Model: xgboost
+10:05:44 [WARNING] Model 'xgboost' not available (missing dependency).
+10:05:44 [INFO] ML results saved to output/results/ml
+10:05:45 [INFO] Saved: output/figures/ml_model_comparison.png
+10:13:06 [INFO] [ERP] Realign áp dụng: 807/840 epochs giữ lại, window [-200ms, 1000ms]
+10:13:06 [INFO] Loaded evoked: 6 conditions, 3 JAR groups
+10:25:12 [INFO] [ERP] Realign áp dụng: 807/840 epochs giữ lại, window [-200ms, 1000ms]
+10:25:17 [INFO] Feature matrix: 168 rows × 589 cols
+10:52:17 [INFO] [ERP] Realign áp dụng: 807/840 epochs giữ lại, window [-200ms, 1000ms]
+10:52:37 [INFO] Feature matrix: 168 rows × 1365 cols
+10:15:03 [INFO] ============================================================
+10:15:03 [INFO] ERP Analysis — từ epochs đã lưu (có Woody realignment)
+10:15:03 [INFO] ============================================================
+10:15:03 [INFO] 
+[Load] Đọc epochs từ disk...
+10:15:03 [INFO] [P001] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P002] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P003] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P004] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P005] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P006] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P007] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P008] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P009] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P010] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P011] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P013] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P014] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P015] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P016] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P017] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P018] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P019] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P020] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P021] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P023] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P024] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P025] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P026] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P027] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P028] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P029] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] [P030] Loaded 30 epochs, shape=(30, 16, 351)
+10:15:03 [INFO] Loaded 28 subjects, 840 epochs tổng
+10:15:03 [INFO] Trial info: 840 rows
+10:15:03 [INFO] 
+[Stage 4] ERP Analysis...
+10:15:03 [INFO] ============================================================
+10:15:03 [INFO] STAGE: ERP Analysis
+10:15:03 [INFO] ============================================================
+10:15:03 [INFO]   [P001] Loaded 30 epochs from disk
+10:15:03 [INFO]   [P002] Loaded 30 epochs from disk
+10:15:03 [INFO]   [P003] Loaded 30 epochs from disk
+10:15:03 [INFO]   [P004] Loaded 30 epochs from disk
+10:15:03 [INFO]   [P005] Loaded 30 epochs from disk
+10:15:03 [INFO]   [P006] Loaded 30 epochs from disk
+10:15:03 [INFO]   [P007] Loaded 30 epochs from disk
+10:15:03 [INFO]   [P008] Loaded 30 epochs from disk
+10:15:03 [INFO]   [P009] Loaded 30 epochs from disk
+10:15:03 [INFO]   [P010] Loaded 30 epochs from disk
+10:15:03 [INFO]   [P011] Loaded 30 epochs from disk
+10:15:03 [INFO]   [P013] Loaded 30 epochs from disk
+10:15:03 [INFO]   [P014] Loaded 30 epochs from disk
+10:15:03 [INFO]   [P015] Loaded 30 epochs from disk
+10:15:03 [INFO]   [P016] Loaded 30 epochs from disk
+10:15:04 [INFO]   [P017] Loaded 30 epochs from disk
+10:15:04 [INFO]   [P018] Loaded 30 epochs from disk
+10:15:04 [INFO]   [P019] Loaded 30 epochs from disk
+10:15:04 [INFO]   [P020] Loaded 30 epochs from disk
+10:15:04 [INFO]   [P021] Loaded 30 epochs from disk
+10:15:04 [INFO]   [P023] Loaded 30 epochs from disk
+10:15:04 [INFO]   [P024] Loaded 30 epochs from disk
+10:15:04 [INFO]   [P025] Loaded 30 epochs from disk
+10:15:04 [INFO]   [P026] Loaded 30 epochs from disk
+10:15:04 [INFO]   [P027] Loaded 30 epochs from disk
+10:15:04 [INFO]   [P028] Loaded 30 epochs from disk
+10:15:04 [INFO]   [P029] Loaded 30 epochs from disk
+10:15:04 [INFO]   [P030] Loaded 30 epochs from disk
+10:15:04 [INFO] Loaded trial_info: 840 rows from output/epochs/all_trial_info.csv
+10:15:04 [INFO] Loaded 28 subjects from disk
+10:15:04 [INFO] Applying Woody realignment to epochs...
+10:15:04 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+10:15:04 [INFO] Computing grand averages...
+10:15:04 [INFO] Grand average: 804 total epochs, 16 channels
+10:15:05 [INFO] Extracted component measures: (168, 15)
+10:15:05 [INFO] Grand average computed: 6 conditions, 3 JAR groups
+10:15:05 [INFO] Comparing by concentration...
+10:15:05 [INFO] Concentration comparison: 72 rows
+10:15:05 [INFO] Comparing by JAR group...
+10:15:05 [INFO] Computing difference waves...
+10:15:05 [INFO]   Difference wave 'High_vs_Water': 131 vs 132 trials
+10:15:05 [INFO]   Difference wave 'MedHigh_vs_Water': 137 vs 132 trials
+10:15:05 [INFO]   Difference wave 'High_vs_Medium': 131 vs 137 trials
+10:15:05 [INFO] Extracting bandpower features...
+10:15:05 [INFO] Bandpower features: (804, 84)
+10:15:05 [INFO] Extracting extended ML features...
+10:15:07 [INFO] Extended ML features: 168 rows × 326 columns
+10:15:07 [INFO] ML features merged with ERP measures: (168, 338)
+10:15:07 [INFO] ERP results saved to output/results/erp
+10:15:07 [INFO] 
+============================================================
+10:15:07 [INFO] ERP Analysis XONG!
+10:15:07 [INFO]   Kết quả tại: output/results
+10:15:07 [INFO]   Figures tại: output/figures
+10:15:07 [INFO] ============================================================
+10:15:29 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+10:15:29 [INFO] Loaded evoked: 6 conditions, 3 JAR groups
+10:39:11 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+10:39:11 [INFO] Loaded evoked: 6 conditions, 3 JAR groups
+10:40:39 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+10:40:39 [INFO] Loaded evoked: 6 conditions, 3 JAR groups
+11:31:51 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+11:31:51 [INFO] Loaded evoked: 6 conditions, 3 JAR groups
+11:42:07 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+11:42:07 [INFO] Loaded evoked: 6 conditions, 3 JAR groups
+11:42:44 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+11:42:44 [INFO] Loaded evoked: 6 conditions, 3 JAR groups
+11:44:41 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+11:44:41 [INFO] Loaded evoked: 6 conditions, 3 JAR groups
+12:56:24 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+12:56:24 [INFO] Loaded evoked: 6 conditions, 3 JAR groups
+13:00:09 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+13:11:36 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+13:12:19 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+16:48:57 [INFO] [P001] 30 epochs, 16 channels
+16:48:58 [INFO] [P002] 30 epochs, 16 channels
+16:48:58 [INFO] [P003] 30 epochs, 16 channels
+16:48:58 [INFO] [P004] 30 epochs, 16 channels
+16:48:58 [INFO] [P005] 30 epochs, 16 channels
+16:48:58 [INFO] [P006] 30 epochs, 16 channels
+16:48:58 [INFO] [P007] 30 epochs, 16 channels
+16:48:58 [INFO] [P008] 30 epochs, 16 channels
+16:48:58 [INFO] [P009] 30 epochs, 16 channels
+16:48:58 [INFO] [P010] 30 epochs, 16 channels
+16:48:58 [INFO] [P011] 30 epochs, 16 channels
+16:48:58 [INFO] [P013] 30 epochs, 16 channels
+16:48:58 [INFO] [P014] 30 epochs, 16 channels
+16:48:58 [INFO] [P015] 30 epochs, 16 channels
+16:48:58 [INFO] [P016] 30 epochs, 16 channels
+16:48:58 [INFO] [P017] 30 epochs, 16 channels
+16:48:58 [INFO] [P018] 30 epochs, 16 channels
+16:48:58 [INFO] [P019] 30 epochs, 16 channels
+16:48:58 [INFO] [P020] 30 epochs, 16 channels
+16:48:58 [INFO] [P021] 30 epochs, 16 channels
+16:48:58 [INFO] [P023] 30 epochs, 16 channels
+16:48:58 [INFO] [P024] 30 epochs, 16 channels
+16:48:58 [INFO] [P025] 30 epochs, 16 channels
+16:48:58 [INFO] [P026] 30 epochs, 16 channels
+16:48:58 [INFO] [P027] 30 epochs, 16 channels
+16:48:58 [INFO] [P028] 30 epochs, 16 channels
+16:48:59 [INFO] [P029] 30 epochs, 16 channels
+16:48:59 [INFO] [P030] 30 epochs, 16 channels
+16:48:59 [INFO] Done. Report: output/results/erp/erp_quality_report.txt
+16:48:59 [INFO] Flags:    output/results/erp/erp_quality_flags.csv
+16:52:00 [INFO] [P001] 30 epochs, 16 channels
+16:52:00 [INFO] [P002] 30 epochs, 16 channels
+16:52:00 [INFO] [P003] 30 epochs, 16 channels
+16:52:00 [INFO] [P004] 30 epochs, 16 channels
+16:52:00 [INFO] [P005] 30 epochs, 16 channels
+16:52:00 [INFO] [P006] 30 epochs, 16 channels
+16:52:00 [INFO] [P007] 30 epochs, 16 channels
+16:52:00 [INFO] [P008] 30 epochs, 16 channels
+16:52:00 [INFO] [P009] 30 epochs, 16 channels
+16:52:00 [INFO] [P010] 30 epochs, 16 channels
+16:52:00 [INFO] [P011] 30 epochs, 16 channels
+16:52:00 [INFO] [P013] 30 epochs, 16 channels
+16:52:00 [INFO] [P014] 30 epochs, 16 channels
+16:52:01 [INFO] [P015] 30 epochs, 16 channels
+16:52:01 [INFO] [P016] 30 epochs, 16 channels
+16:52:01 [INFO] [P017] 30 epochs, 16 channels
+16:52:01 [INFO] [P018] 30 epochs, 16 channels
+16:52:01 [INFO] [P019] 30 epochs, 16 channels
+16:52:01 [INFO] [P020] 30 epochs, 16 channels
+16:52:01 [INFO] [P021] 30 epochs, 16 channels
+16:52:01 [INFO] [P023] 30 epochs, 16 channels
+16:52:01 [INFO] [P024] 30 epochs, 16 channels
+16:52:01 [INFO] [P025] 30 epochs, 16 channels
+16:52:01 [INFO] [P026] 30 epochs, 16 channels
+16:52:01 [INFO] [P027] 30 epochs, 16 channels
+16:52:01 [INFO] [P028] 30 epochs, 16 channels
+16:52:01 [INFO] [P029] 30 epochs, 16 channels
+16:52:01 [INFO] [P030] 30 epochs, 16 channels
+16:52:01 [INFO] Done. Report: output/results/erp/erp_quality_report.txt
+16:52:01 [INFO] Flags:    output/results/erp/erp_quality_flags.csv
+16:52:56 [INFO] [P001] 30 epochs, 16 channels
+16:52:56 [INFO] [P002] 30 epochs, 16 channels
+16:52:56 [INFO] [P003] 30 epochs, 16 channels
+16:52:56 [INFO] [P004] 30 epochs, 16 channels
+16:52:56 [INFO] [P005] 30 epochs, 16 channels
+16:52:56 [INFO] [P006] 30 epochs, 16 channels
+16:52:56 [INFO] [P007] 30 epochs, 16 channels
+16:52:56 [INFO] [P008] 30 epochs, 16 channels
+16:52:56 [INFO] [P009] 30 epochs, 16 channels
+16:52:56 [INFO] [P010] 30 epochs, 16 channels
+16:52:56 [INFO] [P011] 30 epochs, 16 channels
+16:52:56 [INFO] [P013] 30 epochs, 16 channels
+16:52:56 [INFO] [P014] 30 epochs, 16 channels
+16:52:56 [INFO] [P015] 30 epochs, 16 channels
+16:52:56 [INFO] [P016] 30 epochs, 16 channels
+16:52:56 [INFO] [P017] 30 epochs, 16 channels
+16:52:56 [INFO] [P018] 30 epochs, 16 channels
+16:52:56 [INFO] [P019] 30 epochs, 16 channels
+16:52:56 [INFO] [P020] 30 epochs, 16 channels
+16:52:56 [INFO] [P021] 30 epochs, 16 channels
+16:52:56 [INFO] [P023] 30 epochs, 16 channels
+16:52:56 [INFO] [P024] 30 epochs, 16 channels
+16:52:56 [INFO] [P025] 30 epochs, 16 channels
+16:52:56 [INFO] [P026] 30 epochs, 16 channels
+16:52:56 [INFO] [P027] 30 epochs, 16 channels
+16:52:57 [INFO] [P028] 30 epochs, 16 channels
+16:52:57 [INFO] [P029] 30 epochs, 16 channels
+16:52:57 [INFO] [P030] 30 epochs, 16 channels
+16:52:57 [INFO] Done. Report: output/results/erp/erp_quality_report.txt
+16:52:57 [INFO] Flags:    output/results/erp/erp_quality_flags.csv
+16:58:48 [INFO] Loaded 168 quality flags, 28 subject summaries
+16:58:49 [INFO] Heatmap saved: output/figures/erp_quality/quality_heatmap.png
+16:58:49 [INFO] Subject summary saved: output/figures/erp_quality/subject_quality_summary.png
+16:58:51 [INFO] GOOD vs BAD waveforms saved: output/figures/erp_quality/good_vs_bad_waveforms.png
+16:58:51 [INFO] Component bar charts saved: output/figures/erp_quality/component_detection_rates.png
+16:58:52 [INFO] SNR distributions saved: output/figures/erp_quality/snr_distributions.png
+16:58:52 [INFO] Exclusion list saved: output/figures/erp_quality/exclusion_list.png
+16:58:52 [INFO] All figures saved to output/figures/erp_quality
+17:01:33 [INFO] ============================================================
+17:01:33 [INFO] ERP Analysis — Quality Filtered (method=weak)
+17:01:33 [INFO] ============================================================
+17:01:33 [INFO] Weak filter: giữ 119 subject×condition (has_real_pattern)
+17:01:33 [INFO]   [P001] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P002] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P003] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P004] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P005] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P006] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P007] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P008] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P009] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P010] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P011] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P013] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P014] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P015] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P016] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P017] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P018] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P019] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P020] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P021] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P023] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P024] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P025] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P026] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P027] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P028] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P029] Loaded 30 epochs from disk
+17:01:33 [INFO]   [P030] Loaded 30 epochs from disk
+17:01:33 [INFO] Loaded trial_info: 840 rows from output/epochs/all_trial_info.csv
+17:01:33 [INFO] Loaded 28 subjects from disk
+17:01:33 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+17:01:33 [INFO] Total epochs after realign: 804
+17:01:33 [INFO] Filter: giữ 570/804 trials (71%)
+17:01:33 [INFO] Filtered data: 570 epochs, 16 ch, 121 times
+17:01:34 [INFO] Extracted component measures: (119, 15)
+17:01:34 [INFO] Concentration comparison: 72 rows
+17:01:34 [INFO]   Difference wave 'High_vs_Water': 108 vs 99 trials
+17:01:34 [INFO]   Difference wave 'MedHigh_vs_Water': 102 vs 99 trials
+17:01:34 [INFO]   Difference wave 'High_vs_Medium': 108 vs 84 trials
+17:02:48 [INFO] ============================================================
+17:02:48 [INFO] ERP Analysis — Quality Filtered (method=weak)
+17:02:48 [INFO] ============================================================
+17:02:48 [INFO] Weak filter: giữ 119 subject×condition (has_real_pattern)
+17:02:48 [INFO]   [P001] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P002] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P003] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P004] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P005] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P006] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P007] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P008] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P009] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P010] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P011] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P013] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P014] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P015] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P016] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P017] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P018] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P019] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P020] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P021] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P023] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P024] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P025] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P026] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P027] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P028] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P029] Loaded 30 epochs from disk
+17:02:48 [INFO]   [P030] Loaded 30 epochs from disk
+17:02:48 [INFO] Loaded trial_info: 840 rows from output/epochs/all_trial_info.csv
+17:02:48 [INFO] Loaded 28 subjects from disk
+17:02:48 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+17:02:48 [INFO] Total epochs after realign: 804
+17:02:48 [INFO] Filter: giữ 570/804 trials (71%)
+17:02:48 [INFO] Filtered data: 570 epochs, 16 ch, 121 times
+17:02:49 [INFO] Extracted component measures: (119, 15)
+17:02:49 [INFO] Concentration comparison: 72 rows
+17:02:49 [INFO]   Difference wave 'High_vs_Water': 108 vs 99 trials
+17:02:49 [INFO]   Difference wave 'MedHigh_vs_Water': 102 vs 99 trials
+17:02:49 [INFO]   Difference wave 'High_vs_Medium': 108 vs 84 trials
+17:02:49 [INFO] Filtered results saved to output/results/erp_filtered
+17:02:49 [INFO] ============================================================
+17:02:49 [INFO] ERP Analysis — Quality Filtered (method=strict)
+17:02:49 [INFO] ============================================================
+17:02:49 [INFO] Strict filter: giữ 90 subject×condition (chỉ GOOD)
+17:02:49 [INFO]   [P001] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P002] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P003] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P004] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P005] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P006] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P007] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P008] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P009] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P010] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P011] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P013] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P014] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P015] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P016] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P017] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P018] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P019] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P020] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P021] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P023] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P024] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P025] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P026] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P027] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P028] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P029] Loaded 30 epochs from disk
+17:02:49 [INFO]   [P030] Loaded 30 epochs from disk
+17:02:49 [INFO] Loaded trial_info: 840 rows from output/epochs/all_trial_info.csv
+17:02:49 [INFO] Loaded 28 subjects from disk
+17:02:49 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+17:02:49 [INFO] Total epochs after realign: 804
+17:02:49 [INFO] Filter: giữ 427/804 trials (53%)
+17:02:49 [INFO] Filtered data: 427 epochs, 16 ch, 121 times
+17:02:50 [INFO] Extracted component measures: (90, 15)
+17:02:50 [INFO] Concentration comparison: 72 rows
+17:02:50 [INFO]   Difference wave 'High_vs_Water': 83 vs 50 trials
+17:02:50 [INFO]   Difference wave 'MedHigh_vs_Water': 63 vs 50 trials
+17:02:50 [INFO]   Difference wave 'High_vs_Medium': 83 vs 69 trials
+17:02:50 [INFO] Filtered results saved to output/results/erp_filtered
+17:14:24 [INFO] Loaded quality flags: 119 good subject×condition
+17:14:24 [INFO] Data: 804 epochs, 16 channels, 121 times
+17:14:24 [INFO] After quality filter: 570 trials
+17:14:24 [INFO] Processing Fp1...
+17:14:24 [INFO]   Fp1: 119 subject×condition
+17:14:25 [INFO] Processing Fp2...
+17:14:25 [INFO]   Fp2: 119 subject×condition
+17:14:25 [INFO] Processing F3...
+17:14:25 [INFO]   F3: 119 subject×condition
+17:14:25 [INFO] Processing F4...
+17:14:25 [INFO]   F4: 119 subject×condition
+17:14:25 [INFO] Processing C3...
+17:14:25 [INFO]   C3: 119 subject×condition
+17:14:25 [INFO] Processing C4...
+17:14:25 [INFO]   C4: 119 subject×condition
+17:14:25 [INFO] Processing P3...
+17:14:25 [INFO]   P3: 119 subject×condition
+17:14:25 [INFO] Processing P4...
+17:14:25 [INFO]   P4: 119 subject×condition
+17:14:26 [INFO] Processing O1...
+17:14:26 [INFO]   O1: 119 subject×condition
+17:14:26 [INFO] Processing O2...
+17:14:26 [INFO]   O2: 119 subject×condition
+17:14:26 [INFO] Processing F7...
+17:14:26 [INFO]   F7: 119 subject×condition
+17:14:26 [INFO] Processing F8...
+17:14:26 [INFO]   F8: 119 subject×condition
+17:14:26 [INFO] Processing T7...
+17:14:26 [INFO]   T7: 119 subject×condition
+17:14:26 [INFO] Processing T8...
+17:14:26 [INFO]   T8: 119 subject×condition
+17:14:26 [INFO] Processing P7...
+17:14:26 [INFO]   P7: 119 subject×condition
+17:14:27 [INFO] Processing P8...
+17:14:27 [INFO]   P8: 119 subject×condition
+17:14:27 [INFO] Heatmap: output/results/per_channel/concentration_heatmap.png
+17:14:27 [INFO] Done. Results in output/results/per_channel
+17:15:39 [INFO] Using ALL data (no quality filter) — rmANOVA needs complete cases
+17:15:40 [INFO] Data: 804 epochs, 16 channels, 121 times
+17:15:40 [INFO] Processing Fp1...
+17:15:40 [INFO]   Fp1: 168 subject×condition
+17:15:40 [INFO] Processing Fp2...
+17:15:40 [INFO]   Fp2: 168 subject×condition
+17:15:41 [INFO] Processing F3...
+17:15:41 [INFO]   F3: 168 subject×condition
+17:15:41 [INFO] Processing F4...
+17:15:41 [INFO]   F4: 168 subject×condition
+17:15:41 [INFO] Processing C3...
+17:15:41 [INFO]   C3: 168 subject×condition
+17:15:41 [INFO] Processing C4...
+17:15:41 [INFO]   C4: 168 subject×condition
+17:15:41 [INFO] Processing P3...
+17:15:41 [INFO]   P3: 168 subject×condition
+17:15:41 [INFO] Processing P4...
+17:15:41 [INFO]   P4: 168 subject×condition
+17:15:41 [INFO] Processing O1...
+17:15:41 [INFO]   O1: 168 subject×condition
+17:15:42 [INFO] Processing O2...
+17:15:42 [INFO]   O2: 168 subject×condition
+17:15:42 [INFO] Processing F7...
+17:15:42 [INFO]   F7: 168 subject×condition
+17:15:42 [INFO] Processing F8...
+17:15:42 [INFO]   F8: 168 subject×condition
+17:15:42 [INFO] Processing T7...
+17:15:42 [INFO]   T7: 168 subject×condition
+17:15:42 [INFO] Processing T8...
+17:15:42 [INFO]   T8: 168 subject×condition
+17:15:42 [INFO] Processing P7...
+17:15:42 [INFO]   P7: 168 subject×condition
+17:15:42 [INFO] Processing P8...
+17:15:42 [INFO]   P8: 168 subject×condition
+17:15:43 [INFO] Heatmap: output/results/per_channel/concentration_heatmap.png
+17:15:43 [INFO] Done. Results in output/results/per_channel
+17:26:46 [INFO] Loading data...
+17:26:47 [INFO] Data: 804 epochs, 16 channels
+17:26:47 [INFO] Plotting C4 P2 waveform by JAR...
+17:26:47 [INFO] Plotting F7 N400 waveform by JAR...
+17:26:47 [INFO] Plotting F4 P2 waveform by JAR...
+17:26:47 [INFO] Plotting dose-response curves...
+17:26:48 [INFO] Plotting topomap...
+17:28:22 [INFO] Loading data...
+17:28:23 [INFO] Data: 804 epochs, 16 channels
+17:28:23 [INFO] Plotting C4 P2 waveform by JAR...
+17:28:23 [INFO] Plotting F7 N400 waveform by JAR...
+17:28:23 [INFO] Plotting F4 P2 waveform by JAR...
+17:28:23 [INFO] Plotting dose-response curves...
+17:28:24 [INFO] Plotting topomap...
+17:28:24 [INFO] Plotting bar charts...
+17:28:24 [INFO] All figures saved to output/figures/per_channel
+17:39:28 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+17:39:28 [INFO] Quality filter: giữ 570/804 trials (71%)
+17:41:38 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+17:41:38 [INFO] Quality filter: giữ 570/804 trials (71%)
+17:45:33 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+17:45:33 [INFO] Quality filter: 570 trials
+16:14:55 [INFO] Loaded output/results/erp/ml_features.csv: 168 rows × 238 features
+16:18:52 [INFO] Loaded output/results/erp/ml_features.csv: 168 rows × 238 features
+16:35:42 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+17:09:24 [INFO] [ERP] Realign áp dụng: 804/840 epochs giữ lại, window [-200ms, 1000ms]
+17:09:45 [INFO] Feature matrix: 168 rows × 1365 cols
+17:09:46 [INFO] Loaded output/results/ml_jar3/features_jar3_adv.csv: 168 rows × 962 features
