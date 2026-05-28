@@ -1,0 +1,11 @@
+phase,model,sampling,K,threshold_tuned,accuracy,balanced_acc,f1_macro,recall_vua_phai,recall_others,avg_threshold
+2,GradBoost,none,20,True,0.6807,0.6487,0.6217,0.5862,0.7111,0.208
+2,GradBoost,smote,30,True,0.6471,0.6148,0.5882,0.5517,0.6778,0.328
+2,GradBoost,none,15,True,0.6387,0.6092,0.5814,0.5517,0.6667,0.173
+1,GradBoost,smote,30,False,0.7059,0.6069,0.6056,0.4138,0.8,0.5
+1,GradBoost,none,30,False,0.7479,0.5996,0.6086,0.3103,0.8889,0.5
+1,RF_balanced,smote,15,False,0.7395,0.5941,0.6017,0.3103,0.8778,0.5
+1,GradBoost,adasyn,30,False,0.6807,0.5902,0.5856,0.4138,0.7667,0.5
+1,RF_balanced,adasyn,10,False,0.6975,0.5897,0.5897,0.3793,0.8,0.5
+1,RF_balanced,adasyn,15,False,0.7311,0.5885,0.5949,0.3103,0.8667,0.5
+2,GradBoost,borderline,10,True,0.605,0.587,0.5547,0.5517,0.6222,0.308

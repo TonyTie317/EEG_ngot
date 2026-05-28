@@ -1,0 +1,5 @@
+model,accuracy,balanced_acc,f1_macro,recall_vua_phai,recall_others,oracle_acc,oracle_thr_acc,oracle_bacc,oracle_thr_bacc
+EEGNet,0.3905,0.5695,0.3837,0.9455,0.1935,0.7226,0.9,0.5717,0.52
+EEGNet_light,0.4012,0.5782,0.3956,0.95,0.2065,0.7357,0.89,0.5927,0.55
+ShallowConvNet,0.5702,0.6136,0.5521,0.7045,0.5226,0.725,0.9,0.6136,0.5
+DeepConvNet,0.5202,0.6237,0.5172,0.8409,0.4065,0.7202,0.9,0.6237,0.5

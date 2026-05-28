@@ -1,0 +1,5 @@
+phase,model,sampling,K,threshold_tuned,accuracy,balanced_acc,f1_macro,recall_vua_phai,recall_others,avg_threshold
+2,GradBoost,none,20,True,0.6807,0.6487,0.6217,0.5862,0.7111,0.208
+2,GradBoost,smote,30,True,0.6471,0.6148,0.5882,0.5517,0.6778,0.328
+1,GradBoost,adasyn,30,False,0.6807,0.5902,0.5856,0.4138,0.7667,0.5
+2,GradBoost,borderline,10,True,0.605,0.587,0.5547,0.5517,0.6222,0.308
