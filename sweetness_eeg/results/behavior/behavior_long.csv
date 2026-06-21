@@ -1,0 +1,351 @@
+subject,name,sex,age,code,ma_mau,substance,intensity,liking,sweetness_jar,aftertaste,jar_dev,after_dev,jar_group
+P001,Nguyễn Đức Minh,Nam,20,119,S1_5,Sucrose,5,6,2,1,-1,-2,Not_enough
+P001,Nguyễn Đức Minh,Nam,20,781,S1_7,Sucrose,7,6,3,4,0,1,Just_right
+P001,Nguyễn Đức Minh,Nam,20,681,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P001,Nguyễn Đức Minh,Nam,20,873,S1_12,Sucrose,12,6,4,4,1,1,Too_much
+P001,Nguyễn Đức Minh,Nam,20,257,S2_12,Sucralose,12,6,4,3,1,0,Too_much
+P001,Nguyễn Đức Minh,Nam,20,563,S2_5,Sucralose,5,5,2,1,-1,-2,Not_enough
+P001,Nguyễn Đức Minh,Nam,20,336,S2_7,Sucralose,7,5,2,1,-1,-2,Not_enough
+P001,Nguyễn Đức Minh,Nam,20,453,S2_5,Sucralose,5,6,2,1,-1,-2,Not_enough
+P001,Nguyễn Đức Minh,Nam,20,122,S2_7,Sucralose,7,5,3,3,0,0,Just_right
+P001,Nguyễn Đức Minh,Nam,20,575,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P001,Nguyễn Đức Minh,Nam,20,644,S2_12,Sucralose,12,6,4,4,1,1,Too_much
+P001,Nguyễn Đức Minh,Nam,20,777,S1_12,Sucrose,12,5,4,3,1,0,Too_much
+P001,Nguyễn Đức Minh,Nam,20,452,S1_5,Sucrose,5,6,2,1,-1,-2,Not_enough
+P001,Nguyễn Đức Minh,Nam,20,299,S1_7,Sucrose,7,6,3,3,0,0,Just_right
+P002,Vũ Khánh Linh,Nữ,20,781,S1_7,Sucrose,7,4,4,2,1,-1,Too_much
+P002,Vũ Khánh Linh,Nữ,20,873,S1_12,Sucrose,12,2,5,5,2,2,Too_much
+P002,Vũ Khánh Linh,Nữ,20,119,S1_5,Sucrose,5,6,3,2,0,-1,Just_right
+P002,Vũ Khánh Linh,Nữ,20,563,S2_5,Sucralose,5,7,2,1,-1,-2,Not_enough
+P002,Vũ Khánh Linh,Nữ,20,681,H2O,Water,0,9,1,1,-2,-2,Not_enough
+P002,Vũ Khánh Linh,Nữ,20,336,S2_7,Sucralose,7,6,3,3,0,0,Just_right
+P002,Vũ Khánh Linh,Nữ,20,257,S2_12,Sucralose,12,3,5,4,2,1,Too_much
+P002,Vũ Khánh Linh,Nữ,20,122,S2_7,Sucralose,7,6,3,3,0,0,Just_right
+P002,Vũ Khánh Linh,Nữ,20,644,S2_12,Sucralose,12,2,5,5,2,2,Too_much
+P002,Vũ Khánh Linh,Nữ,20,453,S2_5,Sucralose,5,7,3,4,0,1,Just_right
+P002,Vũ Khánh Linh,Nữ,20,452,S1_5,Sucrose,5,7,4,4,1,1,Too_much
+P002,Vũ Khánh Linh,Nữ,20,575,H2O,Water,0,1,1,1,-2,-2,Not_enough
+P002,Vũ Khánh Linh,Nữ,20,299,S1_7,Sucrose,7,4,4,4,1,1,Too_much
+P002,Vũ Khánh Linh,Nữ,20,777,S1_12,Sucrose,12,1,5,5,2,2,Too_much
+P003,Hoàng Minh Thi,Nữ,19,873,S1_12,Sucrose,12,9,3,3,0,0,Just_right
+P003,Hoàng Minh Thi,Nữ,19,563,S2_5,Sucralose,5,5,2,2,-1,-1,Not_enough
+P003,Hoàng Minh Thi,Nữ,19,781,S1_7,Sucrose,7,9,3,3,0,0,Just_right
+P003,Hoàng Minh Thi,Nữ,19,336,S2_7,Sucralose,7,4,4,4,1,1,Too_much
+P003,Hoàng Minh Thi,Nữ,19,119,S1_5,Sucrose,5,5,1,1,-2,-2,Not_enough
+P003,Hoàng Minh Thi,Nữ,19,257,S2_12,Sucralose,12,8,3,2,0,-1,Just_right
+P003,Hoàng Minh Thi,Nữ,19,681,H2O,Water,0,1,1,1,-2,-2,Not_enough
+P003,Hoàng Minh Thi,Nữ,19,644,S2_12,Sucralose,12,5,3,3,0,0,Just_right
+P003,Hoàng Minh Thi,Nữ,19,452,S1_5,Sucrose,5,9,3,3,0,0,Just_right
+P003,Hoàng Minh Thi,Nữ,19,122,S2_7,Sucralose,7,6,4,4,1,1,Too_much
+P003,Hoàng Minh Thi,Nữ,19,299,S1_7,Sucrose,7,8,3,3,0,0,Just_right
+P003,Hoàng Minh Thi,Nữ,19,453,S2_5,Sucralose,5,4,1,1,-2,-2,Not_enough
+P003,Hoàng Minh Thi,Nữ,19,777,S1_12,Sucrose,12,7,4,3,1,0,Too_much
+P003,Hoàng Minh Thi,Nữ,19,575,H2O,Water,0,1,1,1,-2,-2,Not_enough
+P004,Phạm Lê Bảo,Nam,19,563,S2_5,Sucralose,5,7,3,4,0,1,Just_right
+P004,Phạm Lê Bảo,Nam,19,336,S2_7,Sucralose,7,8,4,4,1,1,Too_much
+P004,Phạm Lê Bảo,Nam,19,873,S1_12,Sucrose,12,7,5,5,2,2,Too_much
+P004,Phạm Lê Bảo,Nam,19,257,S2_12,Sucralose,12,8,4,5,1,2,Too_much
+P004,Phạm Lê Bảo,Nam,19,781,S1_7,Sucrose,7,7,5,5,2,2,Too_much
+P004,Phạm Lê Bảo,Nam,19,681,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P004,Phạm Lê Bảo,Nam,19,119,S1_5,Sucrose,5,7,4,4,1,1,Too_much
+P004,Phạm Lê Bảo,Nam,19,452,S1_5,Sucrose,5,8,3,3,0,0,Just_right
+P004,Phạm Lê Bảo,Nam,19,299,S1_7,Sucrose,7,7,5,5,2,2,Too_much
+P004,Phạm Lê Bảo,Nam,19,644,S2_12,Sucralose,12,7,5,4,2,1,Too_much
+P004,Phạm Lê Bảo,Nam,19,777,S1_12,Sucrose,12,6,5,5,2,2,Too_much
+P004,Phạm Lê Bảo,Nam,19,122,S2_7,Sucralose,7,6,5,4,2,1,Too_much
+P004,Phạm Lê Bảo,Nam,19,575,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P004,Phạm Lê Bảo,Nam,19,453,S2_5,Sucralose,5,7,4,3,1,0,Too_much
+P005,Bùi Đào Duy Anh,Nam,23,336,S2_7,Sucralose,7,7,3,4,0,1,Just_right
+P005,Bùi Đào Duy Anh,Nam,23,257,S2_12,Sucralose,12,5,1,1,-2,-2,Not_enough
+P005,Bùi Đào Duy Anh,Nam,23,563,S2_5,Sucralose,5,5,2,2,-1,-1,Not_enough
+P005,Bùi Đào Duy Anh,Nam,23,681,H2O,Water,0,6,1,1,-2,-2,Not_enough
+P005,Bùi Đào Duy Anh,Nam,23,873,S1_12,Sucrose,12,7,3,3,0,0,Just_right
+P005,Bùi Đào Duy Anh,Nam,23,119,S1_5,Sucrose,5,4,2,2,-1,-1,Not_enough
+P005,Bùi Đào Duy Anh,Nam,23,781,S1_7,Sucrose,7,5,2,4,-1,1,Not_enough
+P005,Bùi Đào Duy Anh,Nam,23,299,S1_7,Sucrose,7,4,2,3,-1,0,Not_enough
+P005,Bùi Đào Duy Anh,Nam,23,777,S1_12,Sucrose,12,6,4,3,1,0,Too_much
+P005,Bùi Đào Duy Anh,Nam,23,452,S1_5,Sucrose,5,3,2,2,-1,-1,Not_enough
+P005,Bùi Đào Duy Anh,Nam,23,575,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P005,Bùi Đào Duy Anh,Nam,23,644,S2_12,Sucralose,12,4,2,4,-1,1,Not_enough
+P005,Bùi Đào Duy Anh,Nam,23,453,S2_5,Sucralose,5,3,1,3,-2,0,Not_enough
+P005,Bùi Đào Duy Anh,Nam,23,122,S2_7,Sucralose,7,5,2,4,-1,1,Not_enough
+P006,Phạm Quang Anh,Nam,23,257,S2_12,Sucralose,12,7,3,3,0,0,Just_right
+P006,Phạm Quang Anh,Nam,23,681,H2O,Water,0,6,1,1,-2,-2,Not_enough
+P006,Phạm Quang Anh,Nam,23,336,S2_7,Sucralose,7,7,4,3,1,0,Too_much
+P006,Phạm Quang Anh,Nam,23,119,S1_5,Sucrose,5,5,1,1,-2,-2,Not_enough
+P006,Phạm Quang Anh,Nam,23,563,S2_5,Sucralose,5,5,1,1,-2,-2,Not_enough
+P006,Phạm Quang Anh,Nam,23,781,S1_7,Sucrose,7,6,3,2,0,-1,Just_right
+P006,Phạm Quang Anh,Nam,23,873,S1_12,Sucrose,12,7,3,2,0,-1,Just_right
+P006,Phạm Quang Anh,Nam,23,777,S1_12,Sucrose,12,6,2,1,-1,-2,Not_enough
+P006,Phạm Quang Anh,Nam,23,575,H2O,Water,0,4,1,1,-2,-2,Not_enough
+P006,Phạm Quang Anh,Nam,23,299,S1_7,Sucrose,7,5,1,1,-2,-2,Not_enough
+P006,Phạm Quang Anh,Nam,23,453,S2_5,Sucralose,5,3,1,1,-2,-2,Not_enough
+P006,Phạm Quang Anh,Nam,23,452,S1_5,Sucrose,5,5,2,1,-1,-2,Not_enough
+P006,Phạm Quang Anh,Nam,23,122,S2_7,Sucralose,7,7,4,4,1,1,Too_much
+P006,Phạm Quang Anh,Nam,23,644,S2_12,Sucralose,12,4,1,1,-2,-2,Not_enough
+P020,Nguyễn Hải Tùng,Nam,22,257,S2_12,Sucralose,12,4,4,3,1,0,Too_much
+P020,Nguyễn Hải Tùng,Nam,22,681,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P020,Nguyễn Hải Tùng,Nam,22,336,S2_7,Sucralose,7,5,3,3,0,0,Just_right
+P020,Nguyễn Hải Tùng,Nam,22,119,S1_5,Sucrose,5,5,4,3,1,0,Too_much
+P020,Nguyễn Hải Tùng,Nam,22,563,S2_5,Sucralose,5,6,3,3,0,0,Just_right
+P020,Nguyễn Hải Tùng,Nam,22,781,S1_7,Sucrose,7,4,4,4,1,1,Too_much
+P020,Nguyễn Hải Tùng,Nam,22,873,S1_12,Sucrose,12,3,5,4,2,1,Too_much
+P020,Nguyễn Hải Tùng,Nam,22,777,S1_12,Sucrose,12,2,5,4,2,1,Too_much
+P020,Nguyễn Hải Tùng,Nam,22,575,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P020,Nguyễn Hải Tùng,Nam,22,299,S1_7,Sucrose,7,4,5,4,2,1,Too_much
+P020,Nguyễn Hải Tùng,Nam,22,453,S2_5,Sucralose,5,6,2,2,-1,-1,Not_enough
+P020,Nguyễn Hải Tùng,Nam,22,452,S1_5,Sucrose,5,6,2,2,-1,-1,Not_enough
+P020,Nguyễn Hải Tùng,Nam,22,122,S2_7,Sucralose,7,5,3,3,0,0,Just_right
+P020,Nguyễn Hải Tùng,Nam,22,644,S2_12,Sucralose,12,3,5,5,2,2,Too_much
+P007,Nguyễn Quốc Huy,Nam,22,681,H2O,Water,0,5,2,1,-1,-2,Not_enough
+P007,Nguyễn Quốc Huy,Nam,22,119,S1_5,Sucrose,5,8,3,3,0,0,Just_right
+P007,Nguyễn Quốc Huy,Nam,22,257,S2_12,Sucralose,12,3,5,5,2,2,Too_much
+P007,Nguyễn Quốc Huy,Nam,22,781,S1_7,Sucrose,7,7,3,3,0,0,Just_right
+P007,Nguyễn Quốc Huy,Nam,22,336,S2_7,Sucralose,7,5,3,4,0,1,Just_right
+P007,Nguyễn Quốc Huy,Nam,22,873,S1_12,Sucrose,12,3,5,5,2,2,Too_much
+P007,Nguyễn Quốc Huy,Nam,22,563,S2_5,Sucralose,5,6,1,2,-2,-1,Not_enough
+P007,Nguyễn Quốc Huy,Nam,22,575,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P007,Nguyễn Quốc Huy,Nam,22,453,S2_5,Sucralose,5,7,2,2,-1,-1,Not_enough
+P007,Nguyễn Quốc Huy,Nam,22,777,S1_12,Sucrose,12,2,5,5,2,2,Too_much
+P007,Nguyễn Quốc Huy,Nam,22,122,S2_7,Sucralose,7,5,3,3,0,0,Just_right
+P007,Nguyễn Quốc Huy,Nam,22,452,S1_5,Sucrose,5,5,3,3,0,0,Just_right
+P007,Nguyễn Quốc Huy,Nam,22,299,S1_7,Sucrose,7,6,3,3,0,0,Just_right
+P007,Nguyễn Quốc Huy,Nam,22,644,S2_12,Sucralose,12,2,5,5,2,2,Too_much
+P008,nguyễn thái huy,Nam,18,336,S2_7,Sucralose,7,7,4,3,1,0,Too_much
+P008,nguyễn thái huy,Nam,18,563,S2_5,Sucralose,5,7,3,3,0,0,Just_right
+P008,nguyễn thái huy,Nam,18,257,S2_12,Sucralose,12,6,4,4,1,1,Too_much
+P008,nguyễn thái huy,Nam,18,873,S1_12,Sucrose,12,5,5,5,2,2,Too_much
+P008,nguyễn thái huy,Nam,18,681,H2O,Water,0,4,1,1,-2,-2,Not_enough
+P008,nguyễn thái huy,Nam,18,781,S1_7,Sucrose,7,7,3,3,0,0,Just_right
+P008,nguyễn thái huy,Nam,18,119,S1_5,Sucrose,5,6,3,2,0,-1,Just_right
+P008,nguyễn thái huy,Nam,18,299,S1_7,Sucrose,7,6,3,2,0,-1,Just_right
+P008,nguyễn thái huy,Nam,18,452,S1_5,Sucrose,5,5,2,2,-1,-1,Not_enough
+P008,nguyễn thái huy,Nam,18,777,S1_12,Sucrose,12,6,4,3,1,0,Too_much
+P008,nguyễn thái huy,Nam,18,644,S2_12,Sucralose,12,5,4,4,1,1,Too_much
+P008,nguyễn thái huy,Nam,18,575,H2O,Water,0,3,1,1,-2,-2,Not_enough
+P008,nguyễn thái huy,Nam,18,122,S2_7,Sucralose,7,7,3,3,0,0,Just_right
+P008,nguyễn thái huy,Nam,18,453,S2_5,Sucralose,5,5,2,2,-1,-1,Not_enough
+P009,Đỗ Mạnh Dũng,Nam,26,257,S2_12,Sucralose,12,3,2,1,-1,-2,Not_enough
+P009,Đỗ Mạnh Dũng,Nam,26,336,S2_7,Sucralose,7,3,1,1,-2,-2,Not_enough
+P009,Đỗ Mạnh Dũng,Nam,26,681,H2O,Water,0,1,1,1,-2,-2,Not_enough
+P009,Đỗ Mạnh Dũng,Nam,26,563,S2_5,Sucralose,5,3,2,2,-1,-1,Not_enough
+P009,Đỗ Mạnh Dũng,Nam,26,119,S1_5,Sucrose,5,4,2,3,-1,0,Not_enough
+P009,Đỗ Mạnh Dũng,Nam,26,873,S1_12,Sucrose,12,5,4,4,1,1,Too_much
+P009,Đỗ Mạnh Dũng,Nam,26,781,S1_7,Sucrose,7,4,2,2,-1,-1,Not_enough
+P009,Đỗ Mạnh Dũng,Nam,26,777,S1_12,Sucrose,12,5,3,3,0,0,Just_right
+P009,Đỗ Mạnh Dũng,Nam,26,299,S1_7,Sucrose,7,5,4,4,1,1,Too_much
+P009,Đỗ Mạnh Dũng,Nam,26,575,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P009,Đỗ Mạnh Dũng,Nam,26,452,S1_5,Sucrose,5,6,3,3,0,0,Just_right
+P009,Đỗ Mạnh Dũng,Nam,26,453,S2_5,Sucralose,5,5,2,2,-1,-1,Not_enough
+P009,Đỗ Mạnh Dũng,Nam,26,644,S2_12,Sucralose,12,3,5,5,2,2,Too_much
+P009,Đỗ Mạnh Dũng,Nam,26,122,S2_7,Sucralose,7,6,3,3,0,0,Just_right
+P010,Phạm Huy Hoàng,Nam,20,681,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P010,Phạm Huy Hoàng,Nam,20,257,S2_12,Sucralose,12,8,4,4,1,1,Too_much
+P010,Phạm Huy Hoàng,Nam,20,119,S1_5,Sucrose,5,6,2,2,-1,-1,Not_enough
+P010,Phạm Huy Hoàng,Nam,20,336,S2_7,Sucralose,7,6,2,2,-1,-1,Not_enough
+P010,Phạm Huy Hoàng,Nam,20,781,S1_7,Sucrose,7,6,2,1,-1,-2,Not_enough
+P010,Phạm Huy Hoàng,Nam,20,563,S2_5,Sucralose,5,5,1,1,-2,-2,Not_enough
+P010,Phạm Huy Hoàng,Nam,20,873,S1_12,Sucrose,12,6,2,2,-1,-1,Not_enough
+P010,Phạm Huy Hoàng,Nam,20,575,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P010,Phạm Huy Hoàng,Nam,20,777,S1_12,Sucrose,12,8,4,3,1,0,Too_much
+P010,Phạm Huy Hoàng,Nam,20,453,S2_5,Sucralose,5,5,2,1,-1,-2,Not_enough
+P010,Phạm Huy Hoàng,Nam,20,299,S1_7,Sucrose,7,6,2,2,-1,-1,Not_enough
+P010,Phạm Huy Hoàng,Nam,20,122,S2_7,Sucralose,7,6,2,2,-1,-1,Not_enough
+P010,Phạm Huy Hoàng,Nam,20,452,S1_5,Sucrose,5,6,2,2,-1,-1,Not_enough
+P010,Phạm Huy Hoàng,Nam,20,644,S2_12,Sucralose,12,8,4,4,1,1,Too_much
+P012,Phạm Hà My,Nữ,20,781,S1_7,Sucrose,7,7,2,1,-1,-2,Not_enough
+P012,Phạm Hà My,Nữ,20,119,S1_5,Sucrose,5,8,3,2,0,-1,Just_right
+P012,Phạm Hà My,Nữ,20,873,S1_12,Sucrose,12,4,4,4,1,1,Too_much
+P012,Phạm Hà My,Nữ,20,681,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P012,Phạm Hà My,Nữ,20,563,S2_5,Sucralose,5,6,2,2,-1,-1,Not_enough
+P012,Phạm Hà My,Nữ,20,257,S2_12,Sucralose,12,4,4,4,1,1,Too_much
+P012,Phạm Hà My,Nữ,20,336,S2_7,Sucralose,7,7,3,2,0,-1,Just_right
+P012,Phạm Hà My,Nữ,20,122,S2_7,Sucralose,7,6,2,2,-1,-1,Not_enough
+P012,Phạm Hà My,Nữ,20,453,S2_5,Sucralose,5,5,1,1,-2,-2,Not_enough
+P012,Phạm Hà My,Nữ,20,644,S2_12,Sucralose,12,7,4,5,1,2,Too_much
+P012,Phạm Hà My,Nữ,20,575,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P012,Phạm Hà My,Nữ,20,452,S1_5,Sucrose,5,6,2,2,-1,-1,Not_enough
+P012,Phạm Hà My,Nữ,20,777,S1_12,Sucrose,12,7,4,4,1,1,Too_much
+P012,Phạm Hà My,Nữ,20,299,S1_7,Sucrose,7,9,3,3,0,0,Just_right
+P013,Phạm Thị Khánh Linh,Nữ,20,873,S1_12,Sucrose,12,2,5,5,2,2,Too_much
+P013,Phạm Thị Khánh Linh,Nữ,20,781,S1_7,Sucrose,7,2,5,5,2,2,Too_much
+P013,Phạm Thị Khánh Linh,Nữ,20,563,S2_5,Sucralose,5,3,2,2,-1,-1,Not_enough
+P013,Phạm Thị Khánh Linh,Nữ,20,119,S1_5,Sucrose,5,6,3,3,0,0,Just_right
+P013,Phạm Thị Khánh Linh,Nữ,20,336,S2_7,Sucralose,7,7,3,3,0,0,Just_right
+P013,Phạm Thị Khánh Linh,Nữ,20,681,H2O,Water,0,8,1,1,-2,-2,Not_enough
+P013,Phạm Thị Khánh Linh,Nữ,20,257,S2_12,Sucralose,12,6,4,4,1,1,Too_much
+P013,Phạm Thị Khánh Linh,Nữ,20,644,S2_12,Sucralose,12,7,4,4,1,1,Too_much
+P013,Phạm Thị Khánh Linh,Nữ,20,122,S2_7,Sucralose,7,4,1,1,-2,-2,Not_enough
+P013,Phạm Thị Khánh Linh,Nữ,20,452,S1_5,Sucrose,5,3,1,1,-2,-2,Not_enough
+P013,Phạm Thị Khánh Linh,Nữ,20,453,S2_5,Sucralose,5,5,1,1,-2,-2,Not_enough
+P013,Phạm Thị Khánh Linh,Nữ,20,299,S1_7,Sucrose,7,5,3,3,0,0,Just_right
+P013,Phạm Thị Khánh Linh,Nữ,20,575,H2O,Water,0,8,1,1,-2,-2,Not_enough
+P013,Phạm Thị Khánh Linh,Nữ,20,777,S1_12,Sucrose,12,7,4,4,1,1,Too_much
+P011,Phan Thuỳ Dương,Nữ,19,119,S1_5,Sucrose,5,7,3,2,0,-1,Just_right
+P011,Phan Thuỳ Dương,Nữ,19,681,H2O,Water,0,9,1,1,-2,-2,Not_enough
+P011,Phan Thuỳ Dương,Nữ,19,781,S1_7,Sucrose,7,3,4,4,1,1,Too_much
+P011,Phan Thuỳ Dương,Nữ,19,257,S2_12,Sucralose,12,2,5,5,2,2,Too_much
+P011,Phan Thuỳ Dương,Nữ,19,873,S1_12,Sucrose,12,5,3,5,0,2,Just_right
+P011,Phan Thuỳ Dương,Nữ,19,336,S2_7,Sucralose,7,6,3,3,0,0,Just_right
+P011,Phan Thuỳ Dương,Nữ,19,563,S2_5,Sucralose,5,8,2,2,-1,-1,Not_enough
+P011,Phan Thuỳ Dương,Nữ,19,453,S2_5,Sucralose,5,7,2,3,-1,0,Not_enough
+P011,Phan Thuỳ Dương,Nữ,19,575,H2O,Water,0,9,1,1,-2,-2,Not_enough
+P011,Phan Thuỳ Dương,Nữ,19,122,S2_7,Sucralose,7,7,2,3,-1,0,Not_enough
+P011,Phan Thuỳ Dương,Nữ,19,777,S1_12,Sucrose,12,1,5,5,2,2,Too_much
+P011,Phan Thuỳ Dương,Nữ,19,644,S2_12,Sucralose,12,2,4,5,1,2,Too_much
+P011,Phan Thuỳ Dương,Nữ,19,299,S1_7,Sucrose,7,5,3,4,0,1,Just_right
+P011,Phan Thuỳ Dương,Nữ,19,452,S1_5,Sucrose,5,7,3,3,0,0,Just_right
+P014,Trần Thuỳ Anh,Nữ,22,563,S2_5,Sucralose,5,5,2,2,-1,-1,Not_enough
+P014,Trần Thuỳ Anh,Nữ,22,873,S1_12,Sucrose,12,5,4,4,1,1,Too_much
+P014,Trần Thuỳ Anh,Nữ,22,336,S2_7,Sucralose,7,3,3,3,0,0,Just_right
+P014,Trần Thuỳ Anh,Nữ,22,781,S1_7,Sucrose,7,7,3,3,0,0,Just_right
+P014,Trần Thuỳ Anh,Nữ,22,257,S2_12,Sucralose,12,6,4,4,1,1,Too_much
+P014,Trần Thuỳ Anh,Nữ,22,119,S1_5,Sucrose,5,5,2,2,-1,-1,Not_enough
+P014,Trần Thuỳ Anh,Nữ,22,681,H2O,Water,0,2,1,1,-2,-2,Not_enough
+P014,Trần Thuỳ Anh,Nữ,22,452,S1_5,Sucrose,5,7,3,3,0,0,Just_right
+P014,Trần Thuỳ Anh,Nữ,22,644,S2_12,Sucralose,12,2,5,5,2,2,Too_much
+P014,Trần Thuỳ Anh,Nữ,22,299,S1_7,Sucrose,7,8,3,3,0,0,Just_right
+P014,Trần Thuỳ Anh,Nữ,22,122,S2_7,Sucralose,7,8,4,4,1,1,Too_much
+P014,Trần Thuỳ Anh,Nữ,22,777,S1_12,Sucrose,12,1,5,5,2,2,Too_much
+P014,Trần Thuỳ Anh,Nữ,22,453,S2_5,Sucralose,5,4,2,2,-1,-1,Not_enough
+P014,Trần Thuỳ Anh,Nữ,22,575,H2O,Water,0,2,1,1,-2,-2,Not_enough
+P015,Đỗ Khánh Huyền,Nữ,19,119,S1_5,Sucrose,5,6,4,2,1,-1,Too_much
+P015,Đỗ Khánh Huyền,Nữ,19,781,S1_7,Sucrose,7,7,4,3,1,0,Too_much
+P015,Đỗ Khánh Huyền,Nữ,19,681,H2O,Water,0,1,1,1,-2,-2,Not_enough
+P015,Đỗ Khánh Huyền,Nữ,19,873,S1_12,Sucrose,12,9,5,4,2,1,Too_much
+P015,Đỗ Khánh Huyền,Nữ,19,257,S2_12,Sucralose,12,8,5,4,2,1,Too_much
+P015,Đỗ Khánh Huyền,Nữ,19,563,S2_5,Sucralose,5,3,2,2,-1,-1,Not_enough
+P015,Đỗ Khánh Huyền,Nữ,19,336,S2_7,Sucralose,7,5,3,2,0,-1,Just_right
+P015,Đỗ Khánh Huyền,Nữ,19,453,S2_5,Sucralose,5,3,2,1,-1,-2,Not_enough
+P015,Đỗ Khánh Huyền,Nữ,19,122,S2_7,Sucralose,7,9,5,4,2,1,Too_much
+P015,Đỗ Khánh Huyền,Nữ,19,575,H2O,Water,0,1,1,1,-2,-2,Not_enough
+P015,Đỗ Khánh Huyền,Nữ,19,644,S2_12,Sucralose,12,9,5,5,2,2,Too_much
+P015,Đỗ Khánh Huyền,Nữ,19,777,S1_12,Sucrose,12,9,5,4,2,1,Too_much
+P015,Đỗ Khánh Huyền,Nữ,19,452,S1_5,Sucrose,5,6,3,2,0,-1,Just_right
+P015,Đỗ Khánh Huyền,Nữ,19,299,S1_7,Sucrose,7,7,4,3,1,0,Too_much
+P016,Bùi Duy Việt,Nam,19,781,S1_7,Sucrose,7,6,3,2,0,-1,Just_right
+P016,Bùi Duy Việt,Nam,19,873,S1_12,Sucrose,12,4,2,1,-1,-2,Not_enough
+P016,Bùi Duy Việt,Nam,19,119,S1_5,Sucrose,5,6,4,5,1,2,Too_much
+P016,Bùi Duy Việt,Nam,19,563,S2_5,Sucralose,5,2,1,1,-2,-2,Not_enough
+P016,Bùi Duy Việt,Nam,19,681,H2O,Water,0,2,1,1,-2,-2,Not_enough
+P016,Bùi Duy Việt,Nam,19,336,S2_7,Sucralose,7,7,4,3,1,0,Too_much
+P016,Bùi Duy Việt,Nam,19,257,S2_12,Sucralose,12,3,5,4,2,1,Too_much
+P016,Bùi Duy Việt,Nam,19,122,S2_7,Sucralose,7,5,3,2,0,-1,Just_right
+P016,Bùi Duy Việt,Nam,19,644,S2_12,Sucralose,12,4,5,4,2,1,Too_much
+P016,Bùi Duy Việt,Nam,19,453,S2_5,Sucralose,5,2,2,1,-1,-2,Not_enough
+P016,Bùi Duy Việt,Nam,19,452,S1_5,Sucrose,5,5,3,2,0,-1,Just_right
+P016,Bùi Duy Việt,Nam,19,575,H2O,Water,0,2,1,1,-2,-2,Not_enough
+P016,Bùi Duy Việt,Nam,19,299,S1_7,Sucrose,7,8,4,3,1,0,Too_much
+P016,Bùi Duy Việt,Nam,19,777,S1_12,Sucrose,12,9,4,4,1,1,Too_much
+P017,Phạm Thị Ngọc Khánh,Nữ,19,873,S1_12,Sucrose,12,6,3,3,0,0,Just_right
+P017,Phạm Thị Ngọc Khánh,Nữ,19,563,S2_5,Sucralose,5,5,1,1,-2,-2,Not_enough
+P017,Phạm Thị Ngọc Khánh,Nữ,19,781,S1_7,Sucrose,7,8,3,3,0,0,Just_right
+P017,Phạm Thị Ngọc Khánh,Nữ,19,336,S2_7,Sucralose,7,5,3,3,0,0,Just_right
+P017,Phạm Thị Ngọc Khánh,Nữ,19,119,S1_5,Sucrose,5,5,3,3,0,0,Just_right
+P017,Phạm Thị Ngọc Khánh,Nữ,19,257,S2_12,Sucralose,12,8,3,3,0,0,Just_right
+P017,Phạm Thị Ngọc Khánh,Nữ,19,681,H2O,Water,0,5,3,3,0,0,Just_right
+P017,Phạm Thị Ngọc Khánh,Nữ,19,644,S2_12,Sucralose,12,8,3,3,0,0,Just_right
+P017,Phạm Thị Ngọc Khánh,Nữ,19,452,S1_5,Sucrose,5,5,3,3,0,0,Just_right
+P017,Phạm Thị Ngọc Khánh,Nữ,19,122,S2_7,Sucralose,7,6,1,3,-2,0,Not_enough
+P017,Phạm Thị Ngọc Khánh,Nữ,19,299,S1_7,Sucrose,7,4,3,3,0,0,Just_right
+P017,Phạm Thị Ngọc Khánh,Nữ,19,453,S2_5,Sucralose,5,5,3,3,0,0,Just_right
+P017,Phạm Thị Ngọc Khánh,Nữ,19,777,S1_12,Sucrose,12,9,1,3,-2,0,Not_enough
+P017,Phạm Thị Ngọc Khánh,Nữ,19,575,H2O,Water,0,5,3,3,0,0,Just_right
+P018,Nông Vũ Hà Như,Nữ,22,563,S2_5,Sucralose,5,6,3,3,0,0,Just_right
+P018,Nông Vũ Hà Như,Nữ,22,336,S2_7,Sucralose,7,7,3,3,0,0,Just_right
+P018,Nông Vũ Hà Như,Nữ,22,873,S1_12,Sucrose,12,7,3,3,0,0,Just_right
+P018,Nông Vũ Hà Như,Nữ,22,257,S2_12,Sucralose,12,5,4,4,1,1,Too_much
+P018,Nông Vũ Hà Như,Nữ,22,781,S1_7,Sucrose,7,5,4,4,1,1,Too_much
+P018,Nông Vũ Hà Như,Nữ,22,681,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P018,Nông Vũ Hà Như,Nữ,22,119,S1_5,Sucrose,5,6,3,3,0,0,Just_right
+P018,Nông Vũ Hà Như,Nữ,22,452,S1_5,Sucrose,5,7,3,3,0,0,Just_right
+P018,Nông Vũ Hà Như,Nữ,22,299,S1_7,Sucrose,7,6,3,4,0,1,Just_right
+P018,Nông Vũ Hà Như,Nữ,22,644,S2_12,Sucralose,12,4,4,4,1,1,Too_much
+P018,Nông Vũ Hà Như,Nữ,22,777,S1_12,Sucrose,12,3,4,4,1,1,Too_much
+P018,Nông Vũ Hà Như,Nữ,22,122,S2_7,Sucralose,7,5,3,4,0,1,Just_right
+P018,Nông Vũ Hà Như,Nữ,22,575,H2O,Water,0,7,1,1,-2,-2,Not_enough
+P018,Nông Vũ Hà Như,Nữ,22,453,S2_5,Sucralose,5,7,3,4,0,1,Just_right
+P019,Trần Thị Trâm Anh,Nữ,19,336,S2_7,Sucralose,7,5,3,4,0,1,Just_right
+P019,Trần Thị Trâm Anh,Nữ,19,257,S2_12,Sucralose,12,4,4,5,1,2,Too_much
+P019,Trần Thị Trâm Anh,Nữ,19,563,S2_5,Sucralose,5,8,1,1,-2,-2,Not_enough
+P019,Trần Thị Trâm Anh,Nữ,19,681,H2O,Water,0,9,1,1,-2,-2,Not_enough
+P019,Trần Thị Trâm Anh,Nữ,19,873,S1_12,Sucrose,12,1,5,5,2,2,Too_much
+P019,Trần Thị Trâm Anh,Nữ,19,119,S1_5,Sucrose,5,7,3,3,0,0,Just_right
+P019,Trần Thị Trâm Anh,Nữ,19,781,S1_7,Sucrose,7,5,3,4,0,1,Just_right
+P019,Trần Thị Trâm Anh,Nữ,19,299,S1_7,Sucrose,7,4,4,4,1,1,Too_much
+P019,Trần Thị Trâm Anh,Nữ,19,777,S1_12,Sucrose,12,1,5,5,2,2,Too_much
+P019,Trần Thị Trâm Anh,Nữ,19,452,S1_5,Sucrose,5,7,2,2,-1,-1,Not_enough
+P019,Trần Thị Trâm Anh,Nữ,19,575,H2O,Water,0,9,1,1,-2,-2,Not_enough
+P019,Trần Thị Trâm Anh,Nữ,19,644,S2_12,Sucralose,12,2,5,5,2,2,Too_much
+P019,Trần Thị Trâm Anh,Nữ,19,453,S2_5,Sucralose,5,7,2,2,-1,-1,Not_enough
+P019,Trần Thị Trâm Anh,Nữ,19,122,S2_7,Sucralose,7,7,4,4,1,1,Too_much
+P021,Đỗ Hương Giang,Nữ,18,681,H2O,Water,0,2,1,1,-2,-2,Not_enough
+P021,Đỗ Hương Giang,Nữ,18,119,S1_5,Sucrose,5,2,5,5,2,2,Too_much
+P021,Đỗ Hương Giang,Nữ,18,257,S2_12,Sucralose,12,3,4,4,1,1,Too_much
+P021,Đỗ Hương Giang,Nữ,18,781,S1_7,Sucrose,7,7,3,3,0,0,Just_right
+P021,Đỗ Hương Giang,Nữ,18,336,S2_7,Sucralose,7,7,3,3,0,0,Just_right
+P021,Đỗ Hương Giang,Nữ,18,873,S1_12,Sucrose,12,2,5,5,2,2,Too_much
+P021,Đỗ Hương Giang,Nữ,18,563,S2_5,Sucralose,5,1,1,1,-2,-2,Not_enough
+P021,Đỗ Hương Giang,Nữ,18,575,H2O,Water,0,2,1,1,-2,-2,Not_enough
+P021,Đỗ Hương Giang,Nữ,18,453,S2_5,Sucralose,5,2,3,3,0,0,Just_right
+P021,Đỗ Hương Giang,Nữ,18,777,S1_12,Sucrose,12,2,5,5,2,2,Too_much
+P021,Đỗ Hương Giang,Nữ,18,122,S2_7,Sucralose,7,3,2,2,-1,-1,Not_enough
+P021,Đỗ Hương Giang,Nữ,18,299,S1_7,Sucrose,7,3,4,4,1,1,Too_much
+P021,Đỗ Hương Giang,Nữ,18,644,S2_12,Sucralose,12,2,5,5,2,2,Too_much
+P021,Đỗ Hương Giang,Nữ,18,452,S1_5,Sucrose,5,5,3,3,0,0,Just_right
+P022,Đinh Ngọc Lan,Nữ,19,336,S2_7,Sucralose,7,3,1,1,-2,-2,Not_enough
+P022,Đinh Ngọc Lan,Nữ,19,563,S2_5,Sucralose,5,2,1,1,-2,-2,Not_enough
+P022,Đinh Ngọc Lan,Nữ,19,257,S2_12,Sucralose,12,5,3,3,0,0,Just_right
+P022,Đinh Ngọc Lan,Nữ,19,873,S1_12,Sucrose,12,5,4,3,1,0,Too_much
+P022,Đinh Ngọc Lan,Nữ,19,781,S1_7,Sucrose,7,6,4,3,1,0,Too_much
+P022,Đinh Ngọc Lan,Nữ,19,681,H2O,Water,0,3,1,1,-2,-2,Not_enough
+P022,Đinh Ngọc Lan,Nữ,19,119,S1_5,Sucrose,5,7,3,3,0,0,Just_right
+P022,Đinh Ngọc Lan,Nữ,19,299,S1_7,Sucrose,7,6,3,3,0,0,Just_right
+P022,Đinh Ngọc Lan,Nữ,19,452,S1_5,Sucrose,5,5,4,3,1,0,Too_much
+P022,Đinh Ngọc Lan,Nữ,19,777,S1_12,Sucrose,12,6,4,4,1,1,Too_much
+P022,Đinh Ngọc Lan,Nữ,19,644,S2_12,Sucralose,12,5,5,5,2,2,Too_much
+P022,Đinh Ngọc Lan,Nữ,19,575,H2O,Water,0,2,1,1,-2,-2,Not_enough
+P022,Đinh Ngọc Lan,Nữ,19,122,S2_7,Sucralose,7,4,2,2,-1,-1,Not_enough
+P022,Đinh Ngọc Lan,Nữ,19,453,S2_5,Sucralose,5,3,2,2,-1,-1,Not_enough
+P023,Lê Văn Thái An,Nam,18,257,S2_12,Sucralose,12,6,4,4,1,1,Too_much
+P023,Lê Văn Thái An,Nam,18,336,S2_7,Sucralose,7,5,2,2,-1,-1,Not_enough
+P023,Lê Văn Thái An,Nam,18,681,H2O,Water,0,2,1,1,-2,-2,Not_enough
+P023,Lê Văn Thái An,Nam,18,563,S2_5,Sucralose,5,7,3,3,0,0,Just_right
+P023,Lê Văn Thái An,Nam,18,119,S1_5,Sucrose,5,7,3,2,0,-1,Just_right
+P023,Lê Văn Thái An,Nam,18,873,S1_12,Sucrose,12,2,5,5,2,2,Too_much
+P023,Lê Văn Thái An,Nam,18,781,S1_7,Sucrose,7,4,4,3,1,0,Too_much
+P023,Lê Văn Thái An,Nam,18,777,S1_12,Sucrose,12,2,5,4,2,1,Too_much
+P023,Lê Văn Thái An,Nam,18,299,S1_7,Sucrose,7,2,5,5,2,2,Too_much
+P023,Lê Văn Thái An,Nam,18,575,H2O,Water,0,2,1,1,-2,-2,Not_enough
+P023,Lê Văn Thái An,Nam,18,452,S1_5,Sucrose,5,4,4,3,1,0,Too_much
+P023,Lê Văn Thái An,Nam,18,453,S2_5,Sucralose,5,6,2,1,-1,-2,Not_enough
+P023,Lê Văn Thái An,Nam,18,644,S2_12,Sucralose,12,2,5,5,2,2,Too_much
+P023,Lê Văn Thái An,Nam,18,122,S2_7,Sucralose,7,7,3,3,0,0,Just_right
+P024,Hoàng Việt Anh,Nam,18,681,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P024,Hoàng Việt Anh,Nam,18,257,S2_12,Sucralose,12,7,3,3,0,0,Just_right
+P024,Hoàng Việt Anh,Nam,18,119,S1_5,Sucrose,5,6,2,1,-1,-2,Not_enough
+P024,Hoàng Việt Anh,Nam,18,336,S2_7,Sucralose,7,5,2,3,-1,0,Not_enough
+P024,Hoàng Việt Anh,Nam,18,781,S1_7,Sucrose,7,5,3,2,0,-1,Just_right
+P024,Hoàng Việt Anh,Nam,18,563,S2_5,Sucralose,5,5,2,2,-1,-1,Not_enough
+P024,Hoàng Việt Anh,Nam,18,873,S1_12,Sucrose,12,8,4,3,1,0,Too_much
+P024,Hoàng Việt Anh,Nam,18,575,H2O,Water,0,4,1,1,-2,-2,Not_enough
+P024,Hoàng Việt Anh,Nam,18,777,S1_12,Sucrose,12,7,3,2,0,-1,Just_right
+P024,Hoàng Việt Anh,Nam,18,453,S2_5,Sucralose,5,6,2,1,-1,-2,Not_enough
+P024,Hoàng Việt Anh,Nam,18,299,S1_7,Sucrose,7,6,2,2,-1,-1,Not_enough
+P024,Hoàng Việt Anh,Nam,18,122,S2_7,Sucralose,7,7,2,3,-1,0,Not_enough
+P024,Hoàng Việt Anh,Nam,18,452,S1_5,Sucrose,5,5,3,2,0,-1,Just_right
+P024,Hoàng Việt Anh,Nam,18,644,S2_12,Sucralose,12,8,5,3,2,0,Too_much
+P025,Nguyễn Vũ Hương Ly,Nữ,18,119,S1_5,Sucrose,5,7,3,2,0,-1,Just_right
+P025,Nguyễn Vũ Hương Ly,Nữ,18,681,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P025,Nguyễn Vũ Hương Ly,Nữ,18,781,S1_7,Sucrose,7,8,3,3,0,0,Just_right
+P025,Nguyễn Vũ Hương Ly,Nữ,18,257,S2_12,Sucralose,12,8,3,4,0,1,Just_right
+P025,Nguyễn Vũ Hương Ly,Nữ,18,873,S1_12,Sucrose,12,7,4,3,1,0,Too_much
+P025,Nguyễn Vũ Hương Ly,Nữ,18,336,S2_7,Sucralose,7,6,2,1,-1,-2,Not_enough
+P025,Nguyễn Vũ Hương Ly,Nữ,18,563,S2_5,Sucralose,5,5,1,1,-2,-2,Not_enough
+P025,Nguyễn Vũ Hương Ly,Nữ,18,453,S2_5,Sucralose,5,5,1,1,-2,-2,Not_enough
+P025,Nguyễn Vũ Hương Ly,Nữ,18,575,H2O,Water,0,5,1,1,-2,-2,Not_enough
+P025,Nguyễn Vũ Hương Ly,Nữ,18,122,S2_7,Sucralose,7,7,2,1,-1,-2,Not_enough
+P025,Nguyễn Vũ Hương Ly,Nữ,18,777,S1_12,Sucrose,12,7,4,3,1,0,Too_much
+P025,Nguyễn Vũ Hương Ly,Nữ,18,644,S2_12,Sucralose,12,8,4,4,1,1,Too_much
+P025,Nguyễn Vũ Hương Ly,Nữ,18,299,S1_7,Sucrose,7,7,2,1,-1,-2,Not_enough
+P025,Nguyễn Vũ Hương Ly,Nữ,18,452,S1_5,Sucrose,5,7,2,1,-1,-2,Not_enough

@@ -1,0 +1,6 @@
+# Regenerable epoch cache (rebuild with scripts/run_02_preprocess_epoch.py)
+results/epochs/
+
+# Python
+__pycache__/
+*.py[cod]
