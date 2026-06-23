@@ -118,6 +118,142 @@ def plot_topomap_row(values: List[np.ndarray], titles: List[str], path: str,
     return _save(fig, path)
 
 
+def plot_stat_topomap_grid(value_grid: List[List[np.ndarray]],
+                           mask_grid: Optional[List[List[np.ndarray]]],
+                           row_labels: List[str], col_labels: List[str], path: str,
+                           suptitle: str = '', cmap: str = 'RdBu_r',
+                           cbar_label: str = 't', symmetric: bool = True) -> str:
+    """Grid of statistic topomaps with significant channels highlighted.
+
+    ``value_grid[r][c]`` and ``mask_grid[r][c]`` are channel vectors (len
+    EEG_CHANNELS); mask is a boolean vector (True = significant) or None. Colour
+    scale is shared within each row. White circles mark significant channels.
+    """
+    import mne
+    info = mne_info()
+    nrow, ncol = len(row_labels), len(col_labels)
+    fig, axes = plt.subplots(nrow, ncol, figsize=(2.4 * ncol + 1.0, 2.3 * nrow + 0.8))
+    axes = np.atleast_2d(axes)
+    mp = dict(marker='o', markerfacecolor='w', markeredgecolor='k', markersize=6,
+              linewidth=0)
+    for r in range(nrow):
+        row_vals = [value_grid[r][c] for c in range(ncol)]
+        allv = np.concatenate([m[np.isfinite(m)] for m in row_vals]) \
+            if row_vals else np.array([0.])
+        if symmetric:
+            vmax = np.nanmax(np.abs(allv)) if allv.size else 1.0
+            vlim = (-vmax, vmax)
+        else:
+            vlim = (np.nanmin(allv), np.nanmax(allv)) if allv.size else (0, 1)
+        for c in range(ncol):
+            ax = axes[r][c]
+            mask = mask_grid[r][c] if mask_grid is not None else None
+            im, _ = mne.viz.plot_topomap(
+                row_vals[c], info, axes=ax, show=False, cmap=cmap, vlim=vlim,
+                contours=4, mask=mask, mask_params=mp)
+            if r == 0:
+                ax.set_title(col_labels[c], fontsize=10)
+            if c == 0:
+                ax.text(-0.32, 0.5, row_labels[r], transform=ax.transAxes,
+                        fontsize=11, fontweight='bold', va='center', ha='right',
+                        color=BAND_COLORS.get(row_labels[r], 'k'))
+        sm = plt.cm.ScalarMappable(cmap=cmap,
+                                   norm=plt.Normalize(vmin=vlim[0], vmax=vlim[1]))
+        cb = fig.colorbar(sm, ax=list(axes[r]), fraction=0.012, pad=0.01)
+        cb.set_label(cbar_label, fontsize=7)
+        cb.ax.tick_params(labelsize=6)
+    if suptitle:
+        fig.suptitle(suptitle, fontsize=13, fontweight='bold')
+    fig.subplots_adjust(top=0.90)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    fig.savefig(path, dpi=150, bbox_inches='tight')
+    plt.close(fig)
+    return path
+
+
+def plot_channel_band_heatmap(matrix: np.ndarray, channels: List[str],
+                              bands: List[str], path: str, title: str = '',
+                              cbar_label: str = 't', star_mask: Optional[np.ndarray] = None,
+                              cmap: str = 'RdBu_r') -> str:
+    """Heatmap of a per-channel × band statistic (channels = rows, bands = cols).
+
+    ``star_mask`` (same shape) marks cells to annotate with ``*`` (e.g. FDR-sig).
+    """
+    vmax = np.nanmax(np.abs(matrix)) if np.isfinite(matrix).any() else 1.0
+    fig, ax = plt.subplots(figsize=(1.1 * len(bands) + 3, 0.34 * len(channels) + 1.5))
+    annot = None
+    if star_mask is not None:
+        annot = np.where(star_mask, '*', '')
+    sns.heatmap(matrix, ax=ax, cmap=cmap, center=0, vmin=-vmax, vmax=vmax,
+                xticklabels=bands, yticklabels=channels,
+                annot=annot, fmt='', annot_kws={'color': 'k', 'fontweight': 'bold'},
+                cbar_kws={'label': cbar_label})
+    ax.set_title(title)
+    ax.set_xlabel('Band')
+    ax.set_ylabel('Channel')
+    return _save(fig, path)
+
+
+def plot_subject_spaghetti(per_subj, value: str, path: str, title: str = '',
+                           ylabel: str = '', intensities=(5, 7, 12)) -> str:
+    """Individual dose trajectories: one faint line per subject + bold group mean.
+
+    ``per_subj`` must have columns: subject, intensity, ``value``. Subjects whose
+    slope is positive are drawn in warm, negative in cool, so responder direction
+    is visible at a glance.
+    """
+    import pandas as pd
+    fig, ax = plt.subplots(figsize=(7, 5))
+    for subj, g in per_subj.groupby('subject'):
+        g = g.sort_values('intensity')
+        if g['intensity'].nunique() < 2:
+            continue
+        x = g['intensity'].to_numpy(float)
+        y = g[value].to_numpy(float)
+        slope = np.polyfit(x, y, 1)[0]
+        col = '#d6604d' if slope > 0 else '#4393c3'
+        ax.plot(x, y, color=col, alpha=0.35, lw=1, marker='o', ms=3)
+    grp = per_subj.groupby('intensity')[value].mean().reindex(list(intensities))
+    ax.plot(list(intensities), grp.values, color='k', lw=3, marker='s', ms=7,
+            label='group mean', zorder=5)
+    ax.set_xticks(list(intensities))
+    ax.set_xticklabels(['~5%', '~7.5%', '~12%'])
+    ax.set_xlabel('Perceived sweetness intensity')
+    ax.set_ylabel(ylabel or value)
+    ax.set_title(title)
+    # legend proxies for slope colour
+    from matplotlib.lines import Line2D
+    ax.legend(handles=[
+        Line2D([0], [0], color='k', lw=3, label='group mean'),
+        Line2D([0], [0], color='#d6604d', lw=1.5, label='subject ↑ with dose'),
+        Line2D([0], [0], color='#4393c3', lw=1.5, label='subject ↓ with dose'),
+    ], fontsize=8)
+    return _save(fig, path)
+
+
+def plot_sorted_subject_bar(subjects: List[str], values: List[float], path: str,
+                            title: str = '', ylabel: str = '') -> str:
+    """Per-subject value sorted ascending, red/blue by sign (e.g. dose slope)."""
+    order = np.argsort(np.asarray(values, float))
+    subs = [subjects[i] for i in order]
+    vals = [values[i] for i in order]
+    cols = ['#d6604d' if v > 0 else '#4393c3' for v in vals]
+    fig, ax = plt.subplots(figsize=(max(7, 0.32 * len(subs) + 2), 4.5))
+    ax.bar(range(len(subs)), vals, color=cols, edgecolor='white')
+    ax.axhline(0, color='k', lw=0.8)
+    ax.set_xticks(range(len(subs)))
+    ax.set_xticklabels(subs, rotation=90, fontsize=7)
+    ax.set_ylabel(ylabel)
+    ax.set_title(title)
+    return _save(fig, path)
+
+
+def plot_channel_dose(summary, value_mean: str, value_sem: str, path: str,
+                      title: str = '', ylabel: str = '') -> str:
+    """Dose-response at a single channel: intensity (x) × substance (lines)."""
+    return plot_dose_response(summary, value_mean, value_sem, path, title, ylabel)
+
+
 # ── Bars / boxes / dose-response ─────────────────────────────────────────────
 def plot_condition_box(df, value: str, path: str, title: str = '', ylabel: str = '',
                        conditions: Optional[List[str]] = None) -> str:

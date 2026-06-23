@@ -4,6 +4,8 @@ Behavioral (sensory) data: liking, sweetness-JAR and sweet-aftertaste.
 Reads the curated ``Sheet1`` of ``doc/Đánh giá cảm quan - EEG 31.5.xlsx`` directly
 (openpyxl). Sheet1 holds 25 clean participants (IDs 001–025, duplicates resolved,
 020 present) with 14 sample-blocks per row: (Code, Liking, JAR_ngọt, JAR_hậu_ngọt).
+By default only the 23 participants with EEG data are kept (P013, P018 have sensory
+ratings but no EEG recording), so the behavioral n matches the EEG analyses.
 
 Each blind code maps to a (substance, intensity) via :data:`swt.constants.CODE_TO_LABEL`,
 so behavior can be aggregated per condition and joined to EEG by subject id
@@ -18,8 +20,8 @@ import numpy as np
 import pandas as pd
 
 from .constants import (
-    CODE_TO_LABEL, JAR_CENTER, label_to_intensity, label_to_substance,
-    map_jar_to_group,
+    ALL_SUBJECTS, CODE_TO_LABEL, JAR_CENTER, label_to_intensity,
+    label_to_substance, map_jar_to_group,
 )
 
 _INT_RE = re.compile(r'-?\d+')
@@ -40,12 +42,17 @@ def _eeg_id(raw_id) -> Optional[str]:
 
 
 def load_behavior_long(xlsx_path: str, sheet: str = 'Sheet1',
+                       keep_subjects: Optional[List[str]] = ALL_SUBJECTS,
                        logger: Optional[logging.Logger] = None) -> pd.DataFrame:
     """Return a tidy long-format behavioral table.
 
     One row per (participant × sample) with columns:
     subject, name, sex, age, code, ma_mau, substance, intensity,
     liking, sweetness_jar, aftertaste, jar_dev, after_dev, jar_group.
+
+    Sheet1 holds 25 participants, but only the ``keep_subjects`` (by default the
+    23 with EEG data — :data:`swt.constants.ALL_SUBJECTS`) are retained so the
+    behavioral n matches the EEG analyses. Pass ``keep_subjects=None`` to keep all.
     """
     try:
         df = pd.read_excel(xlsx_path, sheet_name=sheet, dtype=str)
@@ -88,6 +95,13 @@ def load_behavior_long(xlsx_path: str, sheet: str = 'Sheet1',
             })
 
     out = pd.DataFrame(records)
+    if keep_subjects is not None:
+        keep = set(keep_subjects)
+        dropped = sorted(set(out['subject']) - keep)
+        out = out[out['subject'].isin(keep)].reset_index(drop=True)
+        if dropped and logger:
+            logger.info(f"Behavior: dropped {len(dropped)} subjects without EEG "
+                        f"({', '.join(dropped)})")
     if logger:
         logger.info(f"Behavior: {df.shape[0]} participants → {len(out)} sample ratings "
                     f"({out['subject'].nunique()} unique subjects)")

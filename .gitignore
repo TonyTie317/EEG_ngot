@@ -27,3 +27,6 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# Raw sweetness data (716MB, do not commit)
+data/datamoi/
