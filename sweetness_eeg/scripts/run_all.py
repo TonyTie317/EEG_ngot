@@ -25,13 +25,16 @@ STAGES = [
     ('08', 'run_08_ml', 'ML classification'),
     ('09', 'run_09_dl', 'DL classification'),
     ('10', 'run_10_eeg_behavior_corr', 'EEG ↔ behavior correlation'),
+    ('11', 'run_11_channel_dose', 'Per-channel within-substance dose-response'),
+    ('12', 'run_12_individual', 'Individual (per-subject) analysis & insights'),
 ]
 
 REPORT_FILES = {
     '01': '01_behavior.md', '02': '02_preprocess.md', '03': '03_spectral_psd.md',
     '04': '04_temporal_tfr.md', '05': '05_stats.md', '06': '06_erp.md',
     '07': '07_connectivity.md', '08': '08_ml.md', '09': '09_dl.md',
-    '10': '10_eeg_behavior_corr.md',
+    '10': '10_eeg_behavior_corr.md', '11': '11_channel_dose.md',
+    '12': '12_individual.md',
 }
 
 INTRO = """# Neural Signatures of Sweetness Perception — Sucrose vs Sucralose (EEG)

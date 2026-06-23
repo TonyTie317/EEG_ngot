@@ -45,7 +45,7 @@ connectivity, and EEG↔behaviour correlation.
 Liking (9-point hedonic), sweetness Just-About-Right (JAR, 1–5, 3 = just right) and sweet aftertaste (1–5) for sucrose (S1) and sucralose (S2) at three iso-sweet intensities (~5 / 7.5 / 12 % sucrose), plus water.
 
 
-- Participants: **25**, sample ratings: **350**
+- Participants: **23**, sample ratings: **322**
 
 
 ## Condition summary (mean ± SEM)
@@ -53,13 +53,13 @@ Liking (9-point hedonic), sweetness Just-About-Right (JAR, 1–5, 3 = just right
 
 | condition     | substance   |   intensity |   n |   liking_mean |   liking_sem |   sweetness_jar_mean |   sweetness_jar_sem |   aftertaste_mean |   aftertaste_sem |
 |:--------------|:------------|------------:|----:|--------------:|-------------:|---------------------:|--------------------:|------------------:|-----------------:|
-| Sucralose-5   | Sucralose   |           5 |  50 |          5.04 |        0.246 |                 1.92 |               0.106 |              1.88 |            0.13  |
-| Sucralose-7.5 | Sucralose   |           7 |  50 |          5.8  |        0.194 |                 2.84 |               0.135 |              2.84 |            0.135 |
-| Sucralose-12  | Sucralose   |          12 |  50 |          5.1  |        0.312 |                 4    |               0.146 |              3.92 |            0.151 |
-| Sucrose-5     | Sucrose     |           5 |  50 |          5.84 |        0.192 |                 2.76 |               0.12  |              2.42 |            0.134 |
-| Sucrose-7.5   | Sucrose     |           7 |  50 |          5.72 |        0.237 |                 3.26 |               0.13  |              3.1  |            0.146 |
-| Sucrose-12    | Sucrose     |          12 |  50 |          5.04 |        0.357 |                 4.06 |               0.141 |              3.78 |            0.155 |
-| Water         | Water       |           0 |  50 |          4.44 |        0.336 |                 1.1  |               0.059 |              1.08 |            0.056 |
+| Sucralose-5   | Sucralose   |           5 |  46 |         5.022 |        0.259 |                1.891 |               0.109 |             1.826 |            0.129 |
+| Sucralose-7.5 | Sucralose   |           7 |  46 |         5.804 |        0.203 |                2.87  |               0.141 |             2.848 |            0.139 |
+| Sucralose-12  | Sucralose   |          12 |  46 |         5.065 |        0.335 |                4     |               0.158 |             3.913 |            0.164 |
+| Sucrose-5     | Sucrose     |           5 |  46 |         5.87  |        0.198 |                2.783 |               0.124 |             2.413 |            0.141 |
+| Sucrose-7.5   | Sucrose     |           7 |  46 |         5.826 |        0.243 |                3.217 |               0.135 |             3.022 |            0.151 |
+| Sucrose-12    | Sucrose     |          12 |  46 |         5.065 |        0.375 |                4.065 |               0.15  |             3.761 |            0.165 |
+| Water         | Water       |           0 |  46 |         4.217 |        0.342 |                1.109 |               0.064 |             1.087 |            0.061 |
 
 ## Liking, sweetness & aftertaste by condition
 
@@ -119,29 +119,29 @@ The residual = *aftertaste − in-mouth sweetness*. A positive value means sweet
 **liking**
 
 
-|   intensity |   n |      t |     p |   mean_sucrose |   mean_sucralose |   mean_diff |   p_fdr |
-|------------:|----:|-------:|------:|---------------:|-----------------:|------------:|--------:|
-|           5 |  25 |  3.006 | 0.006 |           5.84 |             5.04 |        0.8  |   0.018 |
-|           7 |  25 | -0.249 | 0.805 |           5.72 |             5.8  |       -0.08 |   0.82  |
-|          12 |  25 | -0.23  | 0.82  |           5.04 |             5.1  |       -0.06 |   0.82  |
+|   intensity |   n |     t |     p |   mean_sucrose |   mean_sucralose |   mean_diff |   p_fdr |
+|------------:|----:|------:|------:|---------------:|-----------------:|------------:|--------:|
+|           5 |  23 | 2.953 | 0.007 |          5.87  |            5.022 |       0.848 |   0.022 |
+|           7 |  23 | 0.064 | 0.949 |          5.826 |            5.804 |       0.022 |   1     |
+|          12 |  23 | 0     | 1     |          5.065 |            5.065 |       0     |   1     |
 
 **sweetness_jar**
 
 
 |   intensity |   n |     t |     p |   mean_sucrose |   mean_sucralose |   mean_diff |   p_fdr |
 |------------:|----:|------:|------:|---------------:|-----------------:|------------:|--------:|
-|           5 |  25 | 6.725 | 0     |           2.76 |             1.92 |        0.84 |   0     |
-|           7 |  25 | 2.201 | 0.038 |           3.26 |             2.84 |        0.42 |   0.056 |
-|          12 |  25 | 0.405 | 0.689 |           4.06 |             4    |        0.06 |   0.689 |
+|           5 |  23 | 6.886 | 0     |          2.783 |            1.891 |       0.891 |   0     |
+|           7 |  23 | 1.785 | 0.088 |          3.217 |            2.87  |       0.348 |   0.132 |
+|          12 |  23 | 0.412 | 0.684 |          4.065 |            4     |       0.065 |   0.684 |
 
 **aftertaste**
 
 
 |   intensity |   n |      t |     p |   mean_sucrose |   mean_sucralose |   mean_diff |   p_fdr |
 |------------:|----:|-------:|------:|---------------:|-----------------:|------------:|--------:|
-|           5 |  25 |  3.674 | 0.001 |           2.42 |             1.88 |        0.54 |   0.004 |
-|           7 |  25 |  1.341 | 0.193 |           3.1  |             2.84 |        0.26 |   0.244 |
-|          12 |  25 | -1.193 | 0.244 |           3.78 |             3.92 |       -0.14 |   0.244 |
+|           5 |  23 |  3.839 | 0.001 |          2.413 |            1.826 |       0.587 |   0.003 |
+|           7 |  23 |  0.89  | 0.383 |          3.022 |            2.848 |       0.174 |   0.383 |
+|          12 |  23 | -1.232 | 0.231 |          3.761 |            3.913 |      -0.152 |   0.346 |
 
 ## Two-way repeated-measures ANOVA (substance × intensity)
 
@@ -151,27 +151,27 @@ The residual = *aftertaste − in-mouth sweetness*. A positive value means sweet
 
 | Source                |     SS |   ddof1 |   ddof2 |    MS |     F |   p_unc |   p_GG_corr |   ng2 |   eps |
 |:----------------------|-------:|--------:|--------:|------:|------:|--------:|------------:|------:|------:|
-| substance             |  1.815 |       1 |      24 | 1.815 | 0.939 |   0.342 |       0.342 | 0.005 | 1     |
-| intensity             | 11.923 |       2 |      48 | 5.962 | 1.581 |   0.216 |       0.222 | 0.03  | 0.643 |
-| substance * intensity |  6.31  |       2 |      48 | 3.155 | 5.801 |   0.006 |       0.009 | 0.016 | 0.833 |
+| substance             |  2.899 |       1 |      22 | 2.899 | 1.474 |   0.238 |       0.238 | 0.008 | 1     |
+| intensity             | 12.938 |       2 |      44 | 6.469 | 1.625 |   0.208 |       0.216 | 0.034 | 0.64  |
+| substance * intensity |  5.373 |       2 |      44 | 2.687 | 4.784 |   0.013 |       0.02  | 0.014 | 0.801 |
 
 **sweetness_jar**
 
 
-| Source                |    SS |   ddof1 |   ddof2 |     MS |      F |   p_unc |   p_GG_corr |   ng2 |   eps |
-|:----------------------|------:|--------:|--------:|-------:|-------:|--------:|------------:|------:|------:|
-| substance             |  7.26 |       1 |      24 |  7.26  | 24.633 |   0     |       0     | 0.078 | 1     |
-| intensity             | 72.01 |       2 |      48 | 36.005 | 93.892 |   0     |       0     | 0.457 | 0.931 |
-| substance * intensity |  3.81 |       2 |      48 |  1.905 |  6.053 |   0.005 |       0.006 | 0.043 | 0.929 |
+| Source                |     SS |   ddof1 |   ddof2 |     MS |      F |   p_unc |   p_GG_corr |   ng2 |   eps |
+|:----------------------|-------:|--------:|--------:|-------:|-------:|--------:|------------:|------:|------:|
+| substance             |  6.522 |       1 |      22 |  6.522 | 22.732 |   0     |       0     | 0.074 | 1     |
+| intensity             | 66.743 |       2 |      44 | 33.371 | 87.191 |   0     |       0     | 0.45  | 0.913 |
+| substance * intensity |  4.054 |       2 |      44 |  2.027 |  6.434 |   0.004 |       0.005 | 0.047 | 0.889 |
 
 **aftertaste**
 
 
 | Source                |     SS |   ddof1 |   ddof2 |     MS |      F |   p_unc |   p_GG_corr |   ng2 |   eps |
 |:----------------------|-------:|--------:|--------:|-------:|-------:|--------:|------------:|------:|------:|
-| substance             |  1.815 |       1 |      24 |  1.815 |  5.349 |    0.03 |        0.03 | 0.018 | 1     |
-| intensity             | 72.28  |       2 |      48 | 36.14  | 62.959 |    0    |        0    | 0.418 | 0.848 |
-| substance * intensity |  2.92  |       2 |      48 |  1.46  |  5.098 |    0.01 |        0.01 | 0.028 | 0.986 |
+| substance             |  1.42  |       1 |      22 |  1.42  |  4.466 |   0.046 |       0.046 | 0.015 | 1     |
+| intensity             | 67.895 |       2 |      44 | 33.947 | 58.911 |   0     |       0     | 0.42  | 0.842 |
+| substance * intensity |  3.156 |       2 |      44 |  1.578 |  5.587 |   0.007 |       0.007 | 0.033 | 0.996 |
 
 
 # Stage 02 — Preprocessing & Epoching
@@ -754,6 +754,211 @@ Frontal θ/α and gustatory γ relative power linked to liking, sweetness JAR an
 
 
 
+
+# Stage 11 — Per-channel, within-substance dose-response
+
+
+Unlike Stage 05 (sucrose **vs** sucralose, pooled into Frontal/Gustatory ROIs), this stage analyses **each substance on its own** and resolves the **individual channels** (all 16 electrodes). For every substance × band × channel we test how relative band power changes across the three perceived intensities (~5 / 7.5 / 12 %):
+
+- **rmANOVA** over intensity — omnibus "is there any dose effect?" (F, p).
+- **Per-subject linear slope** of rel-power vs intensity, one-sample t-test vs 0 — the *direction* (positive ⇒ power rises with concentration).
+
+p-values are **FDR-corrected across the 16 channels within each band**. Channels surviving FDR are circled on the topographies / starred in the heatmaps.
+
+
+## Dose slope topographies (direction of the effect)
+
+
+![Per-subject slope t-value of relative band power vs intensity — rows = bands, cols = substance. Red = power increases with concentration, blue = decreases. Circled = FDR p<0.05.](../figures/channel_dose/topomap_dose_slope_grid.png)
+
+*Per-subject slope t-value of relative band power vs intensity — rows = bands, cols = substance. Red = power increases with concentration, blue = decreases. Circled = FDR p<0.05.*
+
+
+## Omnibus dose effect (rmANOVA F)
+
+
+![rmANOVA F-statistic for the intensity main effect per channel (circled = FDR p<0.05).](../figures/channel_dose/topomap_dose_anovaF_grid.png)
+
+*rmANOVA F-statistic for the intensity main effect per channel (circled = FDR p<0.05).*
+
+
+## Channel × band slope heatmaps
+
+
+![Sucrose: dose slope t per channel × band](../figures/channel_dose/heatmap_dose_slope_sucrose.png)
+
+*Sucrose: dose slope t per channel × band*
+
+
+![Sucralose: dose slope t per channel × band](../figures/channel_dose/heatmap_dose_slope_sucralose.png)
+
+*Sucralose: dose slope t per channel × band*
+
+
+## Strongest channel-level dose effects
+
+
+Top channel × band combinations by raw slope p-value (both substances shown for context).
+
+
+| substance   | band   | channel   |   n | F   | p_anova   |   p_anova_fdr |   slope |   t_slope |   p_slope |   p_slope_fdr |
+|:------------|:-------|:----------|----:|:----|:----------|--------------:|--------:|----------:|----------:|--------------:|
+| Sucralose   | theta  | F7        |  23 |     |           |             1 |  -0.001 |    -2.603 |     0.016 |         0.26  |
+| Sucralose   | alpha  | T7        |  23 |     |           |             1 |   0.001 |     2.259 |     0.034 |         0.546 |
+| Sucralose   | theta  | P7        |  23 |     |           |             1 |  -0.001 |    -2.222 |     0.037 |         0.268 |
+| Sucralose   | theta  | F4        |  23 |     |           |             1 |  -0.002 |    -2.051 |     0.052 |         0.268 |
+| Sucralose   | theta  | C3        |  23 |     |           |             1 |  -0.001 |    -1.927 |     0.067 |         0.268 |
+| Sucralose   | beta   | Fp1       |  23 |     |           |             1 |   0.002 |     1.698 |     0.104 |         0.483 |
+| Sucralose   | beta   | Fp2       |  23 |     |           |             1 |   0.002 |     1.65  |     0.113 |         0.483 |
+| Sucralose   | theta  | Fp1       |  23 |     |           |             1 |  -0.001 |    -1.647 |     0.114 |         0.364 |
+
+![F7 theta (Sucralose)](../figures/channel_dose/dose_F7_theta.png)
+
+*F7 theta (Sucralose)*
+
+
+![T7 alpha (Sucralose)](../figures/channel_dose/dose_T7_alpha.png)
+
+*T7 alpha (Sucralose)*
+
+
+![P7 theta (Sucralose)](../figures/channel_dose/dose_P7_theta.png)
+
+*P7 theta (Sucralose)*
+
+
+![F4 theta (Sucralose)](../figures/channel_dose/dose_F4_theta.png)
+
+*F4 theta (Sucralose)*
+
+
+![C3 theta (Sucralose)](../figures/channel_dose/dose_C3_theta.png)
+
+*C3 theta (Sucralose)*
+
+
+![Fp1 beta (Sucralose)](../figures/channel_dose/dose_Fp1_beta.png)
+
+*Fp1 beta (Sucralose)*
+
+
+![Fp2 beta (Sucralose)](../figures/channel_dose/dose_Fp2_beta.png)
+
+*Fp2 beta (Sucralose)*
+
+
+![Fp1 theta (Sucralose)](../figures/channel_dose/dose_Fp1_theta.png)
+
+*Fp1 theta (Sucralose)*
+
+
+## FDR-significant dose channels (summary)
+
+
+*No channel survived FDR correction for a linear dose effect in either substance — dose modulation of band power is weak at the single-channel level (consistent with the weak ROI-level contrasts in Stage 05).*
+
+
+
+
+# Stage 12 — Individual (per-subject) analysis & insights
+
+
+Group means hide individual variability. Here every subject stays visible: individual dose trajectories, the spread of per-subject dose slopes, responder sub-groups, individual substance preference, and whether a person's EEG dose response tracks their own ratings.
+
+
+## Key insights
+
+
+- **23 subjects** analysed individually; each contributes one dose slope per ROI × band × substance.
+
+- **Frontal theta, Sucrose**: 17/23 subjects rise with concentration (6 opposite); mean slope +5.04e-04 (one-sample t=0.91, p=0.371). Direction is *not* consistent across people — the group effect is driven by a subset / cancels out.
+
+- **Frontal theta, Sucralose**: 19/23 subjects fall with concentration (4 opposite); mean slope -8.80e-04 (one-sample t=-2.11, p=0.046). **Consistent across subjects.**
+
+- **Frontal alpha, Sucrose**: 12/23 subjects rise with concentration (11 opposite); mean slope +8.67e-05 (one-sample t=0.19, p=0.850). Direction is *not* consistent across people — the group effect is driven by a subset / cancels out.
+
+- **Frontal alpha, Sucralose**: 13/23 subjects rise with concentration (10 opposite); mean slope +1.79e-04 (one-sample t=0.51, p=0.612). Direction is *not* consistent across people — the group effect is driven by a subset / cancels out.
+
+- **Strongest Frontal-θ Sucralose responders**: P022 (-6.09e-03), P017 (+3.27e-03), P015 (+2.71e-03).
+
+- **Substance preference (Frontal θ)**: 10/23 subjects show higher θ for sucrose, 13 for sucralose — no single substance dominates at the individual level.
+
+- **Individual EEG↔behaviour**: strongest link is frontal_theta_slope vs liking (r=+0.41, p=0.050, n=23) — not significant. Subjects whose frontal θ responds more to dose do tend to differ in their ratings.
+
+
+
+## Individual dose trajectories (frontal θ / α)
+
+
+Each thin line is one subject (red = power rises with dose, blue = falls); the black line is the group mean.
+
+
+![Sucrose — Frontal theta per-subject trajectories](../figures/individual/spag_Frontal_theta_Sucrose.png)
+
+*Sucrose — Frontal theta per-subject trajectories*
+
+
+![Sucralose — Frontal theta per-subject trajectories](../figures/individual/spag_Frontal_theta_Sucralose.png)
+
+*Sucralose — Frontal theta per-subject trajectories*
+
+
+![Sucrose — Frontal alpha per-subject trajectories](../figures/individual/spag_Frontal_alpha_Sucrose.png)
+
+*Sucrose — Frontal alpha per-subject trajectories*
+
+
+![Sucralose — Frontal alpha per-subject trajectories](../figures/individual/spag_Frontal_alpha_Sucralose.png)
+
+*Sucralose — Frontal alpha per-subject trajectories*
+
+
+## Distribution of individual dose slopes
+
+
+![Each dot = one subject. Spread crossing zero ⇒ subjects disagree in direction.](../figures/individual/slope_distribution.png)
+
+*Each dot = one subject. Spread crossing zero ⇒ subjects disagree in direction.*
+
+
+## Responder sub-groups (subject × band slope)
+
+
+![Sucrose: per-subject Frontal dose slope by band](../figures/individual/subject_band_slope_sucrose.png)
+
+*Sucrose: per-subject Frontal dose slope by band*
+
+
+![Sucralose: per-subject Frontal dose slope by band](../figures/individual/subject_band_slope_sucralose.png)
+
+*Sucralose: per-subject Frontal dose slope by band*
+
+
+## Individual substance preference (Frontal θ)
+
+
+![Sucrose − Sucralose frontal θ per subject (sorted)](../figures/individual/frontal_theta_preference.png)
+
+*Sucrose − Sucralose frontal θ per subject (sorted)*
+
+
+## Individual EEG ↔ behaviour
+
+
+| eeg_metric          | behavior      |   n |      r |     p |
+|:--------------------|:--------------|----:|-------:|------:|
+| frontal_theta_slope | liking        |  23 |  0.413 | 0.05  |
+| frontal_theta_slope | sweetness_jar |  23 | -0.122 | 0.58  |
+| frontal_theta_slope | aftertaste    |  23 | -0.088 | 0.689 |
+| frontal_theta_pref  | liking        |  23 |  0.108 | 0.625 |
+| frontal_theta_pref  | sweetness_jar |  23 | -0.247 | 0.256 |
+| frontal_theta_pref  | aftertaste    |  23 | -0.101 | 0.646 |
+
+![Strongest per-subject EEG↔behaviour link](../figures/individual/subject_eeg_behavior_best.png)
+
+*Strongest per-subject EEG↔behaviour link*
+
+
 ---
 
 ## Discussion (auto-generated scaffold)
@@ -793,4 +998,4 @@ sensory trigger (ERP in Stage 06 is exploratory).
 - Stage 07: ok (cached from previous run)
 - Stage 08: ok (cached from previous run)
 - Stage 09: ok (cached from previous run)
-- Stage 10: ok
+- Stage 10: ok (cached from previous run)

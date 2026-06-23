@@ -87,6 +87,94 @@ def paired_substance_contrasts(subj_cond: pd.DataFrame, dv: str
     return out
 
 
+def one_way_rm_anova_intensity(d: pd.DataFrame, dv: str, subject: str = 'subject',
+                               within: str = 'intensity'
+                               ) -> Tuple[float, float, int]:
+    """One-way within-subject ANOVA of ``dv`` over intensity (single substance).
+
+    ``d`` is already filtered to one substance × channel/ROI × band. Collapses to
+    one value per subject × intensity, keeps subjects with all 3 intensities.
+    Returns (F, p, n_subjects); NaN/NaN/n when pingouin missing or < 3 subjects.
+    """
+    g = (d.groupby([subject, within], dropna=False)[dv].mean().reset_index())
+    n_lev = g[within].nunique()
+    complete = g.dropna(subset=[dv]).groupby(subject).size()
+    keep = complete[complete == n_lev].index
+    g = g[g[subject].isin(keep)]
+    n = g[subject].nunique()
+    if n < 3 or n_lev < 2 or not PINGOUIN_AVAILABLE:
+        return np.nan, np.nan, n
+    try:
+        aov = pg.rm_anova(data=g, dv=dv, within=within, subject=subject, detailed=False)
+        row = aov.iloc[0]
+        return float(row['F']), float(row['p-unc']), n
+    except Exception:                                   # noqa: BLE001
+        return np.nan, np.nan, n
+
+
+def dose_slope_test(d: pd.DataFrame, dv: str, subject: str = 'subject',
+                    within: str = 'intensity'
+                    ) -> Tuple[float, float, float, int]:
+    """Per-subject linear slope of ``dv`` across intensity, tested against zero.
+
+    Fits a degree-1 polynomial (dv vs intensity) per subject (intensities used as
+    the numeric x), then a one-sample t-test of the slopes. Captures the *direction*
+    of the dose effect (slope > 0 ⇒ power rises with concentration).
+    Returns (mean_slope, t, p, n_subjects).
+    """
+    g = (d.groupby([subject, within], dropna=False)[dv].mean().reset_index())
+    slopes = []
+    for _s, sg in g.groupby(subject):
+        sg = sg.dropna(subset=[dv])
+        if sg[within].nunique() < 2:
+            continue
+        x = sg[within].to_numpy(float)
+        y = sg[dv].to_numpy(float)
+        slopes.append(np.polyfit(x, y, 1)[0])
+    slopes = np.asarray(slopes, float)
+    n = len(slopes)
+    if n < 3:
+        return (float(np.mean(slopes)) if n else np.nan), np.nan, np.nan, n
+    t, p = sps.ttest_1samp(slopes, 0.0)
+    return float(np.mean(slopes)), float(t), float(p), n
+
+
+def perchannel_dose_effect(bp_long: pd.DataFrame, substance: str,
+                           value: str = 'rel_power',
+                           bands: Optional[List[str]] = None) -> pd.DataFrame:
+    """Within-substance dose effect for every channel × band (single substance).
+
+    For the given substance, tests how band power changes across the three
+    intensities at *each individual channel*: a one-way rmANOVA (omnibus dose
+    effect) plus a per-subject linear slope (directional). p-values are
+    FDR-corrected across channels separately within each band.
+
+    Returns long format: substance, band, channel, n, F, p_anova, p_anova_fdr,
+    slope, t_slope, p_slope, p_slope_fdr.
+    """
+    from .constants import BAND_ORDER, EEG_CHANNELS
+    bands = bands or BAND_ORDER
+    d0 = bp_long[bp_long['substance'] == substance]
+    rows = []
+    for band in bands:
+        for ch in EEG_CHANNELS:
+            d = d0[(d0['band'] == band) & (d0['channel'] == ch)]
+            F, p_anova, n = one_way_rm_anova_intensity(d, value)
+            slope, t_sl, p_sl, n_sl = dose_slope_test(d, value)
+            rows.append({'substance': substance, 'band': band, 'channel': ch,
+                         'n': n_sl or n, 'F': F, 'p_anova': p_anova,
+                         'slope': slope, 't_slope': t_sl, 'p_slope': p_sl})
+    out = pd.DataFrame(rows)
+    # FDR across channels, within each band
+    out['p_anova_fdr'] = np.nan
+    out['p_slope_fdr'] = np.nan
+    for band, idx in out.groupby('band').groups.items():
+        sub = out.loc[idx]
+        out.loc[idx, 'p_anova_fdr'] = fdr(sub['p_anova'].fillna(1.0).values)
+        out.loc[idx, 'p_slope_fdr'] = fdr(sub['p_slope'].fillna(1.0).values)
+    return out
+
+
 def condition_vs_water(subj_cond: pd.DataFrame, dv: str) -> pd.DataFrame:
     """Each sweet condition vs water, paired across subjects, FDR corrected."""
     water = subj_cond[subj_cond['ma_mau'] == 'H2O'].set_index('subject')[dv]
