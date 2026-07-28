@@ -1,0 +1,369 @@
+{
+  "task": "binary",
+  "class_names": {
+    "0": "Khac",
+    "1": "Vua_phai"
+  },
+  "partial_cv": false,
+  "folds_run": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "condition_unit": "subject_id × ma_mau",
+  "experiments": {
+    "code_only": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.6714285714285714,
+        "balanced_accuracy": 0.6557765151515151,
+        "macro_f1": 0.6422222222222222,
+        "per_class_recall": [
+          0.6979166666666666,
+          0.6136363636363636
+        ],
+        "per_class_precision": [
+          0.7976190476190477,
+          0.48214285714285715
+        ],
+        "per_class_f1": [
+          0.7444444444444444,
+          0.54
+        ],
+        "support": [
+          96,
+          44
+        ],
+        "mae": 0.32857142857142857,
+        "quadratic_weighted_kappa": 0.2901234567901234
+      },
+      "confusion": [
+        [
+          67,
+          29
+        ],
+        [
+          17,
+          27
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "face_raw": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.5285714285714286,
+        "balanced_accuracy": 0.44696969696969696,
+        "macro_f1": 0.4461759769839367,
+        "per_class_recall": [
+          0.6666666666666666,
+          0.22727272727272727
+        ],
+        "per_class_precision": [
+          0.6530612244897959,
+          0.23809523809523808
+        ],
+        "per_class_f1": [
+          0.6597938144329897,
+          0.23255813953488372
+        ],
+        "support": [
+          96,
+          44
+        ],
+        "mae": 0.4714285714285714,
+        "quadratic_weighted_kappa": -0.10738255033557054
+      },
+      "confusion": [
+        [
+          64,
+          32
+        ],
+        [
+          34,
+          10
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "face_trial_delta": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.5642857142857143,
+        "balanced_accuracy": 0.48532196969696967,
+        "macro_f1": 0.4847662141779788,
+        "per_class_recall": [
+          0.6979166666666666,
+          0.2727272727272727
+        ],
+        "per_class_precision": [
+          0.6767676767676768,
+          0.2926829268292683
+        ],
+        "per_class_f1": [
+          0.6871794871794872,
+          0.28235294117647053
+        ],
+        "support": [
+          96,
+          44
+        ],
+        "mae": 0.4357142857142857,
+        "quadratic_weighted_kappa": -0.029908345393150126
+      },
+      "confusion": [
+        [
+          67,
+          29
+        ],
+        [
+          32,
+          12
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "face_water_delta": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.6214285714285714,
+        "balanced_accuracy": 0.5516098484848485,
+        "macro_f1": 0.5523378582202112,
+        "per_class_recall": [
+          0.7395833333333334,
+          0.36363636363636365
+        ],
+        "per_class_precision": [
+          0.7171717171717171,
+          0.3902439024390244
+        ],
+        "per_class_f1": [
+          0.7282051282051282,
+          0.3764705882352941
+        ],
+        "support": [
+          96,
+          44
+        ],
+        "mae": 0.37857142857142856,
+        "quadratic_weighted_kappa": 0.1051616015436565
+      },
+      "confusion": [
+        [
+          71,
+          25
+        ],
+        [
+          28,
+          16
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "fusion_raw": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.6285714285714286,
+        "balanced_accuracy": 0.606060606060606,
+        "macro_f1": 0.5955555555555555,
+        "per_class_recall": [
+          0.6666666666666666,
+          0.5454545454545454
+        ],
+        "per_class_precision": [
+          0.7619047619047619,
+          0.42857142857142855
+        ],
+        "per_class_f1": [
+          0.7111111111111111,
+          0.4799999999999999
+        ],
+        "support": [
+          96,
+          44
+        ],
+        "mae": 0.37142857142857144,
+        "quadratic_weighted_kappa": 0.19753086419753085
+      },
+      "confusion": [
+        [
+          64,
+          32
+        ],
+        [
+          20,
+          24
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "fusion_trial_delta": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.5857142857142857,
+        "balanced_accuracy": 0.556344696969697,
+        "macro_f1": 0.5488888888888889,
+        "per_class_recall": [
+          0.6354166666666666,
+          0.4772727272727273
+        ],
+        "per_class_precision": [
+          0.7261904761904762,
+          0.375
+        ],
+        "per_class_f1": [
+          0.6777777777777777,
+          0.42
+        ],
+        "support": [
+          96,
+          44
+        ],
+        "mae": 0.4142857142857143,
+        "quadratic_weighted_kappa": 0.10493827160493818
+      },
+      "confusion": [
+        [
+          61,
+          35
+        ],
+        [
+          23,
+          21
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "fusion_water_delta": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.6285714285714286,
+        "balanced_accuracy": 0.59375,
+        "macro_f1": 0.5878623188405797,
+        "per_class_recall": [
+          0.6875,
+          0.5
+        ],
+        "per_class_precision": [
+          0.75,
+          0.4230769230769231
+        ],
+        "per_class_f1": [
+          0.717391304347826,
+          0.4583333333333333
+        ],
+        "support": [
+          96,
+          44
+        ],
+        "mae": 0.37142857142857144,
+        "quadratic_weighted_kappa": 0.1787003610108303
+      },
+      "confusion": [
+        [
+          66,
+          30
+        ],
+        [
+          22,
+          22
+        ]
+      ],
+      "confusion_plot_written": true
+    }
+  },
+  "best_by_balanced_accuracy": "code_only",
+  "subject_cluster_bootstrap": {
+    "requested_samples": 1000,
+    "accepted_samples": 1000,
+    "cluster": "subject_id",
+    "balanced_accuracy": {
+      "code_only": {
+        "low_2_5": 0.5562485795454546,
+        "median": 0.6564625850340136,
+        "high_97_5": 0.7620497076023391
+      },
+      "face_raw": {
+        "low_2_5": 0.3673247373751707,
+        "median": 0.44635997243392955,
+        "high_97_5": 0.5221915863702691
+      },
+      "face_trial_delta": {
+        "low_2_5": 0.4316751700680272,
+        "median": 0.485443681667938,
+        "high_97_5": 0.5342083333333333
+      },
+      "face_water_delta": {
+        "low_2_5": 0.48022017045454546,
+        "median": 0.5492076675631493,
+        "high_97_5": 0.6228476069098663
+      },
+      "fusion_raw": {
+        "low_2_5": 0.506218335248159,
+        "median": 0.6076565497994069,
+        "high_97_5": 0.7081403726775778
+      },
+      "fusion_trial_delta": {
+        "low_2_5": 0.46623904219257895,
+        "median": 0.555126811594203,
+        "high_97_5": 0.6508327157444005
+      },
+      "fusion_water_delta": {
+        "low_2_5": 0.49876859916301663,
+        "median": 0.594589184528209,
+        "high_97_5": 0.6938076839111713
+      }
+    },
+    "minus_code_only": {
+      "face_raw": {
+        "low_2_5": -0.3468917847905365,
+        "median": -0.20891642233105648,
+        "high_97_5": -0.07145063756202172
+      },
+      "face_trial_delta": {
+        "low_2_5": -0.3005804953560371,
+        "median": -0.1725,
+        "high_97_5": -0.04705041440001205
+      },
+      "face_water_delta": {
+        "low_2_5": -0.21701498458075805,
+        "median": -0.10777777777777775,
+        "high_97_5": 0.006312901436353488
+      },
+      "fusion_raw": {
+        "low_2_5": -0.13519188596491236,
+        "median": -0.05037990673592929,
+        "high_97_5": 0.025000000000000022
+      },
+      "fusion_trial_delta": {
+        "low_2_5": -0.1802980217481639,
+        "median": -0.09869774261570585,
+        "high_97_5": -0.03237188752698125
+      },
+      "fusion_water_delta": {
+        "low_2_5": -0.13506904293863703,
+        "median": -0.06271319863552882,
+        "high_97_5": 0.008527558750773077
+      }
+    }
+  },
+  "water_used_as_unlabelled_reference": true,
+  "record_exclusions": {
+    "manifest_rows": 840,
+    "excluded_water": 0,
+    "excluded_status": 0,
+    "excluded_quality": 0,
+    "excluded_missing_graph": 0,
+    "included": 840
+  },
+  "condition_audit": {
+    "conditions_before_min_repeats": 140,
+    "conditions_included": 140,
+    "conditions_excluded_min_repeats": 0,
+    "repeat_count_distribution": {
+      "5": 140
+    }
+  }
+}

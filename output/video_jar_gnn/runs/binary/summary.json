@@ -1,0 +1,187 @@
+{
+  "task": "binary",
+  "class_names": {
+    "0": "Khac",
+    "1": "Vua_phai"
+  },
+  "include_water": false,
+  "partial_cv": false,
+  "folds_run": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "n_parameters": 61234,
+  "trial_level": {
+    "metrics": {
+      "n": 700,
+      "accuracy": 0.5385714285714286,
+      "balanced_accuracy": 0.4505681818181818,
+      "macro_f1": 0.4484168514628786,
+      "per_class_recall": [
+        0.6875,
+        0.21363636363636362
+      ],
+      "per_class_precision": [
+        0.6560636182902585,
+        0.23857868020304568
+      ],
+      "per_class_f1": [
+        0.671414038657172,
+        0.22541966426858512
+      ],
+      "support": [
+        480,
+        220
+      ]
+    },
+    "confusion": [
+      [
+        330,
+        150
+      ],
+      [
+        173,
+        47
+      ]
+    ]
+  },
+  "subject_condition_level": {
+    "metrics": {
+      "n": 140,
+      "accuracy": 0.5571428571428572,
+      "balanced_accuracy": 0.4431818181818182,
+      "macro_f1": 0.4305956441878772,
+      "per_class_recall": [
+        0.75,
+        0.13636363636363635
+      ],
+      "per_class_precision": [
+        0.6545454545454545,
+        0.2
+      ],
+      "per_class_f1": [
+        0.6990291262135923,
+        0.16216216216216214
+      ],
+      "support": [
+        96,
+        44
+      ]
+    },
+    "confusion": [
+      [
+        72,
+        24
+      ],
+      [
+        38,
+        6
+      ]
+    ]
+  },
+  "baselines": {
+    "trial_majority": {
+      "n": 700,
+      "accuracy": 0.6857142857142857,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.4067796610169492,
+      "per_class_recall": [
+        1.0,
+        0.0
+      ],
+      "per_class_precision": [
+        0.6857142857142857,
+        0.0
+      ],
+      "per_class_f1": [
+        0.8135593220338984,
+        0.0
+      ],
+      "support": [
+        480,
+        220
+      ]
+    },
+    "trial_condition_only": {
+      "n": 700,
+      "accuracy": 0.65,
+      "balanced_accuracy": 0.5293560606060606,
+      "macro_f1": 0.5193048840305514,
+      "per_class_recall": [
+        0.8541666666666666,
+        0.20454545454545456
+      ],
+      "per_class_precision": [
+        0.7008547008547008,
+        0.391304347826087
+      ],
+      "per_class_f1": [
+        0.7699530516431924,
+        0.2686567164179105
+      ],
+      "support": [
+        480,
+        220
+      ]
+    },
+    "condition_majority": {
+      "n": 140,
+      "accuracy": 0.6857142857142857,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.4067796610169492,
+      "per_class_recall": [
+        1.0,
+        0.0
+      ],
+      "per_class_precision": [
+        0.6857142857142857,
+        0.0
+      ],
+      "per_class_f1": [
+        0.8135593220338984,
+        0.0
+      ],
+      "support": [
+        96,
+        44
+      ]
+    },
+    "condition_condition_only": {
+      "n": 140,
+      "accuracy": 0.65,
+      "balanced_accuracy": 0.5293560606060606,
+      "macro_f1": 0.5193048840305514,
+      "per_class_recall": [
+        0.8541666666666666,
+        0.20454545454545456
+      ],
+      "per_class_precision": [
+        0.7008547008547008,
+        0.391304347826087
+      ],
+      "per_class_f1": [
+        0.7699530516431924,
+        0.2686567164179105
+      ],
+      "support": [
+        96,
+        44
+      ]
+    }
+  },
+  "confusion_plots_written": {
+    "trial": true,
+    "condition": true
+  },
+  "exclusions": {
+    "manifest_rows": 840,
+    "excluded_water": 140,
+    "excluded_status": 0,
+    "excluded_quality": 0,
+    "excluded_missing_graph": 0,
+    "included": 700
+  }
+}

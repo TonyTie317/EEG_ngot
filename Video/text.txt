@@ -1,0 +1,522 @@
+Mục tiêu: Cắt mỗi mã vị (ma_mau) một clip từ video gốc dựa trên mốc frame trong CSV.
+Quy trình:
+Đọc tham số, tạo outdir.
+
+
+Lấy fps và duration bằng ffprobe.
+
+
+Nạp & chuẩn hoá CSV (frame_idx, ma_mau), loại ma_mau==0 hoặc rỗng.
+
+
+Gom 1 block/ma_mau: start_frame=min, end_frame=max, sắp xếp theo first_frame.
+
+
+Với mỗi block:
+
+
+Quy đổi start/end frame → giây: t0 = start/fps, t1 = (end+1)/fps, clamp vào [0, duration].
+
+
+Cắt bằng ffmpeg:
+
+
+Chuẩn xác: re-encode H.264 (-c:v libx264 -crf 18) → biên cắt chính xác.
+
+
+Nhanh: --fast-copy dùng -c copy (biên có thể lệch keyframe).
+
+
+Ghi log vào segments.csv (thời gian, frame, fps, file đầu ra).
+
+
+In tổng kết số clip và đường dẫn manifest.
+
+
+Đầu vào: video.mp4, labels.csv (có frame_idx, ma_mau; timestamp tuỳ chọn).
+ Đầu ra: Nhiều *.mp4 (mỗi ma_mau một file) + segments.csv trong outdir.
+
+
+Flow Bước 2 — Từ FaceMesh (468) → AU-level Graph (cho ST-GCN)
+1) Mục tiêu
+Chuẩn hóa khuôn mặt theo ROI, trích xuất đặc trưng theo 15 nút AU theo thời gian, ghép đồ thị AU (adjacency) và lưu thành .npz phục vụ huấn luyện GCN/ST-GCN.
+2) Input / Output
+Input
+
+
+Thư mục video --input (hỗ trợ: .mp4,.mov,.mkv,.avi)
+
+
+Tham số CLI: --target-fps, --resize-wh, --write-preview
+
+
+Output
+
+
+OUT_ROOT/{subject_id}_{ma_mau}.npz gồm:
+
+
+graph_seq: mảng [T, 15, 10]
+
+
+adj: ma trận kề [15, 15]
+
+
+meta: JSON bytes (sid, mã mẫu, fps hiệu dụng, T, N_AU, đường dẫn gốc, tên feature, tên AU)
+
+
+(Tuỳ chọn) OUT_ROOT/{subject_id}_{ma_mau}_preview.mp4 để kiểm tra trực quan
+
+
+2.1 Lược đồ dữ liệu
+AU_NODES (15):
+ ["brow_left_inner","brow_left_outer","brow_right_inner","brow_right_outer","eye_left_upper","eye_left_lower","eye_right_upper","eye_right_lower","nose_bridge","nose_alar_left","nose_alar_right","upper_lip","lower_lip","lip_corners","chin_center"]
+
+
+FEATURE_NAMES (10 mỗi nút):
+ ["cx","cy","cz","vis","area","aspect","dcx","dcy","darea","daspect"]
+
+
+Ý nghĩa: c* là tâm ROI (x,y,z), vis hiện diện, area diện tích lồi ROI, aspect tỉ lệ rộng/cao; d* là vi phân theo thời gian của (x,y,area,aspect).
+3) Tham số & cấu hình chính
+target_fps (mặc định 60): đồng bộ tốc độ khung hình qua frame stride.
+
+
+resize_wh (mặc định 256×256): chuẩn hóa kích thước ROI/bức ảnh.
+
+
+write_preview: ghi video preview (tessellation + bbox) để debug.
+
+
+Theo dõi khuôn mặt
+
+
+min_det_conf, min_track_conf: ngưỡng detect/track của MediaPipe.
+
+
+detect_every_k: chu kỳ gọi lại detector (tiết kiệm thời gian).
+
+
+ema_alpha: hệ số EMA làm mượt bbox.
+
+
+face_pad_ratio: nới rộng bbox → roi vuông ổn định.
+
+
+temporal_stride: bỏ bớt khung thời gian (downsample theo thời gian).
+
+
+4) Quy trình chi tiết
+flowchart TD
+    A[Start] --> B[Load config & scan video folders]
+    B --> C[For each video]
+    C --> D[Open video, read orig_fps & frame_count]
+    D --> E[Compute stride_pre = match_target_fps(orig_fps,target_fps)]
+    E --> F[Loop frames with stride_pre & temporal_stride]
+    F --> G[FaceDetection (every k); EMA bbox; expand_square_bbox(+pad)]
+    G --> H[Crop -> resize -> RGB]
+    H --> I[FaceMesh(468) inference]
+    I --> J{Landmarks found?}
+    J -- Yes --> K[Build dynamic ROIs (brow/eye/ nose/lip/chin)]
+    K --> L[Region pooling: cx,cy,cz,vis, area(ConvexHull), aspect]
+    L --> M[Append to sequence; cache last_valid]
+    J -- No --> N[Use last_valid; set vis=0]
+    M --> O[Preview (optional): draw tessellation & bbox]
+    N --> O
+    O --> P[End video: stack seq -> [T,15,10]]
+    P --> Q[Compute temporal diffs: dcx,dcy,darea,daspect]
+    Q --> R[Build AU adjacency (15x15)]
+    R --> S[Compute eff_fps; write .npz (graph_seq, adj, meta)]
+    S --> T[Write preview.mp4 (optional)]
+    T --> U[Next video / End]
+
+4.1 Quét & chọn video
+Duyệt cả thư mục gốc và các thư mục con để gom danh sách video.
+
+
+Parse {subject_id} từ tên thư mục cha; parse ma_mau bằng regex (\d{2,4}) từ tên file video.
+
+
+4.2 Lấy frame + đồng bộ FPS
+Đọc orig_fps; tính stride_pre = round(orig_fps/target_fps) → lấy khung theo stride này.
+
+
+Áp dụng thêm temporal_stride (bỏ bớt theo thời gian) trong vòng lặp.
+
+
+4.3 Phát hiện & theo dõi khuôn mặt
+Mỗi detect_every_k khung: chạy FaceDetection, trả về bbox.
+
+
+EMA bbox với ema_alpha để mượt; sau đó expand_square_bbox với face_pad_ratio → ROI vuông ổn định, giảm trôi.
+
+
+Cắt ROI, resize về resize_wh, chuyển RGB.
+
+
+4.4 FaceMesh & xây ROI động
+Chạy MediaPipe FaceMesh (tối đa 1 mặt, có refine landmarks).
+
+
+Từ 468 landmark → tạo tập ROI cho 15 AU:
+
+
+Chân mày: tách inner/outer (khoảng cách tới mốc mũi).
+
+
+Mắt: tách upper/lower theo median y.
+
+
+Mũi: “bridge” + chia alar_left/right theo x so với mốc mũi.
+
+
+Môi: upper/lower theo median y; lip_corners cố định [61,291].
+
+
+chin_center: cụm điểm quanh cằm.
+
+
+(Khi không có landmark): dùng last_valid (nội suy tạm), đặt vis=0.
+
+
+4.5 Pooling đặc trưng theo ROI
+Mỗi ROI: tính cx,cy,cz,vis, area (ConvexHull trên (x,y)), aspect (tỉ lệ (x1−x0)/(y1−y0)).
+
+
+Ghép thành mảng [T, 15, 6].
+
+
+4.6 Đặc trưng thời gian
+Với từng nút AU: tính vi phân theo thời gian của (x, y, area, aspect) → ghép thành 4 kênh dcx,dcy,darea,daspect.
+
+
+Kết quả cuối: [T, 15, 10] theo FEATURE_NAMES định nghĩa.
+
+
+4.7 Đồ thị kề AU
+Tạo ma trận adj (15×15): nối các cặp có liên hệ giải phẫu/chức năng (brow↔eye, eye upper↔lower, nose↔lip, lip↔chin…), và điền 1 trên đường chéo.
+
+
+4.8 Lưu kết quả & preview
+Tính eff_fps = orig_fps/stride_pre/temporal_stride (ràng buộc > 0).
+
+
+Lưu .npz với graph_seq, adj, meta (JSON bytes).
+
+
+Nếu --write-preview: kết xuất video overlay lưới tessellation + bbox mượt.
+
+
+5) Kiểm thử & tiêu chí chấp nhận
+Tính đúng kích thước: mở .npz xác nhận graph_seq.shape == (T,15,10), adj.shape == (15,15).
+
+
+Nhất quán FPS: T ≈ eff_fps × thời lượng video (giây).
+
+
+Preview hợp lý: bbox bám mặt, ROI mắt tách upper/lower đúng trực quan; mất tracking → không “nhảy” mạnh.
+
+
+Tính ổn định: khi không có landmark, chuỗi vẫn liên tục nhờ last_valid, vis=0 để mô hình học độ tin cậy.
+
+
+6) Log/giám sát gợi ý
+Với mỗi video in: orig_fps, stride_pre, temporal_stride, eff_fps, T, N=15.
+
+
+Đếm tỷ lệ khung “mất landmark” (vis=0).
+
+
+Cảnh báo nếu: T==0, eff_fps<1, hoặc diện tích ROI ~0 quá nhiều.
+
+
+7) Rủi ro & cách xử lý
+Lệch mốc mũi / ROI sai: dùng mốc mũi ước lượng (centroid) từ tập điểm mũi thay vì hard-code ID.
+
+
+Mắt/môi không tách được: fallback median y; nếu ROI rỗng → nối last_valid.
+
+
+ConvexHull lỗi (ít điểm): bắt ngoại lệ → area=0.
+
+
+FPS metadata sai: nếu orig_fps rỗng → dùng target_fps.
+
+
+8) Câu lệnh chạy mẫu
+python3 step2_facemesh_to_au_graph.py \
+  --input "/data/videos" \
+  --output "/data/out_npz" \
+  --target-fps 60 \
+  --resize-wh 256 256 \
+  --write-preview
+
+
+Bạn cần mình rút gọn thành 1–2 slide (bullet ngắn + sơ đồ) hay format SOP/Checklist để đưa thẳng vào tài liệu dự án không?
+
+
+Flow Bước 3 — Huấn luyện ST-GCN trên AU Graph
+1) Mục tiêu
+Chuẩn hóa độ dài chuỗi AU, dựng Dataset/Dataloader từ .npz (B2), huấn luyện baseline SimpleSTGCN để phân loại 4 vị (ngọt/mặn/chua/đắng), theo dõi loss/accuracy, lưu mô hình & biểu đồ, xuất ma trận nhầm lẫn trên tập validation.
+
+2) Input / Output
+Input
+split.csv (tối thiểu các cột):
+ path (đường dẫn .npz), label (0..3), split (train/val), T (số frame) + (tùy) subject_id, code.
+
+
+Các file .npz từ B2:
+
+
+graph_seq [T, N, F] (N=15 AU, F=10 feature),
+
+
+adj [N, N],
+
+
+meta (bytes JSON).
+
+
+Output (artifact)
+stgcn_baseline.pt (best theo val_acc).
+
+
+stgcn_last.pt (trạng thái sau epoch cuối).
+
+
+train_curves.png (loss & acc theo epoch).
+
+
+conf_matrix.png (ma trận nhầm lẫn, chuẩn hóa theo hàng).
+
+
+
+3) Kiến trúc dữ liệu & chuẩn hóa thời gian
+3.1 Chuẩn hóa thời gian (temporal fixing)
+Hàm _temporal_fix(x_np, t_fix, mode="center") ép mọi mẫu về cùng độ dài T_fix:
+
+
+Nếu T > T_fix: center-crop (cắt giữa).
+
+
+Nếu T < T_fix: pad lặp frame cuối đến đủ T_fix.
+
+
+Nếu t_fix=None: giữ nguyên T.
+
+
+T_fix được chọn là median(T) của tập train (ở train.py).
+
+
+3.2 Dataset → Tensor
+AUSequenceDataset.__getitem__:
+
+
+Load .npz → lấy x=graph_seq [T,N,F], adj [N,N].
+
+
+Gọi _temporal_fix → [T_fix,N,F].
+
+
+Chuyển sang tensor và permute thành [N,T,F] để nạp batch.
+
+
+Trả về (x, adj, y, subject_id, code).
+
+
+Lưu ý: label lấy từ split.csv. subject_id, code dùng để phân tích lỗi sau huấn luyện (không ảnh hưởng forward).
+
+4) Mô hình SimpleSTGCN (baseline)
+4.1 Đầu vào/ra
+Input: x [B, N, T, F_in], adj [B hoặc 1, N, N] (có self-loop & chuẩn hóa ở train loop).
+
+
+Output: logits [B, num_classes].
+
+
+4.2 Các khối chính
+Feature lift: theta1: Linear(F_in → H) + ReLU.
+
+
+Spatial step 1:
+
+
+Lấy mean theo trục T → x_mean [B,N,H].
+
+
+GCN đơn giản: A @ x_mean → broadcasting về [B,N,T,H], rồi residual add.
+
+
+Temporal conv 1:
+
+
+Chạy Conv1d(H,H, k=5, pad=2) độc lập trên từng node (reshape [B*N, H, T]).
+
+
+Spatial step 2: lặp lại bước không gian như (2) + residual.
+
+
+Temporal conv 2: Conv1d(H,H, k=3, pad=1).
+
+
+Global Average Pooling theo N và T → vector [B,H].
+
+
+Classifier: Linear(H → num_classes).
+
+
+Ý tưởng: Trộn tương quan không gian trên đồ thị AU (qua A) với động học theo thời gian (Conv1d) và residual để giữ ổn định gradient.
+
+5) Huấn luyện & đánh giá (train.py)
+5.1 Thiết lập
+Siêu tham số (mặc định):
+ EPOCHS=30, BATCH_SIZE=8, LR=1e-3, WEIGHT_DECAY=1e-4, NUM_WORKERS=4.
+
+
+Số lớp: num_classes=4.
+
+
+Tự động suy N, F từ 1 file train.
+
+
+5.2 Dataloader
+train_loader: shuffle, t_fix=T_fix.
+
+
+val_loader: không shuffle, cùng t_fix.
+
+
+5.3 Chuẩn hóa adjacency trong loop
+Mỗi batch:
+
+
+Mở rộng adj [N,N] → [B,N,N] khi cần.
+
+
+Thêm self-loop: A = adj + I.
+
+
+Chuẩn hóa theo hàng: A = A / row_sum.
+
+
+Công thức: với mỗi node i,
+ A~i,j=Ai,j+δi,j∑k(Ai,k+δi,k)\tilde{A}_{i,j} = \frac{A_{i,j} + \delta_{i,j}}{\sum_k (A_{i,k} + \delta_{i,k})}A~i,j​=∑k​(Ai,k​+δi,k​)Ai,j​+δi,j​​.
+5.4 Train/Val loop
+Loss: CrossEntropy.
+
+
+Optimizer: AdamW.
+
+
+Mỗi epoch in: train loss/acc | val loss/acc.
+
+
+Early snapshot: khi val_acc tăng, lưu stgcn_baseline.pt.
+
+
+Sau cùng lưu stgcn_last.pt.
+
+
+5.5 Logging biểu đồ & confusion matrix
+train_curves.png: 2 subplots (Loss, Accuracy) theo epoch.
+
+
+conf_matrix.png: ma trận nhầm lẫn (mặc định normalized theo hàng, hiển thị %).
+
+
+
+6) Quy trình chi tiết (sơ đồ)
+flowchart TD
+    A[Start B3] --> B[Đọc split.csv (train/val)]
+    B --> C[Tính T_fix = median(T_train)]
+    C --> D[Tạo AUSequenceDataset (ép T về T_fix)]
+    D --> E[DataLoader train/val]
+    E --> F[Suy N,F từ 1 mẫu train]
+    F --> G[Khởi tạo SimpleSTGCN + AdamW + CE Loss]
+    G --> H{Epoch 1..E}
+    H --> I[Train: chuẩn hóa A, forward, CE loss, backward, step]
+    I --> J[Tính train_loss & train_acc]
+    J --> K[Val: chuẩn hóa A, forward, compute val_loss/acc]
+    K --> L[Lưu best stgcn_baseline.pt nếu val_acc tăng]
+    L --> H
+    H --> M[Lưu stgcn_last.pt]
+    M --> N[Vẽ train_curves.png]
+    N --> O[Tính & vẽ conf_matrix.png]
+    O --> P[Done]
+
+
+7) Tiêu chí chấp nhận & kiểm thử nhanh
+Kích thước đúng:
+
+
+Input batch vào model: [B, N=15, T_fix, F=10], A: [B,N,N].
+
+
+Ổn định huấn luyện:
+
+
+Loss train giảm dần; val_acc ≥ random-chance (≥25%).
+
+
+Biểu đồ:
+
+
+train_curves.png sinh ra, có sự khác biệt Train vs Val hợp lý.
+
+
+Confusion matrix:
+
+
+conf_matrix.png đúng kích thước 4×4, nhãn theo LABEL2NAME.
+
+
+
+8) Rủi ro & lưu ý vận hành
+Mất cân bằng lớp: val_acc dao động; cân nhắc class weights cho CE hoặc oversampling trong DataLoader.
+
+
+T_fix quá nhỏ: cắt bỏ động học; quá lớn → pad nhiều, gây nhiễu. Median(T_train) là cân bằng.
+
+
+Chuẩn hóa A: đang row-normalize; nếu đồ thị quá thưa/dày, cân nhắc D^{-1/2}(A+I)D^{-1/2}.
+
+
+Batch-wise adj: nếu về sau mỗi mẫu có adj khác nhau (dynamic graph), code đã hỗ trợ broadcast.
+
+
+Seed: để tái lập kết quả, set seed cho numpy/torch.
+
+
+
+9) Câu lệnh chạy mẫu
+# Yêu cầu: đã có split.csv + .npz (B2)
+python3 train.py
+
+Kỳ vọng log (ví dụ):
+
+
+Using T_fix = 660
+N=15, F=10, Classes=4
+Epoch 01 | train loss 1.30 acc 0.35 | val loss 1.28 acc 0.38
+💾 Saved BEST model (val_acc=0.380) → stgcn_baseline.pt
+...
+📈 Saved training curve → train_curves.png
+📊 Saved confusion matrix → conf_matrix.png
+🎉 Done.
+
+
+10) Gợi ý mở rộng sau baseline (tuỳ chọn nêu trong báo cáo)
+Graph Norm: thử symmetric norm A^=D−1/2(A+I)D−1/2\hat{A} = D^{-1/2}(A+I)D^{-1/2}A^=D−1/2(A+I)D−1/2.
+
+
+Temporal modeling: thêm TCN blocks/Dilated Conv hoặc Bi-GRU sau Conv1d.
+
+
+Attention: GAT/Spatial attention trên AU nodes.
+
+
+Regularization: Dropout sau Conv1d/Linear; early stopping theo val_loss.
+
+
+Subject-wise split: đảm bảo không rò rỉ giữa train/val khi cùng subject.
+

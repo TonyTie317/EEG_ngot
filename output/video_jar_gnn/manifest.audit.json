@@ -1,0 +1,111 @@
+{
+  "n_subjects": 28,
+  "subjects": [
+    "P001",
+    "P002",
+    "P003",
+    "P004",
+    "P005",
+    "P006",
+    "P007",
+    "P008",
+    "P009",
+    "P010",
+    "P011",
+    "P013",
+    "P014",
+    "P015",
+    "P016",
+    "P017",
+    "P018",
+    "P019",
+    "P020",
+    "P021",
+    "P023",
+    "P024",
+    "P025",
+    "P026",
+    "P027",
+    "P028",
+    "P029",
+    "P030"
+  ],
+  "n_trials": 840,
+  "trials_per_subject": {
+    "P001": 30,
+    "P002": 30,
+    "P003": 30,
+    "P004": 30,
+    "P005": 30,
+    "P006": 30,
+    "P007": 30,
+    "P008": 30,
+    "P009": 30,
+    "P010": 30,
+    "P011": 30,
+    "P013": 30,
+    "P014": 30,
+    "P015": 30,
+    "P016": 30,
+    "P017": 30,
+    "P018": 30,
+    "P019": 30,
+    "P020": 30,
+    "P021": 30,
+    "P023": 30,
+    "P024": 30,
+    "P025": 30,
+    "P026": 30,
+    "P027": 30,
+    "P028": 30,
+    "P029": 30,
+    "P030": 30
+  },
+  "trial_jar3_counts": {
+    "Khong_du": 415,
+    "Qua_nhieu": 205,
+    "Vua_phai": 220
+  },
+  "trial_binary_counts": {
+    "Khac": 620,
+    "Vua_phai": 220
+  },
+  "n_subject_condition_pairs": 168,
+  "condition_jar3_counts": {
+    "Khong_du": 83,
+    "Qua_nhieu": 41,
+    "Vua_phai": 44
+  },
+  "condition_binary_counts": {
+    "Khac": 124,
+    "Vua_phai": 44
+  },
+  "non_water": {
+    "n_trials": 700,
+    "trial_jar3_counts": {
+      "Khong_du": 275,
+      "Qua_nhieu": 205,
+      "Vua_phai": 220
+    },
+    "trial_binary_counts": {
+      "Khac": 480,
+      "Vua_phai": 220
+    },
+    "n_subject_condition_pairs": 140,
+    "condition_jar3_counts": {
+      "Khong_du": 55,
+      "Qua_nhieu": 41,
+      "Vua_phai": 44
+    },
+    "condition_binary_counts": {
+      "Khac": 96,
+      "Vua_phai": 44
+    }
+  },
+  "video_lsl_duration_sec": {
+    "min": 9.958320000208914,
+    "mean": 10.313941947625773,
+    "max": 15.860711000859737,
+    "n_over_10_5_sec": 129
+  }
+}

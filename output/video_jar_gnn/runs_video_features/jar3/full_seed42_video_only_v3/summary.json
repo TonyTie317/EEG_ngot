@@ -1,0 +1,550 @@
+{
+  "task": "jar3",
+  "class_names": {
+    "0": "Khong_du",
+    "1": "Vua_phai",
+    "2": "Qua_nhieu"
+  },
+  "input_contract": "video_summary_only",
+  "uses_ma_mau_as_predictor": false,
+  "partial_cv": false,
+  "folds_run": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "condition_unit": "subject_id × ma_mau",
+  "experiments": {
+    "video_raw": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.36428571428571427,
+        "balanced_accuracy": 0.3638211382113821,
+        "macro_f1": 0.36327682918297394,
+        "per_class_recall": [
+          0.36363636363636365,
+          0.38636363636363635,
+          0.34146341463414637
+        ],
+        "per_class_precision": [
+          0.5,
+          0.3148148148148148,
+          0.30434782608695654
+        ],
+        "per_class_f1": [
+          0.4210526315789474,
+          0.34693877551020413,
+          0.3218390804597701
+        ],
+        "support": [
+          55,
+          44,
+          41
+        ],
+        "mae": 0.8142857142857143,
+        "quadratic_weighted_kappa": 0.10480349344978157
+      },
+      "confusion": [
+        [
+          20,
+          20,
+          15
+        ],
+        [
+          10,
+          17,
+          17
+        ],
+        [
+          10,
+          17,
+          14
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "video_trial_delta": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.37142857142857144,
+        "balanced_accuracy": 0.3713968957871397,
+        "macro_f1": 0.36971339410363807,
+        "per_class_recall": [
+          0.36363636363636365,
+          0.4090909090909091,
+          0.34146341463414637
+        ],
+        "per_class_precision": [
+          0.45454545454545453,
+          0.32727272727272727,
+          0.34146341463414637
+        ],
+        "per_class_f1": [
+          0.4040404040404041,
+          0.3636363636363637,
+          0.34146341463414637
+        ],
+        "support": [
+          55,
+          44,
+          41
+        ],
+        "mae": 0.8071428571428572,
+        "quadratic_weighted_kappa": 0.09645232815964522
+      },
+      "confusion": [
+        [
+          20,
+          21,
+          14
+        ],
+        [
+          13,
+          18,
+          13
+        ],
+        [
+          11,
+          16,
+          14
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "video_water_delta": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.42142857142857143,
+        "balanced_accuracy": 0.4067997043606799,
+        "macro_f1": 0.4029126854072825,
+        "per_class_recall": [
+          0.5818181818181818,
+          0.2727272727272727,
+          0.36585365853658536
+        ],
+        "per_class_precision": [
+          0.47058823529411764,
+          0.34285714285714286,
+          0.40540540540540543
+        ],
+        "per_class_f1": [
+          0.5203252032520326,
+          0.30379746835443033,
+          0.3846153846153847
+        ],
+        "support": [
+          55,
+          44,
+          41
+        ],
+        "mae": 0.7642857142857142,
+        "quadratic_weighted_kappa": 0.1837782340862424
+      },
+      "confusion": [
+        [
+          32,
+          12,
+          11
+        ],
+        [
+          21,
+          12,
+          11
+        ],
+        [
+          15,
+          11,
+          15
+        ]
+      ],
+      "confusion_plot_written": true
+    }
+  },
+  "baseline": {
+    "outer_train_majority": {
+      "n": 140,
+      "accuracy": 0.39285714285714285,
+      "balanced_accuracy": 0.3333333333333333,
+      "macro_f1": 0.18803418803418803,
+      "per_class_recall": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "per_class_precision": [
+        0.39285714285714285,
+        0.0,
+        0.0
+      ],
+      "per_class_f1": [
+        0.5641025641025641,
+        0.0,
+        0.0
+      ],
+      "support": [
+        55,
+        44,
+        41
+      ]
+    }
+  },
+  "subject_cluster_bootstrap": {
+    "requested_samples": 1000,
+    "accepted_samples": 1000,
+    "cluster": "subject_id",
+    "model_balanced_accuracy": {
+      "video_raw": {
+        "low_2_5": 0.2742027773151151,
+        "median": 0.36267046974544126,
+        "high_97_5": 0.45120976078118924
+      },
+      "video_trial_delta": {
+        "low_2_5": 0.2969237897981517,
+        "median": 0.3699337015978912,
+        "high_97_5": 0.44707801006581493
+      },
+      "video_water_delta": {
+        "low_2_5": 0.3310061504283843,
+        "median": 0.4072193398844342,
+        "high_97_5": 0.4839318763100543
+      }
+    },
+    "majority_balanced_accuracy": {
+      "video_raw": {
+        "low_2_5": 0.3333333333333333,
+        "median": 0.3333333333333333,
+        "high_97_5": 0.3333333333333333
+      },
+      "video_trial_delta": {
+        "low_2_5": 0.3333333333333333,
+        "median": 0.3333333333333333,
+        "high_97_5": 0.3333333333333333
+      },
+      "video_water_delta": {
+        "low_2_5": 0.3333333333333333,
+        "median": 0.3333333333333333,
+        "high_97_5": 0.3333333333333333
+      }
+    },
+    "model_minus_majority": {
+      "video_raw": {
+        "low_2_5": -0.059130556018218185,
+        "median": 0.029337136412107945,
+        "high_97_5": 0.11787642744785591
+      },
+      "video_trial_delta": {
+        "low_2_5": -0.036409543535181624,
+        "median": 0.03660036826455787,
+        "high_97_5": 0.1137446767324816
+      },
+      "video_water_delta": {
+        "low_2_5": -0.0023271829049490134,
+        "median": 0.07388600655110089,
+        "high_97_5": 0.15059854297672096
+      }
+    }
+  },
+  "feature_selection_stability": {
+    "video_raw": {
+      "n_folds": 5,
+      "selected_counts": [
+        32,
+        32,
+        32,
+        1034,
+        16
+      ],
+      "mean_pairwise_jaccard": 0.09793312581280299,
+      "features_selected_in_every_fold": 1,
+      "top_features_by_fold_frequency": [
+        {
+          "summary_feature_index": 899,
+          "selected_fold_count": 5,
+          "node": "eye_left_lower",
+          "source_feature": "velocity_area",
+          "statistic": "absolute_std",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 499,
+          "selected_fold_count": 4,
+          "node": "nose_alar_left",
+          "source_feature": "cz",
+          "statistic": "std",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 503,
+          "selected_fold_count": 4,
+          "node": "nose_alar_left",
+          "source_feature": "cz",
+          "statistic": "temporal_slope",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 537,
+          "selected_fold_count": 4,
+          "node": "nose_alar_left",
+          "source_feature": "velocity_aspect",
+          "statistic": "quantile_90",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 726,
+          "selected_fold_count": 4,
+          "node": "lip_corners",
+          "source_feature": "aspect",
+          "statistic": "mean",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 728,
+          "selected_fold_count": 4,
+          "node": "lip_corners",
+          "source_feature": "aspect",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 901,
+          "selected_fold_count": 4,
+          "node": "eye_left_lower",
+          "source_feature": "velocity_area",
+          "statistic": "absolute_max",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 968,
+          "selected_fold_count": 4,
+          "node": "nose_alar_left",
+          "source_feature": "velocity_aspect",
+          "statistic": "absolute_quantile_90",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 143,
+          "selected_fold_count": 3,
+          "node": "brow_right_inner",
+          "source_feature": "velocity_x",
+          "statistic": "temporal_slope",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 152,
+          "selected_fold_count": 3,
+          "node": "brow_right_inner",
+          "source_feature": "velocity_area",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        }
+      ]
+    },
+    "video_trial_delta": {
+      "n_folds": 5,
+      "selected_counts": [
+        32,
+        1034,
+        32,
+        1034,
+        64
+      ],
+      "mean_pairwise_jaccard": 0.16982293457498926,
+      "features_selected_in_every_fold": 6,
+      "top_features_by_fold_frequency": [
+        {
+          "summary_feature_index": 537,
+          "selected_fold_count": 5,
+          "node": "nose_alar_left",
+          "source_feature": "velocity_aspect",
+          "statistic": "quantile_90",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 899,
+          "selected_fold_count": 5,
+          "node": "eye_left_lower",
+          "source_feature": "velocity_area",
+          "statistic": "absolute_std",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 900,
+          "selected_fold_count": 5,
+          "node": "eye_left_lower",
+          "source_feature": "velocity_area",
+          "statistic": "absolute_quantile_90",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 901,
+          "selected_fold_count": 5,
+          "node": "eye_left_lower",
+          "source_feature": "velocity_area",
+          "statistic": "absolute_max",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 967,
+          "selected_fold_count": 5,
+          "node": "nose_alar_left",
+          "source_feature": "velocity_aspect",
+          "statistic": "absolute_std",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 968,
+          "selected_fold_count": 5,
+          "node": "nose_alar_left",
+          "source_feature": "velocity_aspect",
+          "statistic": "absolute_quantile_90",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 49,
+          "selected_fold_count": 4,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_aspect",
+          "statistic": "std",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 50,
+          "selected_fold_count": 4,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_aspect",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 143,
+          "selected_fold_count": 4,
+          "node": "brow_right_inner",
+          "source_feature": "velocity_x",
+          "statistic": "temporal_slope",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 152,
+          "selected_fold_count": 4,
+          "node": "brow_right_inner",
+          "source_feature": "velocity_area",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        }
+      ]
+    },
+    "video_water_delta": {
+      "n_folds": 5,
+      "selected_counts": [
+        1034,
+        1034,
+        32,
+        1034,
+        1034
+      ],
+      "mean_pairwise_jaccard": 0.6123791102514506,
+      "features_selected_in_every_fold": 32,
+      "top_features_by_fold_frequency": [
+        {
+          "summary_feature_index": 16,
+          "selected_fold_count": 5,
+          "node": "brow_left_inner",
+          "source_feature": "cz",
+          "statistic": "late_minus_early",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 17,
+          "selected_fold_count": 5,
+          "node": "brow_left_inner",
+          "source_feature": "cz",
+          "statistic": "temporal_slope",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 38,
+          "selected_fold_count": 5,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_y",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 39,
+          "selected_fold_count": 5,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_y",
+          "statistic": "quantile_90",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 58,
+          "selected_fold_count": 5,
+          "node": "brow_left_outer",
+          "source_feature": "cx",
+          "statistic": "late_minus_early",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 59,
+          "selected_fold_count": 5,
+          "node": "brow_left_outer",
+          "source_feature": "cx",
+          "statistic": "temporal_slope",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 154,
+          "selected_fold_count": 5,
+          "node": "brow_right_inner",
+          "source_feature": "velocity_area",
+          "statistic": "late_minus_early",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 170,
+          "selected_fold_count": 5,
+          "node": "brow_right_outer",
+          "source_feature": "cy",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 289,
+          "selected_fold_count": 5,
+          "node": "eye_left_lower",
+          "source_feature": "area",
+          "statistic": "std",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 490,
+          "selected_fold_count": 5,
+          "node": "nose_alar_left",
+          "source_feature": "cx",
+          "statistic": "late_minus_early",
+          "feature_family": "temporal"
+        }
+      ]
+    }
+  },
+  "water_used_as_unlabelled_reference": true,
+  "record_exclusions": {
+    "manifest_rows": 840,
+    "excluded_water": 0,
+    "excluded_status": 0,
+    "excluded_quality": 0,
+    "excluded_missing_graph": 0,
+    "included": 840
+  },
+  "condition_audit": {
+    "conditions_before_min_repeats": 140,
+    "conditions_included": 140,
+    "conditions_excluded_min_repeats": 0,
+    "repeat_count_distribution": {
+      "5": 140
+    }
+  }
+}

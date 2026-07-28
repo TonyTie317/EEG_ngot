@@ -1,0 +1,137 @@
+{
+  "task": "jar3",
+  "class_names": {
+    "0": "Khong_du",
+    "1": "Vua_phai",
+    "2": "Qua_nhieu"
+  },
+  "representation": "expression_v2",
+  "input_contract": "expression_summary_only",
+  "uses_ma_mau_as_predictor": false,
+  "water_605_supervised": false,
+  "partial_cv": false,
+  "folds_run": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "condition_unit": "subject_id × ma_mau",
+  "window_selection_scope": "subject-disjoint inner CV within each outer training fold",
+  "selected_window_fold_counts": {
+    "0:2": 2,
+    "4:6": 1,
+    "6:8": 2
+  },
+  "metrics": {
+    "n": 140,
+    "accuracy": 0.34285714285714286,
+    "balanced_accuracy": 0.3463414634146342,
+    "macro_f1": 0.34027028646769747,
+    "per_class_recall": [
+      0.32727272727272727,
+      0.2727272727272727,
+      0.43902439024390244
+    ],
+    "per_class_precision": [
+      0.375,
+      0.32432432432432434,
+      0.32727272727272727
+    ],
+    "per_class_f1": [
+      0.34951456310679613,
+      0.2962962962962963,
+      0.37499999999999994
+    ],
+    "support": [
+      55,
+      44,
+      41
+    ],
+    "mae": 0.9071428571428571,
+    "quadratic_weighted_kappa": 0.016966067864271572
+  },
+  "confusion": [
+    [
+      18,
+      14,
+      23
+    ],
+    [
+      18,
+      12,
+      14
+    ],
+    [
+      12,
+      11,
+      18
+    ]
+  ],
+  "confusion_plot_written": true,
+  "baseline": {
+    "outer_train_majority": {
+      "n": 140,
+      "accuracy": 0.39285714285714285,
+      "balanced_accuracy": 0.3333333333333333,
+      "macro_f1": 0.18803418803418803,
+      "per_class_recall": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "per_class_precision": [
+        0.39285714285714285,
+        0.0,
+        0.0
+      ],
+      "per_class_f1": [
+        0.5641025641025641,
+        0.0,
+        0.0
+      ],
+      "support": [
+        55,
+        44,
+        41
+      ]
+    }
+  },
+  "subject_cluster_bootstrap": {
+    "requested_samples": 1000,
+    "accepted_samples": 1000,
+    "cluster": "subject_id",
+    "balanced_accuracy": {
+      "low_2_5": 0.2619517554295936,
+      "median": 0.34669310524303687,
+      "high_97_5": 0.42758069075497224
+    },
+    "majority_balanced_accuracy": {
+      "low_2_5": 0.3333333333333333,
+      "median": 0.3333333333333333,
+      "high_97_5": 0.3333333333333333
+    },
+    "model_minus_majority": {
+      "low_2_5": -0.07138157790373975,
+      "median": 0.013359771909703527,
+      "high_97_5": 0.09424735742163895
+    }
+  },
+  "record_exclusions": {
+    "manifest_rows": 840,
+    "excluded_water": 140,
+    "excluded_status": 0,
+    "excluded_quality": 0,
+    "excluded_missing_graph": 0,
+    "included": 700
+  },
+  "condition_audit": {
+    "conditions_before_min_repeats": 140,
+    "conditions_included": 140,
+    "conditions_excluded_min_repeats": 0,
+    "repeat_count_distribution": {
+      "5": 140
+    }
+  }
+}

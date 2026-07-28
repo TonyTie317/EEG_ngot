@@ -1,0 +1,73 @@
+{
+  "manifest": "output/video_jar_gnn/graph_manifest.csv",
+  "task": "jar3",
+  "output_dir": "output/video_jar_gnn/smoke_advanced/jar3_tcn_water_prior",
+  "model": "tcn",
+  "preprocess": "absolute_water_delta",
+  "aggregation": "mean",
+  "fusion": "prior_residual",
+  "objective": "ce",
+  "baseline_frames": 12,
+  "min_repeats": 3,
+  "min_detection_ratio": 0.5,
+  "cv_folds": 5,
+  "inner_folds": 2,
+  "fold_index": 0,
+  "epochs": 1,
+  "min_epochs": 1,
+  "patience": 1,
+  "batch_size": 16,
+  "hidden_channels": 8,
+  "dropout": 0.35,
+  "learning_rate": 0.0007,
+  "weight_decay": 0.002,
+  "temporal_crop_min": 0.9,
+  "noise_std": 0.005,
+  "repeat_dropout": 0.0,
+  "prior_smoothing": 1.0,
+  "bootstrap_samples": 0,
+  "num_workers": 0,
+  "seed": 42,
+  "device": "cpu",
+  "objective_resolved": "ce",
+  "device_resolved": "cpu",
+  "num_classes": 3,
+  "class_names": {
+    "0": "Khong_du",
+    "1": "Vua_phai",
+    "2": "Qua_nhieu"
+  },
+  "n_subjects": 28,
+  "n_records_loaded": 840,
+  "n_supervised_conditions": 140,
+  "graph_shape_T_N_F": [
+    96,
+    15,
+    19
+  ],
+  "code_to_index": {
+    "189": 0,
+    "258": 1,
+    "453": 2,
+    "605": 3,
+    "762": 4,
+    "893": 5
+  },
+  "record_exclusions": {
+    "manifest_rows": 840,
+    "excluded_water": 0,
+    "excluded_status": 0,
+    "excluded_quality": 0,
+    "excluded_missing_graph": 0,
+    "included": 840
+  },
+  "condition_audit": {
+    "conditions_before_min_repeats": 140,
+    "conditions_included": 140,
+    "conditions_excluded_min_repeats": 0,
+    "repeat_count_distribution": {
+      "5": 140
+    }
+  },
+  "water_used_as_unlabelled_reference": true
+}

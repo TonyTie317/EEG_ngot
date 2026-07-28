@@ -1,0 +1,207 @@
+{
+  "task": "jar3",
+  "class_names": {
+    "0": "Khong_du",
+    "1": "Vua_phai",
+    "2": "Qua_nhieu"
+  },
+  "input_contract": "video_summary_only",
+  "uses_ma_mau_as_predictor": false,
+  "partial_cv": true,
+  "folds_run": [
+    1
+  ],
+  "condition_unit": "subject_id × ma_mau",
+  "experiments": {
+    "video_raw": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.36666666666666664,
+        "balanced_accuracy": 0.3611111111111111,
+        "macro_f1": 0.3686868686868687,
+        "per_class_recall": [
+          0.4166666666666667,
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "per_class_precision": [
+          0.625,
+          0.23076923076923078,
+          0.3333333333333333
+        ],
+        "per_class_f1": [
+          0.5,
+          0.27272727272727276,
+          0.3333333333333333
+        ],
+        "support": [
+          12,
+          9,
+          9
+        ],
+        "mae": 0.7333333333333333,
+        "quadratic_weighted_kappa": 0.2670157068062827
+      },
+      "confusion": [
+        [
+          5,
+          4,
+          3
+        ],
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          0,
+          6,
+          3
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "video_trial_delta": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.36666666666666664,
+        "balanced_accuracy": 0.3703703703703704,
+        "macro_f1": 0.35837365249129954,
+        "per_class_recall": [
+          0.3333333333333333,
+          0.2222222222222222,
+          0.5555555555555556
+        ],
+        "per_class_precision": [
+          0.4,
+          0.25,
+          0.4166666666666667
+        ],
+        "per_class_f1": [
+          0.3636363636363636,
+          0.23529411764705882,
+          0.4761904761904762
+        ],
+        "support": [
+          12,
+          9,
+          9
+        ],
+        "mae": 0.8333333333333334,
+        "quadratic_weighted_kappa": 0.14746543778801835
+      },
+      "confusion": [
+        [
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          5
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "video_water_delta": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.4666666666666667,
+        "balanced_accuracy": 0.4537037037037037,
+        "macro_f1": 0.443064182194617,
+        "per_class_recall": [
+          0.5833333333333334,
+          0.5555555555555556,
+          0.2222222222222222
+        ],
+        "per_class_precision": [
+          0.6363636363636364,
+          0.35714285714285715,
+          0.4
+        ],
+        "per_class_f1": [
+          0.6086956521739131,
+          0.43478260869565216,
+          0.2857142857142857
+        ],
+        "support": [
+          12,
+          9,
+          9
+        ],
+        "mae": 0.6333333333333333,
+        "quadratic_weighted_kappa": 0.3016759776536312
+      },
+      "confusion": [
+        [
+          7,
+          3,
+          2
+        ],
+        [
+          3,
+          5,
+          1
+        ],
+        [
+          1,
+          6,
+          2
+        ]
+      ],
+      "confusion_plot_written": true
+    }
+  },
+  "baseline": {
+    "outer_train_majority": {
+      "n": 30,
+      "accuracy": 0.4,
+      "balanced_accuracy": 0.3333333333333333,
+      "macro_f1": 0.1904761904761905,
+      "per_class_recall": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "per_class_precision": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "per_class_f1": [
+        0.5714285714285715,
+        0.0,
+        0.0
+      ],
+      "support": [
+        12,
+        9,
+        9
+      ]
+    }
+  },
+  "subject_cluster_bootstrap": {},
+  "water_used_as_unlabelled_reference": true,
+  "record_exclusions": {
+    "manifest_rows": 840,
+    "excluded_water": 0,
+    "excluded_status": 0,
+    "excluded_quality": 0,
+    "excluded_missing_graph": 0,
+    "included": 840
+  },
+  "condition_audit": {
+    "conditions_before_min_repeats": 140,
+    "conditions_included": 140,
+    "conditions_excluded_min_repeats": 0,
+    "repeat_count_distribution": {
+      "5": 140
+    }
+  }
+}

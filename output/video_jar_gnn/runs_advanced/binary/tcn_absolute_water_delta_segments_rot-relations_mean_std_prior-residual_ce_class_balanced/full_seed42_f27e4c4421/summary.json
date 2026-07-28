@@ -1,0 +1,144 @@
+{
+  "task": "binary",
+  "class_names": {
+    "0": "Khac",
+    "1": "Vua_phai"
+  },
+  "model": "tcn",
+  "preprocess": "absolute_water_delta",
+  "canonical_rotation": true,
+  "relational_features": true,
+  "temporal_pooling": "segments",
+  "aggregation": "mean_std",
+  "fusion": "prior_residual",
+  "objective": "ce",
+  "prior_mode": "class_balanced",
+  "partial_cv": false,
+  "folds_run": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "n_parameters": 35553,
+  "condition_level": {
+    "metrics": {
+      "n": 140,
+      "accuracy": 0.6285714285714286,
+      "balanced_accuracy": 0.6306818181818181,
+      "macro_f1": 0.6080964685615848,
+      "per_class_recall": [
+        0.625,
+        0.6363636363636364
+      ],
+      "per_class_precision": [
+        0.7894736842105263,
+        0.4375
+      ],
+      "per_class_f1": [
+        0.6976744186046512,
+        0.5185185185185185
+      ],
+      "support": [
+        96,
+        44
+      ],
+      "mae": 0.37142857142857144,
+      "quadratic_weighted_kappa": 0.23271500843170323
+    },
+    "confusion": [
+      [
+        60,
+        36
+      ],
+      [
+        16,
+        28
+      ]
+    ]
+  },
+  "baselines": {
+    "majority": {
+      "n": 140,
+      "accuracy": 0.6857142857142857,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.4067796610169492,
+      "per_class_recall": [
+        1.0,
+        0.0
+      ],
+      "per_class_precision": [
+        0.6857142857142857,
+        0.0
+      ],
+      "per_class_f1": [
+        0.8135593220338984,
+        0.0
+      ],
+      "support": [
+        96,
+        44
+      ]
+    },
+    "code_prior": {
+      "n": 140,
+      "accuracy": 0.6142857142857143,
+      "balanced_accuracy": 0.6264204545454546,
+      "macro_f1": 0.5982142857142858,
+      "per_class_recall": [
+        0.59375,
+        0.6590909090909091
+      ],
+      "per_class_precision": [
+        0.7916666666666666,
+        0.4264705882352941
+      ],
+      "per_class_f1": [
+        0.6785714285714286,
+        0.5178571428571429
+      ],
+      "support": [
+        96,
+        44
+      ]
+    }
+  },
+  "subject_cluster_bootstrap": {
+    "n_bootstrap": 1000,
+    "cluster": "subject_id",
+    "model_balanced_accuracy": {
+      "low_2_5": 0.5249507491675915,
+      "median": 0.6336428140096618,
+      "high_97_5": 0.7363011695906433
+    },
+    "code_prior_balanced_accuracy": {
+      "low_2_5": 0.5278616271069831,
+      "median": 0.6307181184331906,
+      "high_97_5": 0.7213348477614315
+    },
+    "model_minus_code_prior": {
+      "low_2_5": -0.059346059045960534,
+      "median": 0.005043940795559698,
+      "high_97_5": 0.07096914106511247
+    }
+  },
+  "condition_audit": {
+    "conditions_before_min_repeats": 140,
+    "conditions_included": 140,
+    "conditions_excluded_min_repeats": 0,
+    "repeat_count_distribution": {
+      "5": 140
+    }
+  },
+  "neutral_quality_audit": {},
+  "record_exclusions": {
+    "manifest_rows": 840,
+    "excluded_water": 0,
+    "excluded_status": 0,
+    "excluded_quality": 0,
+    "excluded_missing_graph": 0,
+    "included": 840
+  },
+  "confusion_plot_written": true
+}

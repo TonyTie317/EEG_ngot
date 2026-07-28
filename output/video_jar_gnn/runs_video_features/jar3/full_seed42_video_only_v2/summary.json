@@ -1,0 +1,550 @@
+{
+  "task": "jar3",
+  "class_names": {
+    "0": "Khong_du",
+    "1": "Vua_phai",
+    "2": "Qua_nhieu"
+  },
+  "input_contract": "video_summary_only",
+  "uses_ma_mau_as_predictor": false,
+  "partial_cv": false,
+  "folds_run": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "condition_unit": "subject_id × ma_mau",
+  "experiments": {
+    "video_raw": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.36428571428571427,
+        "balanced_accuracy": 0.357760532150776,
+        "macro_f1": 0.35782148033384975,
+        "per_class_recall": [
+          0.43636363636363634,
+          0.29545454545454547,
+          0.34146341463414637
+        ],
+        "per_class_precision": [
+          0.46153846153846156,
+          0.29545454545454547,
+          0.3181818181818182
+        ],
+        "per_class_f1": [
+          0.4485981308411215,
+          0.29545454545454547,
+          0.32941176470588235
+        ],
+        "support": [
+          55,
+          44,
+          41
+        ],
+        "mae": 0.8285714285714286,
+        "quadratic_weighted_kappa": 0.10714285714285698
+      },
+      "confusion": [
+        [
+          24,
+          17,
+          14
+        ],
+        [
+          15,
+          13,
+          16
+        ],
+        [
+          13,
+          14,
+          14
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "video_trial_delta": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.39285714285714285,
+        "balanced_accuracy": 0.3824094604582409,
+        "macro_f1": 0.3828434723171565,
+        "per_class_recall": [
+          0.4909090909090909,
+          0.36363636363636365,
+          0.2926829268292683
+        ],
+        "per_class_precision": [
+          0.5094339622641509,
+          0.3137254901960784,
+          0.3333333333333333
+        ],
+        "per_class_f1": [
+          0.5,
+          0.3368421052631579,
+          0.3116883116883117
+        ],
+        "support": [
+          55,
+          44,
+          41
+        ],
+        "mae": 0.7642857142857142,
+        "quadratic_weighted_kappa": 0.16850220264317173
+      },
+      "confusion": [
+        [
+          27,
+          16,
+          12
+        ],
+        [
+          16,
+          16,
+          12
+        ],
+        [
+          10,
+          19,
+          12
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "video_water_delta": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.38571428571428573,
+        "balanced_accuracy": 0.37124907612712493,
+        "macro_f1": 0.36902356902356903,
+        "per_class_recall": [
+          0.5272727272727272,
+          0.3181818181818182,
+          0.2682926829268293
+        ],
+        "per_class_precision": [
+          0.4461538461538462,
+          0.3181818181818182,
+          0.3548387096774194
+        ],
+        "per_class_f1": [
+          0.48333333333333334,
+          0.3181818181818182,
+          0.3055555555555556
+        ],
+        "support": [
+          55,
+          44,
+          41
+        ],
+        "mae": 0.8,
+        "quadratic_weighted_kappa": 0.11447084233261329
+      },
+      "confusion": [
+        [
+          29,
+          16,
+          10
+        ],
+        [
+          20,
+          14,
+          10
+        ],
+        [
+          16,
+          14,
+          11
+        ]
+      ],
+      "confusion_plot_written": true
+    }
+  },
+  "baseline": {
+    "outer_train_majority": {
+      "n": 140,
+      "accuracy": 0.39285714285714285,
+      "balanced_accuracy": 0.3333333333333333,
+      "macro_f1": 0.18803418803418803,
+      "per_class_recall": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "per_class_precision": [
+        0.39285714285714285,
+        0.0,
+        0.0
+      ],
+      "per_class_f1": [
+        0.5641025641025641,
+        0.0,
+        0.0
+      ],
+      "support": [
+        55,
+        44,
+        41
+      ]
+    }
+  },
+  "subject_cluster_bootstrap": {
+    "requested_samples": 1000,
+    "accepted_samples": 1000,
+    "cluster": "subject_id",
+    "model_balanced_accuracy": {
+      "video_raw": {
+        "low_2_5": 0.2714170607267297,
+        "median": 0.3560847264364458,
+        "high_97_5": 0.44881214650611206
+      },
+      "video_trial_delta": {
+        "low_2_5": 0.30517418243214584,
+        "median": 0.3805550601907363,
+        "high_97_5": 0.4600167252308116
+      },
+      "video_water_delta": {
+        "low_2_5": 0.30723389414841407,
+        "median": 0.37260352597232027,
+        "high_97_5": 0.44053245369967825
+      }
+    },
+    "majority_balanced_accuracy": {
+      "video_raw": {
+        "low_2_5": 0.3333333333333333,
+        "median": 0.3333333333333333,
+        "high_97_5": 0.3333333333333333
+      },
+      "video_trial_delta": {
+        "low_2_5": 0.3333333333333333,
+        "median": 0.3333333333333333,
+        "high_97_5": 0.3333333333333333
+      },
+      "video_water_delta": {
+        "low_2_5": 0.3333333333333333,
+        "median": 0.3333333333333333,
+        "high_97_5": 0.3333333333333333
+      }
+    },
+    "model_minus_majority": {
+      "video_raw": {
+        "low_2_5": -0.06191627260660359,
+        "median": 0.02275139310311247,
+        "high_97_5": 0.11547881317277872
+      },
+      "video_trial_delta": {
+        "low_2_5": -0.028159150901187494,
+        "median": 0.047221726857403,
+        "high_97_5": 0.12668339189747826
+      },
+      "video_water_delta": {
+        "low_2_5": -0.026099439184919235,
+        "median": 0.039270192638986956,
+        "high_97_5": 0.10719912036634491
+      }
+    }
+  },
+  "feature_selection_stability": {
+    "video_raw": {
+      "n_folds": 5,
+      "selected_counts": [
+        32,
+        32,
+        32,
+        64,
+        16
+      ],
+      "mean_pairwise_jaccard": 0.18134356399978852,
+      "features_selected_in_every_fold": 1,
+      "top_features_by_fold_frequency": [
+        {
+          "summary_feature_index": 899,
+          "selected_fold_count": 5,
+          "node": "eye_left_lower",
+          "source_feature": "velocity_area",
+          "statistic": "absolute_std",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 499,
+          "selected_fold_count": 4,
+          "node": "nose_alar_left",
+          "source_feature": "cz",
+          "statistic": "std",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 503,
+          "selected_fold_count": 4,
+          "node": "nose_alar_left",
+          "source_feature": "cz",
+          "statistic": "temporal_slope",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 537,
+          "selected_fold_count": 4,
+          "node": "nose_alar_left",
+          "source_feature": "velocity_aspect",
+          "statistic": "quantile_90",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 726,
+          "selected_fold_count": 4,
+          "node": "lip_corners",
+          "source_feature": "aspect",
+          "statistic": "mean",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 728,
+          "selected_fold_count": 4,
+          "node": "lip_corners",
+          "source_feature": "aspect",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 901,
+          "selected_fold_count": 4,
+          "node": "eye_left_lower",
+          "source_feature": "velocity_area",
+          "statistic": "absolute_max",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 968,
+          "selected_fold_count": 4,
+          "node": "nose_alar_left",
+          "source_feature": "velocity_aspect",
+          "statistic": "absolute_quantile_90",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 143,
+          "selected_fold_count": 3,
+          "node": "brow_right_inner",
+          "source_feature": "velocity_x",
+          "statistic": "temporal_slope",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 217,
+          "selected_fold_count": 3,
+          "node": "eye_left_upper",
+          "source_feature": "cx",
+          "statistic": "std",
+          "feature_family": "temporal"
+        }
+      ]
+    },
+    "video_trial_delta": {
+      "n_folds": 5,
+      "selected_counts": [
+        32,
+        32,
+        32,
+        16,
+        64
+      ],
+      "mean_pairwise_jaccard": 0.16236352484256603,
+      "features_selected_in_every_fold": 2,
+      "top_features_by_fold_frequency": [
+        {
+          "summary_feature_index": 537,
+          "selected_fold_count": 5,
+          "node": "nose_alar_left",
+          "source_feature": "velocity_aspect",
+          "statistic": "quantile_90",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 899,
+          "selected_fold_count": 5,
+          "node": "eye_left_lower",
+          "source_feature": "velocity_area",
+          "statistic": "absolute_std",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 499,
+          "selected_fold_count": 4,
+          "node": "nose_alar_left",
+          "source_feature": "cz",
+          "statistic": "std",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 502,
+          "selected_fold_count": 4,
+          "node": "nose_alar_left",
+          "source_feature": "cz",
+          "statistic": "late_minus_early",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 503,
+          "selected_fold_count": 4,
+          "node": "nose_alar_left",
+          "source_feature": "cz",
+          "statistic": "temporal_slope",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 900,
+          "selected_fold_count": 4,
+          "node": "eye_left_lower",
+          "source_feature": "velocity_area",
+          "statistic": "absolute_quantile_90",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 901,
+          "selected_fold_count": 4,
+          "node": "eye_left_lower",
+          "source_feature": "velocity_area",
+          "statistic": "absolute_max",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 968,
+          "selected_fold_count": 4,
+          "node": "nose_alar_left",
+          "source_feature": "velocity_aspect",
+          "statistic": "absolute_quantile_90",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 313,
+          "selected_fold_count": 3,
+          "node": "eye_left_lower",
+          "source_feature": "velocity_area",
+          "statistic": "std",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 445,
+          "selected_fold_count": 3,
+          "node": "nose_bridge",
+          "source_feature": "cz",
+          "statistic": "std",
+          "feature_family": "temporal"
+        }
+      ]
+    },
+    "video_water_delta": {
+      "n_folds": 5,
+      "selected_counts": [
+        32,
+        16,
+        32,
+        64,
+        16
+      ],
+      "mean_pairwise_jaccard": 0.12969998079692927,
+      "features_selected_in_every_fold": 1,
+      "top_features_by_fold_frequency": [
+        {
+          "summary_feature_index": 289,
+          "selected_fold_count": 5,
+          "node": "eye_left_lower",
+          "source_feature": "area",
+          "statistic": "std",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 154,
+          "selected_fold_count": 4,
+          "node": "brow_right_inner",
+          "source_feature": "velocity_area",
+          "statistic": "late_minus_early",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 508,
+          "selected_fold_count": 4,
+          "node": "nose_alar_left",
+          "source_feature": "area",
+          "statistic": "late_minus_early",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 901,
+          "selected_fold_count": 4,
+          "node": "eye_left_lower",
+          "source_feature": "velocity_area",
+          "statistic": "absolute_max",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 17,
+          "selected_fold_count": 3,
+          "node": "brow_left_inner",
+          "source_feature": "cz",
+          "statistic": "temporal_slope",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 38,
+          "selected_fold_count": 3,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_y",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 136,
+          "selected_fold_count": 3,
+          "node": "brow_right_inner",
+          "source_feature": "aspect",
+          "statistic": "late_minus_early",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 137,
+          "selected_fold_count": 3,
+          "node": "brow_right_inner",
+          "source_feature": "aspect",
+          "statistic": "temporal_slope",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 155,
+          "selected_fold_count": 3,
+          "node": "brow_right_inner",
+          "source_feature": "velocity_area",
+          "statistic": "temporal_slope",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 509,
+          "selected_fold_count": 3,
+          "node": "nose_alar_left",
+          "source_feature": "area",
+          "statistic": "temporal_slope",
+          "feature_family": "temporal"
+        }
+      ]
+    }
+  },
+  "water_used_as_unlabelled_reference": true,
+  "record_exclusions": {
+    "manifest_rows": 840,
+    "excluded_water": 0,
+    "excluded_status": 0,
+    "excluded_quality": 0,
+    "excluded_missing_graph": 0,
+    "included": 840
+  },
+  "condition_audit": {
+    "conditions_before_min_repeats": 140,
+    "conditions_included": 140,
+    "conditions_excluded_min_repeats": 0,
+    "repeat_count_distribution": {
+      "5": 140
+    }
+  }
+}

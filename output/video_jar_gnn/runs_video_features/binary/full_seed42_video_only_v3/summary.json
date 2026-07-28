@@ -1,0 +1,512 @@
+{
+  "task": "binary",
+  "class_names": {
+    "0": "Khac",
+    "1": "Vua_phai"
+  },
+  "input_contract": "video_summary_only",
+  "uses_ma_mau_as_predictor": false,
+  "partial_cv": false,
+  "folds_run": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "condition_unit": "subject_id × ma_mau",
+  "experiments": {
+    "video_raw": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.5285714285714286,
+        "balanced_accuracy": 0.45928030303030304,
+        "macro_f1": 0.4596491228070175,
+        "per_class_recall": [
+          0.6458333333333334,
+          0.2727272727272727
+        ],
+        "per_class_precision": [
+          0.6595744680851063,
+          0.2608695652173913
+        ],
+        "per_class_f1": [
+          0.6526315789473683,
+          0.2666666666666666
+        ],
+        "support": [
+          96,
+          44
+        ],
+        "mae": 0.4714285714285714,
+        "quadratic_weighted_kappa": -0.08044901777362012
+      },
+      "confusion": [
+        [
+          62,
+          34
+        ],
+        [
+          32,
+          12
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "video_trial_delta": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.6071428571428571,
+        "balanced_accuracy": 0.5411931818181819,
+        "macro_f1": 0.5414209993448871,
+        "per_class_recall": [
+          0.71875,
+          0.36363636363636365
+        ],
+        "per_class_precision": [
+          0.711340206185567,
+          0.37209302325581395
+        ],
+        "per_class_f1": [
+          0.7150259067357513,
+          0.367816091954023
+        ],
+        "support": [
+          96,
+          44
+        ],
+        "mae": 0.39285714285714285,
+        "quadratic_weighted_kappa": 0.0828966174368746
+      },
+      "confusion": [
+        [
+          69,
+          27
+        ],
+        [
+          28,
+          16
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "video_water_delta": {
+      "metrics": {
+        "n": 140,
+        "accuracy": 0.5142857142857142,
+        "balanced_accuracy": 0.46117424242424243,
+        "macro_f1": 0.46105072463768115,
+        "per_class_recall": [
+          0.6041666666666666,
+          0.3181818181818182
+        ],
+        "per_class_precision": [
+          0.6590909090909091,
+          0.2692307692307692
+        ],
+        "per_class_f1": [
+          0.6304347826086956,
+          0.2916666666666667
+        ],
+        "support": [
+          96,
+          44
+        ],
+        "mae": 0.4857142857142857,
+        "quadratic_weighted_kappa": -0.07400722021660644
+      },
+      "confusion": [
+        [
+          58,
+          38
+        ],
+        [
+          30,
+          14
+        ]
+      ],
+      "confusion_plot_written": true
+    }
+  },
+  "baseline": {
+    "outer_train_majority": {
+      "n": 140,
+      "accuracy": 0.6857142857142857,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.4067796610169492,
+      "per_class_recall": [
+        1.0,
+        0.0
+      ],
+      "per_class_precision": [
+        0.6857142857142857,
+        0.0
+      ],
+      "per_class_f1": [
+        0.8135593220338984,
+        0.0
+      ],
+      "support": [
+        96,
+        44
+      ]
+    }
+  },
+  "subject_cluster_bootstrap": {
+    "requested_samples": 1000,
+    "accepted_samples": 1000,
+    "cluster": "subject_id",
+    "model_balanced_accuracy": {
+      "video_raw": {
+        "low_2_5": 0.3707482993197279,
+        "median": 0.46051411968918154,
+        "high_97_5": 0.5391156462585034
+      },
+      "video_trial_delta": {
+        "low_2_5": 0.476137495981452,
+        "median": 0.5375000000000001,
+        "high_97_5": 0.6037601882858405
+      },
+      "video_water_delta": {
+        "low_2_5": 0.3873079371892871,
+        "median": 0.4608814356216062,
+        "high_97_5": 0.5351439166013802
+      }
+    },
+    "majority_balanced_accuracy": {
+      "video_raw": {
+        "low_2_5": 0.5,
+        "median": 0.5,
+        "high_97_5": 0.5
+      },
+      "video_trial_delta": {
+        "low_2_5": 0.5,
+        "median": 0.5,
+        "high_97_5": 0.5
+      },
+      "video_water_delta": {
+        "low_2_5": 0.5,
+        "median": 0.5,
+        "high_97_5": 0.5
+      }
+    },
+    "model_minus_majority": {
+      "video_raw": {
+        "low_2_5": -0.12925170068027209,
+        "median": -0.03948588031081843,
+        "high_97_5": 0.03911564625850339
+      },
+      "video_trial_delta": {
+        "low_2_5": -0.023862504018547986,
+        "median": 0.03750000000000003,
+        "high_97_5": 0.10376018828584059
+      },
+      "video_water_delta": {
+        "low_2_5": -0.11269206281071294,
+        "median": -0.03911856437839378,
+        "high_97_5": 0.03514391660138012
+      }
+    }
+  },
+  "feature_selection_stability": {
+    "video_raw": {
+      "n_folds": 5,
+      "selected_counts": [
+        32,
+        64,
+        64,
+        1034,
+        32
+      ],
+      "mean_pairwise_jaccard": 0.10926667411587783,
+      "features_selected_in_every_fold": 3,
+      "top_features_by_fold_frequency": [
+        {
+          "summary_feature_index": 303,
+          "selected_fold_count": 5,
+          "node": "eye_left_lower",
+          "source_feature": "velocity_x",
+          "statistic": "quantile_90",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 356,
+          "selected_fold_count": 5,
+          "node": "eye_right_upper",
+          "source_feature": "velocity_x",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 411,
+          "selected_fold_count": 5,
+          "node": "eye_right_lower",
+          "source_feature": "velocity_x",
+          "statistic": "quantile_90",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 31,
+          "selected_fold_count": 4,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_x",
+          "statistic": "std",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 39,
+          "selected_fold_count": 4,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_y",
+          "statistic": "quantile_90",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 49,
+          "selected_fold_count": 4,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_aspect",
+          "statistic": "std",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 50,
+          "selected_fold_count": 4,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_aspect",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 729,
+          "selected_fold_count": 4,
+          "node": "lip_corners",
+          "source_feature": "aspect",
+          "statistic": "quantile_90",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 812,
+          "selected_fold_count": 4,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_x",
+          "statistic": "absolute_quantile_90",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 969,
+          "selected_fold_count": 4,
+          "node": "nose_alar_left",
+          "source_feature": "velocity_aspect",
+          "statistic": "absolute_max",
+          "feature_family": "absolute_motion"
+        }
+      ]
+    },
+    "video_trial_delta": {
+      "n_folds": 5,
+      "selected_counts": [
+        1034,
+        64,
+        1034,
+        64,
+        1034
+      ],
+      "mean_pairwise_jaccard": 0.3567634989786511,
+      "features_selected_in_every_fold": 21,
+      "top_features_by_fold_frequency": [
+        {
+          "summary_feature_index": 25,
+          "selected_fold_count": 5,
+          "node": "brow_left_inner",
+          "source_feature": "aspect",
+          "statistic": "std",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 49,
+          "selected_fold_count": 5,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_aspect",
+          "statistic": "std",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 50,
+          "selected_fold_count": 5,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_aspect",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 69,
+          "selected_fold_count": 5,
+          "node": "brow_left_outer",
+          "source_feature": "cz",
+          "statistic": "quantile_90",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 248,
+          "selected_fold_count": 5,
+          "node": "eye_left_upper",
+          "source_feature": "velocity_x",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 303,
+          "selected_fold_count": 5,
+          "node": "eye_left_lower",
+          "source_feature": "velocity_x",
+          "statistic": "quantile_90",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 356,
+          "selected_fold_count": 5,
+          "node": "eye_right_upper",
+          "source_feature": "velocity_x",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 411,
+          "selected_fold_count": 5,
+          "node": "eye_right_lower",
+          "source_feature": "velocity_x",
+          "statistic": "quantile_90",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 440,
+          "selected_fold_count": 5,
+          "node": "nose_bridge",
+          "source_feature": "cy",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 446,
+          "selected_fold_count": 5,
+          "node": "nose_bridge",
+          "source_feature": "cz",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        }
+      ]
+    },
+    "video_water_delta": {
+      "n_folds": 5,
+      "selected_counts": [
+        32,
+        1034,
+        1034,
+        16,
+        1034
+      ],
+      "mean_pairwise_jaccard": 0.32555440600962615,
+      "features_selected_in_every_fold": 5,
+      "top_features_by_fold_frequency": [
+        {
+          "summary_feature_index": 31,
+          "selected_fold_count": 5,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_x",
+          "statistic": "std",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 38,
+          "selected_fold_count": 5,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_y",
+          "statistic": "quantile_10",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 811,
+          "selected_fold_count": 5,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_x",
+          "statistic": "absolute_std",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 814,
+          "selected_fold_count": 5,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_y",
+          "statistic": "absolute_mean",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 816,
+          "selected_fold_count": 5,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_y",
+          "statistic": "absolute_quantile_90",
+          "feature_family": "absolute_motion"
+        },
+        {
+          "summary_feature_index": 33,
+          "selected_fold_count": 4,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_x",
+          "statistic": "quantile_90",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 37,
+          "selected_fold_count": 4,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_y",
+          "statistic": "std",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 39,
+          "selected_fold_count": 4,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_y",
+          "statistic": "quantile_90",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 40,
+          "selected_fold_count": 4,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_y",
+          "statistic": "late_minus_early",
+          "feature_family": "temporal"
+        },
+        {
+          "summary_feature_index": 49,
+          "selected_fold_count": 4,
+          "node": "brow_left_inner",
+          "source_feature": "velocity_aspect",
+          "statistic": "std",
+          "feature_family": "temporal"
+        }
+      ]
+    }
+  },
+  "water_used_as_unlabelled_reference": true,
+  "record_exclusions": {
+    "manifest_rows": 840,
+    "excluded_water": 0,
+    "excluded_status": 0,
+    "excluded_quality": 0,
+    "excluded_missing_graph": 0,
+    "included": 840
+  },
+  "condition_audit": {
+    "conditions_before_min_repeats": 140,
+    "conditions_included": 140,
+    "conditions_excluded_min_repeats": 0,
+    "repeat_count_distribution": {
+      "5": 140
+    }
+  }
+}

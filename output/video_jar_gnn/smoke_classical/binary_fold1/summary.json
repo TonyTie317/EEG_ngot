@@ -1,0 +1,292 @@
+{
+  "task": "binary",
+  "class_names": {
+    "0": "Khac",
+    "1": "Vua_phai"
+  },
+  "partial_cv": true,
+  "folds_run": [
+    1
+  ],
+  "condition_unit": "subject_id × ma_mau",
+  "experiments": {
+    "code_only": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.7333333333333333,
+        "balanced_accuracy": 0.725,
+        "macro_f1": 0.7129186602870814,
+        "per_class_recall": [
+          0.75,
+          0.7
+        ],
+        "per_class_precision": [
+          0.8333333333333334,
+          0.5833333333333334
+        ],
+        "per_class_f1": [
+          0.7894736842105262,
+          0.6363636363636365
+        ],
+        "support": [
+          20,
+          10
+        ],
+        "mae": 0.26666666666666666,
+        "quadratic_weighted_kappa": 0.4285714285714286
+      },
+      "confusion": [
+        [
+          15,
+          5
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "face_raw": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.6333333333333333,
+        "balanced_accuracy": 0.575,
+        "macro_f1": 0.576379974326059,
+        "per_class_recall": [
+          0.75,
+          0.4
+        ],
+        "per_class_precision": [
+          0.7142857142857143,
+          0.4444444444444444
+        ],
+        "per_class_f1": [
+          0.7317073170731706,
+          0.4210526315789474
+        ],
+        "support": [
+          20,
+          10
+        ],
+        "mae": 0.36666666666666664,
+        "quadratic_weighted_kappa": 0.15384615384615385
+      },
+      "confusion": [
+        [
+          15,
+          5
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "face_trial_delta": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.6333333333333333,
+        "balanced_accuracy": 0.6,
+        "macro_f1": 0.5970695970695971,
+        "per_class_recall": [
+          0.7,
+          0.5
+        ],
+        "per_class_precision": [
+          0.7368421052631579,
+          0.45454545454545453
+        ],
+        "per_class_f1": [
+          0.717948717948718,
+          0.47619047619047616
+        ],
+        "support": [
+          20,
+          10
+        ],
+        "mae": 0.36666666666666664,
+        "quadratic_weighted_kappa": 0.19512195121951215
+      },
+      "confusion": [
+        [
+          14,
+          6
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "face_water_delta": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.6666666666666666,
+        "balanced_accuracy": 0.6499999999999999,
+        "macro_f1": 0.6411483253588516,
+        "per_class_recall": [
+          0.7,
+          0.6
+        ],
+        "per_class_precision": [
+          0.7777777777777778,
+          0.5
+        ],
+        "per_class_f1": [
+          0.7368421052631577,
+          0.5454545454545454
+        ],
+        "support": [
+          20,
+          10
+        ],
+        "mae": 0.3333333333333333,
+        "quadratic_weighted_kappa": 0.2857142857142857
+      },
+      "confusion": [
+        [
+          14,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "fusion_raw": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.7333333333333333,
+        "balanced_accuracy": 0.725,
+        "macro_f1": 0.7129186602870814,
+        "per_class_recall": [
+          0.75,
+          0.7
+        ],
+        "per_class_precision": [
+          0.8333333333333334,
+          0.5833333333333334
+        ],
+        "per_class_f1": [
+          0.7894736842105262,
+          0.6363636363636365
+        ],
+        "support": [
+          20,
+          10
+        ],
+        "mae": 0.26666666666666666,
+        "quadratic_weighted_kappa": 0.4285714285714286
+      },
+      "confusion": [
+        [
+          15,
+          5
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "fusion_trial_delta": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.7333333333333333,
+        "balanced_accuracy": 0.7,
+        "macro_f1": 0.7000000000000001,
+        "per_class_recall": [
+          0.8,
+          0.6
+        ],
+        "per_class_precision": [
+          0.8,
+          0.6
+        ],
+        "per_class_f1": [
+          0.8000000000000002,
+          0.6
+        ],
+        "support": [
+          20,
+          10
+        ],
+        "mae": 0.26666666666666666,
+        "quadratic_weighted_kappa": 0.4
+      },
+      "confusion": [
+        [
+          16,
+          4
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "fusion_water_delta": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.7333333333333333,
+        "balanced_accuracy": 0.725,
+        "macro_f1": 0.7129186602870814,
+        "per_class_recall": [
+          0.75,
+          0.7
+        ],
+        "per_class_precision": [
+          0.8333333333333334,
+          0.5833333333333334
+        ],
+        "per_class_f1": [
+          0.7894736842105262,
+          0.6363636363636365
+        ],
+        "support": [
+          20,
+          10
+        ],
+        "mae": 0.26666666666666666,
+        "quadratic_weighted_kappa": 0.4285714285714286
+      },
+      "confusion": [
+        [
+          15,
+          5
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "confusion_plot_written": true
+    }
+  },
+  "best_by_balanced_accuracy": "code_only",
+  "subject_cluster_bootstrap": {},
+  "water_used_as_unlabelled_reference": true,
+  "record_exclusions": {
+    "manifest_rows": 840,
+    "excluded_water": 0,
+    "excluded_status": 0,
+    "excluded_quality": 0,
+    "excluded_missing_graph": 0,
+    "included": 840
+  },
+  "condition_audit": {
+    "conditions_before_min_repeats": 140,
+    "conditions_included": 140,
+    "conditions_excluded_min_repeats": 0,
+    "repeat_count_distribution": {
+      "5": 140
+    }
+  }
+}

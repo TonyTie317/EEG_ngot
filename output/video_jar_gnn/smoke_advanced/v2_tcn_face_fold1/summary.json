@@ -1,0 +1,142 @@
+{
+  "task": "jar3",
+  "class_names": {
+    "0": "Khong_du",
+    "1": "Vua_phai",
+    "2": "Qua_nhieu"
+  },
+  "model": "tcn",
+  "preprocess": "trial_delta_motion",
+  "canonical_rotation": true,
+  "relational_features": true,
+  "temporal_pooling": "segments",
+  "aggregation": "mean_std",
+  "fusion": "none",
+  "objective": "ordinal",
+  "prior_mode": "class_balanced",
+  "partial_cv": true,
+  "folds_run": [
+    1
+  ],
+  "n_parameters": 2629,
+  "condition_level": {
+    "metrics": {
+      "n": 30,
+      "accuracy": 0.4,
+      "balanced_accuracy": 0.3333333333333333,
+      "macro_f1": 0.19512195121951217,
+      "per_class_recall": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "per_class_precision": [
+        0.41379310344827586,
+        0.0,
+        0.0
+      ],
+      "per_class_f1": [
+        0.5853658536585366,
+        0.0,
+        0.0
+      ],
+      "support": [
+        12,
+        9,
+        9
+      ],
+      "mae": 0.9,
+      "quadratic_weighted_kappa": 0.008810572687224627
+    },
+    "confusion": [
+      [
+        12,
+        0,
+        0
+      ],
+      [
+        8,
+        0,
+        1
+      ],
+      [
+        9,
+        0,
+        0
+      ]
+    ]
+  },
+  "baselines": {
+    "majority": {
+      "n": 30,
+      "accuracy": 0.4,
+      "balanced_accuracy": 0.3333333333333333,
+      "macro_f1": 0.1904761904761905,
+      "per_class_recall": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "per_class_precision": [
+        0.4,
+        0.0,
+        0.0
+      ],
+      "per_class_f1": [
+        0.5714285714285715,
+        0.0,
+        0.0
+      ],
+      "support": [
+        12,
+        9,
+        9
+      ]
+    },
+    "code_prior": {
+      "n": 30,
+      "accuracy": 0.7,
+      "balanced_accuracy": 0.6944444444444443,
+      "macro_f1": 0.6817460317460317,
+      "per_class_recall": [
+        0.75,
+        0.4444444444444444,
+        0.8888888888888888
+      ],
+      "per_class_precision": [
+        0.75,
+        0.6666666666666666,
+        0.6666666666666666
+      ],
+      "per_class_f1": [
+        0.75,
+        0.5333333333333333,
+        0.761904761904762
+      ],
+      "support": [
+        12,
+        9,
+        9
+      ]
+    }
+  },
+  "subject_cluster_bootstrap": {},
+  "condition_audit": {
+    "conditions_before_min_repeats": 140,
+    "conditions_included": 140,
+    "conditions_excluded_min_repeats": 0,
+    "repeat_count_distribution": {
+      "5": 140
+    }
+  },
+  "neutral_quality_audit": {},
+  "record_exclusions": {
+    "manifest_rows": 840,
+    "excluded_water": 140,
+    "excluded_status": 0,
+    "excluded_quality": 0,
+    "excluded_missing_graph": 0,
+    "included": 700
+  },
+  "confusion_plot_written": true
+}

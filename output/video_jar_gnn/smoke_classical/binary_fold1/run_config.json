@@ -1,0 +1,103 @@
+{
+  "manifest": "output/video_jar_gnn/graph_manifest.csv",
+  "task": "binary",
+  "output_dir": "output/video_jar_gnn/smoke_classical/binary_fold1",
+  "variants": [
+    "code_only",
+    "face_raw",
+    "face_trial_delta",
+    "face_water_delta",
+    "fusion_raw",
+    "fusion_trial_delta",
+    "fusion_water_delta"
+  ],
+  "baseline_frames": 12,
+  "min_repeats": 3,
+  "min_detection_ratio": 0.5,
+  "cv_folds": 5,
+  "inner_folds": 3,
+  "fold_index": 0,
+  "c_grid": [
+    0.01,
+    0.1,
+    1.0
+  ],
+  "alpha_grid": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "max_iter": 5000,
+  "bootstrap_samples": 0,
+  "seed": 42,
+  "n_records_loaded": 840,
+  "n_supervised_conditions": 140,
+  "n_subjects": 28,
+  "num_classes": 2,
+  "class_names": {
+    "0": "Khac",
+    "1": "Vua_phai"
+  },
+  "sweet_code_order": [
+    189,
+    258,
+    453,
+    762,
+    893
+  ],
+  "condition_unit": "subject_id × ma_mau",
+  "repeat_handling": "mean graph before temporal summary",
+  "water_used_as_unlabelled_reference": true,
+  "water_reference_aggregation": "mean across usable ma_mau=605 repeats",
+  "water_repeat_counts": {
+    "P001": 5,
+    "P002": 5,
+    "P003": 5,
+    "P004": 5,
+    "P005": 5,
+    "P006": 5,
+    "P007": 5,
+    "P008": 5,
+    "P009": 5,
+    "P010": 5,
+    "P011": 5,
+    "P013": 5,
+    "P014": 5,
+    "P015": 5,
+    "P016": 5,
+    "P017": 5,
+    "P018": 5,
+    "P019": 5,
+    "P020": 5,
+    "P021": 5,
+    "P023": 5,
+    "P024": 5,
+    "P025": 5,
+    "P026": 5,
+    "P027": 5,
+    "P028": 5,
+    "P029": 5,
+    "P030": 5
+  },
+  "face_feature_dimensions": {
+    "raw": 1050,
+    "trial_delta": 1050,
+    "water_delta": 1050
+  },
+  "record_exclusions": {
+    "manifest_rows": 840,
+    "excluded_water": 0,
+    "excluded_status": 0,
+    "excluded_quality": 0,
+    "excluded_missing_graph": 0,
+    "included": 840
+  },
+  "condition_audit": {
+    "conditions_before_min_repeats": 140,
+    "conditions_included": 140,
+    "conditions_excluded_min_repeats": 0,
+    "repeat_count_distribution": {
+      "5": 140
+    }
+  }
+}

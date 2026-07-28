@@ -1,0 +1,123 @@
+{
+  "task": "binary",
+  "class_names": {
+    "0": "Khac",
+    "1": "Vua_phai"
+  },
+  "model": "tcn",
+  "preprocess": "trial_delta",
+  "canonical_rotation": true,
+  "relational_features": false,
+  "temporal_pooling": "segments",
+  "aggregation": "mean",
+  "input_contract": "video_graph_only",
+  "uses_ma_mau_as_model_feature": false,
+  "objective": "ce",
+  "advanced_trainer_version": 3,
+  "partial_cv": false,
+  "folds_run": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "n_parameters": 7298,
+  "condition_level": {
+    "metrics": {
+      "n": 140,
+      "accuracy": 0.5357142857142857,
+      "balanced_accuracy": 0.47679924242424243,
+      "macro_f1": 0.47674084296475183,
+      "per_class_recall": [
+        0.6354166666666666,
+        0.3181818181818182
+      ],
+      "per_class_precision": [
+        0.6703296703296703,
+        0.2857142857142857
+      ],
+      "per_class_f1": [
+        0.6524064171122994,
+        0.30107526881720426
+      ],
+      "support": [
+        96,
+        44
+      ],
+      "mae": 0.4642857142857143,
+      "quadratic_weighted_kappa": -0.045016077170418
+    },
+    "confusion": [
+      [
+        61,
+        35
+      ],
+      [
+        30,
+        14
+      ]
+    ]
+  },
+  "baselines": {
+    "majority": {
+      "n": 140,
+      "accuracy": 0.6857142857142857,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.4067796610169492,
+      "per_class_recall": [
+        1.0,
+        0.0
+      ],
+      "per_class_precision": [
+        0.6857142857142857,
+        0.0
+      ],
+      "per_class_f1": [
+        0.8135593220338984,
+        0.0
+      ],
+      "support": [
+        96,
+        44
+      ]
+    }
+  },
+  "subject_cluster_bootstrap": {
+    "n_bootstrap": 1000,
+    "cluster": "subject_id",
+    "model_balanced_accuracy": {
+      "low_2_5": 0.39638726229128013,
+      "median": 0.4765790878477365,
+      "high_97_5": 0.553507782449104
+    },
+    "majority_balanced_accuracy": {
+      "low_2_5": 0.5,
+      "median": 0.5,
+      "high_97_5": 0.5
+    },
+    "model_minus_majority": {
+      "low_2_5": -0.10361273770871986,
+      "median": -0.023420912152263496,
+      "high_97_5": 0.05350778244910401
+    }
+  },
+  "condition_audit": {
+    "conditions_before_min_repeats": 140,
+    "conditions_included": 140,
+    "conditions_excluded_min_repeats": 0,
+    "repeat_count_distribution": {
+      "5": 140
+    }
+  },
+  "neutral_quality_audit": {},
+  "record_exclusions": {
+    "manifest_rows": 840,
+    "excluded_water": 140,
+    "excluded_status": 0,
+    "excluded_quality": 0,
+    "excluded_missing_graph": 0,
+    "included": 700
+  },
+  "confusion_plot_written": true
+}

@@ -1,0 +1,44 @@
+flowchart TD
+    A[Bắt đầu B2] --> B[Load config & quét<br/>thư mục video]
+    B --> C{Duyệt từng video}
+    C --> D[Mở video, đọc<br/>orig_fps & frame_count]
+    D --> E[Tính stride_pre =<br/>match_target_fps]
+    E --> F[Loop frames với<br/>stride_pre & temporal_stride]
+    F --> G{Mỗi k frames}
+    G -->|Có| H[FaceDetection]
+    G -->|Không| I[Dùng bbox trước]
+    H --> J[EMA bbox làm mượt]
+    I --> J
+    J --> K[Expand square bbox<br/>với face_pad_ratio]
+    K --> L[Crop ROI → resize<br/>→ RGB resize_wh]
+    L --> M[FaceMesh 468<br/>landmarks inference]
+    M --> N{Tìm thấy<br/>landmarks?}
+    N -->|Có| O[Xây dựng 15 ROI động<br/>brow/eye/nose/lip/chin]
+    N -->|Không| P[Dùng last_valid<br/>set vis=0]
+    O --> Q[Region pooling cho mỗi AU<br/>cx,cy,cz,vis,area,aspect]
+    P --> Q
+    Q --> R[Append vào sequence<br/>Cache last_valid]
+    R --> S{Write preview?}
+    S -->|Có| T[Vẽ tessellation & bbox]
+    S -->|Không| U[Tiếp tục]
+    T --> U
+    U --> V{Còn frame?}
+    V -->|Có| F
+    V -->|Không| W[Stack seq → T,15,10]
+    W --> X[Tính vi phân theo thời gian<br/>dcx,dcy,darea,daspect]
+    X --> Y[Build AU adjacency<br/>ma trận 15x15]
+    Y --> Z[Tính eff_fps]
+    Z --> AA[Lưu .npz<br/>graph_seq, adj, meta]
+    AA --> AB{Write preview?}
+    AB -->|Có| AC[Xuất preview.mp4]
+    AB -->|Không| AD[Bỏ qua]
+    AC --> AE{Còn video?}
+    AD --> AE
+    AE -->|Có| C
+    AE -->|Không| AF[Kết thúc]
+
+    style A fill:#90EE90
+    style AF fill:#FFB6C1
+    style M fill:#87CEEB
+    style AA fill:#FFD700
+    style O fill:#DDA0DD

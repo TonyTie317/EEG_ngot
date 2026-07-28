@@ -1,0 +1,370 @@
+{
+  "task": "jar3",
+  "class_names": {
+    "0": "Khong_du",
+    "1": "Vua_phai",
+    "2": "Qua_nhieu"
+  },
+  "partial_cv": true,
+  "folds_run": [
+    1
+  ],
+  "condition_unit": "subject_id × ma_mau",
+  "experiments": {
+    "code_only": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.6666666666666666,
+        "balanced_accuracy": 0.6574074074074073,
+        "macro_f1": 0.6626984126984128,
+        "per_class_recall": [
+          0.75,
+          0.6666666666666666,
+          0.5555555555555556
+        ],
+        "per_class_precision": [
+          0.75,
+          0.5,
+          0.8333333333333334
+        ],
+        "per_class_f1": [
+          0.75,
+          0.5714285714285715,
+          0.6666666666666667
+        ],
+        "support": [
+          12,
+          9,
+          9
+        ],
+        "mae": 0.36666666666666664,
+        "quadratic_weighted_kappa": 0.656084656084656
+      },
+      "confusion": [
+        [
+          9,
+          2,
+          1
+        ],
+        [
+          3,
+          6,
+          0
+        ],
+        [
+          0,
+          4,
+          5
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "face_raw": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.26666666666666666,
+        "balanced_accuracy": 0.25,
+        "macro_f1": 0.22020568663036902,
+        "per_class_recall": [
+          0.4166666666666667,
+          0.0,
+          0.3333333333333333
+        ],
+        "per_class_precision": [
+          0.29411764705882354,
+          0.0,
+          0.3
+        ],
+        "per_class_f1": [
+          0.3448275862068966,
+          0.0,
+          0.3157894736842105
+        ],
+        "support": [
+          12,
+          9,
+          9
+        ],
+        "mae": 1.0666666666666667,
+        "quadratic_weighted_kappa": -0.11587982832618038
+      },
+      "confusion": [
+        [
+          5,
+          3,
+          4
+        ],
+        [
+          6,
+          0,
+          3
+        ],
+        [
+          6,
+          0,
+          3
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "face_trial_delta": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.26666666666666666,
+        "balanced_accuracy": 0.25,
+        "macro_f1": 0.21904761904761905,
+        "per_class_recall": [
+          0.4166666666666667,
+          0.0,
+          0.3333333333333333
+        ],
+        "per_class_precision": [
+          0.3125,
+          0.0,
+          0.2727272727272727
+        ],
+        "per_class_f1": [
+          0.35714285714285715,
+          0.0,
+          0.3
+        ],
+        "support": [
+          12,
+          9,
+          9
+        ],
+        "mae": 1.0666666666666667,
+        "quadratic_weighted_kappa": -0.1063829787234043
+      },
+      "confusion": [
+        [
+          5,
+          2,
+          5
+        ],
+        [
+          6,
+          0,
+          3
+        ],
+        [
+          5,
+          1,
+          3
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "face_water_delta": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.4,
+        "balanced_accuracy": 0.3703703703703704,
+        "macro_f1": 0.3259259259259259,
+        "per_class_recall": [
+          0.6666666666666666,
+          0.0,
+          0.4444444444444444
+        ],
+        "per_class_precision": [
+          0.4444444444444444,
+          0.0,
+          0.4444444444444444
+        ],
+        "per_class_f1": [
+          0.5333333333333333,
+          0.0,
+          0.4444444444444444
+        ],
+        "support": [
+          12,
+          9,
+          9
+        ],
+        "mae": 0.8,
+        "quadratic_weighted_kappa": 0.22077922077922085
+      },
+      "confusion": [
+        [
+          8,
+          2,
+          2
+        ],
+        [
+          6,
+          0,
+          3
+        ],
+        [
+          4,
+          1,
+          4
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "fusion_raw": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.6666666666666666,
+        "balanced_accuracy": 0.6574074074074073,
+        "macro_f1": 0.6626984126984128,
+        "per_class_recall": [
+          0.75,
+          0.6666666666666666,
+          0.5555555555555556
+        ],
+        "per_class_precision": [
+          0.75,
+          0.5,
+          0.8333333333333334
+        ],
+        "per_class_f1": [
+          0.75,
+          0.5714285714285715,
+          0.6666666666666667
+        ],
+        "support": [
+          12,
+          9,
+          9
+        ],
+        "mae": 0.36666666666666664,
+        "quadratic_weighted_kappa": 0.656084656084656
+      },
+      "confusion": [
+        [
+          9,
+          2,
+          1
+        ],
+        [
+          3,
+          6,
+          0
+        ],
+        [
+          0,
+          4,
+          5
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "fusion_trial_delta": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.6666666666666666,
+        "balanced_accuracy": 0.6574074074074073,
+        "macro_f1": 0.6626984126984128,
+        "per_class_recall": [
+          0.75,
+          0.6666666666666666,
+          0.5555555555555556
+        ],
+        "per_class_precision": [
+          0.75,
+          0.5,
+          0.8333333333333334
+        ],
+        "per_class_f1": [
+          0.75,
+          0.5714285714285715,
+          0.6666666666666667
+        ],
+        "support": [
+          12,
+          9,
+          9
+        ],
+        "mae": 0.36666666666666664,
+        "quadratic_weighted_kappa": 0.656084656084656
+      },
+      "confusion": [
+        [
+          9,
+          2,
+          1
+        ],
+        [
+          3,
+          6,
+          0
+        ],
+        [
+          0,
+          4,
+          5
+        ]
+      ],
+      "confusion_plot_written": true
+    },
+    "fusion_water_delta": {
+      "metrics": {
+        "n": 30,
+        "accuracy": 0.6666666666666666,
+        "balanced_accuracy": 0.6574074074074073,
+        "macro_f1": 0.6626984126984128,
+        "per_class_recall": [
+          0.75,
+          0.6666666666666666,
+          0.5555555555555556
+        ],
+        "per_class_precision": [
+          0.75,
+          0.5,
+          0.8333333333333334
+        ],
+        "per_class_f1": [
+          0.75,
+          0.5714285714285715,
+          0.6666666666666667
+        ],
+        "support": [
+          12,
+          9,
+          9
+        ],
+        "mae": 0.36666666666666664,
+        "quadratic_weighted_kappa": 0.656084656084656
+      },
+      "confusion": [
+        [
+          9,
+          2,
+          1
+        ],
+        [
+          3,
+          6,
+          0
+        ],
+        [
+          0,
+          4,
+          5
+        ]
+      ],
+      "confusion_plot_written": true
+    }
+  },
+  "best_by_balanced_accuracy": "code_only",
+  "subject_cluster_bootstrap": {},
+  "water_used_as_unlabelled_reference": true,
+  "record_exclusions": {
+    "manifest_rows": 840,
+    "excluded_water": 0,
+    "excluded_status": 0,
+    "excluded_quality": 0,
+    "excluded_missing_graph": 0,
+    "included": 840
+  },
+  "condition_audit": {
+    "conditions_before_min_repeats": 140,
+    "conditions_included": 140,
+    "conditions_excluded_min_repeats": 0,
+    "repeat_count_distribution": {
+      "5": 140
+    }
+  }
+}

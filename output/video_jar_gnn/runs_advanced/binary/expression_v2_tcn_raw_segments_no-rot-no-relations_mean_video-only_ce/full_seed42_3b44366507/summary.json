@@ -1,0 +1,184 @@
+{
+  "task": "binary",
+  "class_names": {
+    "0": "Khac",
+    "1": "Vua_phai"
+  },
+  "model": "tcn",
+  "representation": "expression_v2",
+  "representation_schema": {
+    "representation": "expression_v2",
+    "representation_version": 1,
+    "node_names": [
+      "inner_brow_R",
+      "inner_brow_L",
+      "outer_brow_R",
+      "outer_brow_L",
+      "eye_open_R",
+      "eye_open_L",
+      "lid_cheek_gap_R",
+      "lid_cheek_gap_L",
+      "alar_extent_R",
+      "alar_extent_L",
+      "nose_upperlip_R",
+      "nose_upperlip_L",
+      "corner_horizontal_R",
+      "corner_horizontal_L",
+      "corner_vertical_R",
+      "corner_vertical_L",
+      "inner_lip_aperture",
+      "outer_mouth_open",
+      "lowerlip_chin_gap",
+      "jaw_open"
+    ],
+    "feature_names": [
+      "value",
+      "delta",
+      "velocity",
+      "acceleration",
+      "abs_velocity",
+      "baseline_robust_z",
+      "observed",
+      "imputed"
+    ],
+    "observed_mask_indices": [
+      6,
+      7
+    ],
+    "static_feature_indices": [
+      0,
+      1,
+      5
+    ],
+    "velocity_feature_indices": [
+      2,
+      3,
+      4
+    ],
+    "processed_feature_names": [
+      "value",
+      "delta",
+      "velocity",
+      "acceleration",
+      "abs_velocity",
+      "baseline_robust_z",
+      "observed",
+      "imputed"
+    ]
+  },
+  "preprocess": "raw",
+  "canonical_rotation": false,
+  "relational_features": false,
+  "temporal_pooling": "segments",
+  "aggregation": "mean",
+  "input_contract": "video_graph_only",
+  "uses_ma_mau_as_model_feature": false,
+  "objective": "ce",
+  "advanced_trainer_version": 4,
+  "partial_cv": false,
+  "folds_run": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "n_parameters": 7438,
+  "condition_level": {
+    "metrics": {
+      "n": 140,
+      "accuracy": 0.6428571428571429,
+      "balanced_accuracy": 0.5179924242424242,
+      "macro_f1": 0.5043896913055792,
+      "per_class_recall": [
+        0.8541666666666666,
+        0.18181818181818182
+      ],
+      "per_class_precision": [
+        0.6949152542372882,
+        0.36363636363636365
+      ],
+      "per_class_f1": [
+        0.7663551401869159,
+        0.24242424242424246
+      ],
+      "support": [
+        96,
+        44
+      ],
+      "mae": 0.35714285714285715,
+      "quadratic_weighted_kappa": 0.041621029572836976
+    },
+    "confusion": [
+      [
+        82,
+        14
+      ],
+      [
+        36,
+        8
+      ]
+    ]
+  },
+  "baselines": {
+    "majority": {
+      "n": 140,
+      "accuracy": 0.6857142857142857,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.4067796610169492,
+      "per_class_recall": [
+        1.0,
+        0.0
+      ],
+      "per_class_precision": [
+        0.6857142857142857,
+        0.0
+      ],
+      "per_class_f1": [
+        0.8135593220338984,
+        0.0
+      ],
+      "support": [
+        96,
+        44
+      ]
+    }
+  },
+  "subject_cluster_bootstrap": {
+    "n_bootstrap": 1000,
+    "cluster": "subject_id",
+    "model_balanced_accuracy": {
+      "low_2_5": 0.46501561345158904,
+      "median": 0.5183487843970942,
+      "high_97_5": 0.5714962121212122
+    },
+    "majority_balanced_accuracy": {
+      "low_2_5": 0.5,
+      "median": 0.5,
+      "high_97_5": 0.5
+    },
+    "model_minus_majority": {
+      "low_2_5": -0.03498438654841095,
+      "median": 0.018348784397094142,
+      "high_97_5": 0.07149621212121215
+    }
+  },
+  "condition_audit": {
+    "conditions_before_min_repeats": 140,
+    "conditions_included": 140,
+    "conditions_excluded_min_repeats": 0,
+    "repeat_count_distribution": {
+      "5": 140
+    }
+  },
+  "neutral_quality_audit": {},
+  "record_exclusions": {
+    "manifest_rows": 840,
+    "excluded_water": 140,
+    "excluded_status": 0,
+    "excluded_quality": 0,
+    "excluded_missing_graph": 0,
+    "included": 700
+  },
+  "confusion_plot_written": true
+}
